@@ -22,7 +22,7 @@ title: awesome-doge
 email: null
 description: >- # this means to ignore newlines until "baseurl:"
   Bitcoin, Crypto, GFW, Tor ,Zeronet, Shadowsocks, Shadowsocksr, V2ray
-baseurl: "/bitcoinbook_2nd_zh" # the subpath of your site, e.g. /blog
+baseurl: "bitcoinbook_2nd_zh" # the subpath of your site, e.g. /blog
 url: "https://awesome-doge.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  awesome-doge
