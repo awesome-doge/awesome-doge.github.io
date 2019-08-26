@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bitcoin 的閱讀清單"
+date:   2019-08-26 18:26:44 +0800
 categories: bitcoin
 ---
 
