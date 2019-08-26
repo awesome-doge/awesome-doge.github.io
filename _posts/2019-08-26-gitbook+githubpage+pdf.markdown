@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "透過gitbook搭建githubpage＋生成電子書"
-date:   2019-08-26 18:26:44 +0800
+date:   2019-08-26 17:26:44 +0800
 categories: gitbook, githubpage
 ---
 
@@ -59,8 +59,38 @@ sudo ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
 ```
 ok，應該可以很舒服的執行勒
 
+## 發佈到github page
+創建一個分支，這個執行一次就好
+```
+git checkout -b gh-pages
+```
+
+以下是一個 自度發佈的腳本，可以創立一個`gitbook.sh`的檔案，可以一直更新
+```
+gitbook build
+```
+
+```
+git checkout master
+git add .
+git commit -m $1
+git push -u origin master
+git checkout gh-pages
+cp -r _book/* .
+git add .
+git commit -m $1
+git push -u origin gh-pages
+git checkout master
+```
+執行的時候在repo裡面
+```
+sh gitbook.sh '更新'
+```
+
+
 ## 參考文獻
 * [gitbook——使用笔记](https://morrowind.gitbooks.io/gitbook_notes/content/qian_yan.html)
 * [GitBook文档（中文版）](https://chrisniael.gitbooks.io/gitbook-documentation/content/index.html)
 * [Gitbook 安装及使用 ](https://my.oschina.net/lpe234/blog/854226)
 * [Mac上将gitbook转化成pdf文档下载](https://www.jianshu.com/p/6a16064a4d1e)
+* [自动化脚本](https://yangjh.oschina.io/gitbook/UsingPages.html)
