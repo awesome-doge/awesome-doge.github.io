@@ -4,13 +4,12 @@ title:  "Bitcoin 的閱讀清單"
 date:   2019-08-26 18:26:44 +0800
 categories: bitcoin
 ---
-
-# 閱讀清單
 ## Bitcoin
 * [fanquake/core-review](https://github.com/fanquake/core-review)參與bitcoin core的工具清單
-### github
 
-* [zkSNACKs/WasabiDoc](https://github.com/zkSNACKs/WasabiDoc)Wasabi 文件，裡面有coinjoin
+### github
+* [zkSNACKs](https://github.com/zkSNACKs)
+  * [zkSNACKs/WasabiDoc](https://github.com/zkSNACKs/WasabiDoc)Wasabi 文件，裡面有coinjoin
     * https://docs.wasabiwallet.io
 * [Andrew Poelstra](https://github.com/apoelstra)blockstream首席
     * [apoelstra/mimblewimble-paper](https://github.com/apoelstra/mimblewimble-paper) 最早的mimblewimble 白皮書
@@ -18,7 +17,8 @@ categories: bitcoin
 * [Blockstream](https://github.com/Blockstream)
     * [Blockstream/docs](https://github.com/Blockstream/docs)
 * [Pieter Wuille](https://github.com/sipa)
-* [bitcoin-dot-org/bitcoin.org](https://github.com/bitcoin-dot-org/bitcoin.org)
+* [bitcoin-dot-org](https://github.com/bitcoin-dot-org)
+  * [bitcoin-dot-org/bitcoin.org](https://github.com/bitcoin-dot-org/bitcoin.org)
 * [bitcoin](https://github.com/bitcoin)
     * [bitcoin/bitcoin/doc](https://github.com/bitcoin/bitcoin/tree/master/doc)
 * [bitcoin-core](https://github.com/bitcoin-core)
@@ -36,8 +36,8 @@ categories: bitcoin
 * [jimmysong](https://github.com/jimmysong)
     * [jimmysong/programmingbitcoin](https://github.com/jimmysong/programmingbitcoin)
 
-### blog
-* [Laanwj's blog](https://laanwj.github.io/) bitcoin core 首席
+### Blog
+* [Laanwj's blog](https://laanwj.github.io/) 
 * [lopp](https://lopp.net)
 * [lopp Medium](https://medium.com/@lopp)
 * [Jimmy Song Medium](https://medium.com/@jimmysong)
@@ -47,11 +47,11 @@ categories: bitcoin
 * [bitcoin wiki](https://en.bitcoin.it/wiki/Main_Page)
 
 ### 論文
-* [以太坊白皮書](https://github.com/cypherpunks-core/ethereum_whitepaper_zh)
-* [比特幣白皮書](https://github.com/cypherpunks-core/bitcoin_whitepaper_zh)
-* [比特幣閃電網路白皮書](https://github.com/cypherpunks-core/lightning_network_whitepaper_zh)
+* [Ethereum Whitepaper](https://github.com/cypherpunks-core/ethereum_whitepaper_zh)
+* [Vitcoin Whitepaper](https://github.com/cypherpunks-core/bitcoin_whitepaper_zh)
+* [Lightning Network Whitepaper](https://github.com/cypherpunks-core/lightning_network_whitepaper_zh)
 
 ### 書
-* [精通比特幣第二版](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh)
-* [精通以太坊](https://github.com/cypherpunks-core/ethereumbook_zh)
+* [Mastering Bitcoin](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh)
+* [Mastering Ethereum](https://github.com/cypherpunks-core/ethereumbook_zh)
 * [密碼龐克](https://github.com/cypherpunks-core/cyherpunksbook_zh)
