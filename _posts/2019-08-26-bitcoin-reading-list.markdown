@@ -4,7 +4,7 @@ title:  "Bitcoin 的閱讀清單"
 date:   2019-08-26 18:26:44 +0800
 categories: bitcoin
 ---
-## Bitcoin
+
 * [fanquake/core-review](https://github.com/fanquake/core-review)參與bitcoin core的工具清單
 
 ### github
