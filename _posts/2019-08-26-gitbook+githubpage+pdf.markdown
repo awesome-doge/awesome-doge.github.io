@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Bitcoin 的閱讀清單"
+title:  "透過gitbook搭建githubpage＋生成電子書"
 date:   2019-08-26 18:26:44 +0800
-categories: bitcoin
+categories: gitbook, githubpage
 ---
 
 因為已經用了各種不成熟的方法在撰寫書籍，所以精進一下製作工藝。
