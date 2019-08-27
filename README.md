@@ -1,0 +1,1 @@
+run `sh publish.sh 'update'`
