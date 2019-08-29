@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "IRC 使用"
-date:   2019-08-29 18:26:44 +0800
+date:   2019-08-28 18:26:44 +0800
 categories: irc
 ---
 
