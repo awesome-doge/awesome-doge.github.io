@@ -6,7 +6,7 @@ categories: IRC
 tag: IRC
 ---
 
-> 雖然對IRC的起源並不是了解的太多，但是看到有非常非常多的超大型開源項目，都是透過都是透過這個聊天協議作為討論的平臺。譬如比特幣項目,Linux foundation,hack in Taiwan conference,Tor project,維基百科,Mozilla firefox。當然還有很多非常著名的 channel ，那我就不一一列舉了。
+雖然對IRC的起源並不是了解的太多，但是看到有非常非常多的超大型開源項目，都是透過都是透過這個聊天協議作為討論的平臺。譬如比特幣項目,Linux foundation,hack in Taiwan conference,Tor project,維基百科,Mozilla firefox。當然還有很多非常著名的 channel ，那我就不一一列舉了。
 
 要進入到IRC 有幾個步驟,要到這個項目的官方網站尋找他是否有開設IRC的 channel 。如果有的話，那就可以去尋找，他是在哪一臺伺服器上面搭建他的 channel ？通常IRC的伺服器都會有網絡的介面，方便一般使用者操作。
 
