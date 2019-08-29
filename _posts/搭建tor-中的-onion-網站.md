@@ -1,0 +1,36 @@
+---
+title: 搭建tor 中的.onion 網站
+date: 2018-01-18 16:52:02
+tags: [tor, hidden service]
+categories: Tor Project
+---
+
+首先再次聲明”.onion”的域名[1]，跟我們腦袋中的DNS不一樣它沒有一個IP對照表，所以不會洩漏hidden server的主機位置，至於怎麼生成一個網址我就姑且當作RSA private key算出public key 然後經過已經過時的sha1[2]算一下雜湊值，再用base 32[3]重新編一次得到我們超級醜的.onion域名，範例"http://oxoujukneztb6wxg.onion"，base32當中應該沒有大寫有沒有奇怪的符號。
+
+<!-- more --> 
+
+>.onion網站的搭建不需要以公有ＩＰ的方是搭建
+>.onion的網站不需要在防火牆新增port規則
+
+那如何搭建一個.onion網站呢，首先你在你自己的電腦中搭建一個網站，最簡單的去XAMPP[5]下載一個，搓一下很快。好了我們有個網站了，接下來去Tor project下載是windows 的話選windows”Expert Bundle”[4]，不要選瀏覽器壓我就不了你。
+
+![](/image/tor4.PNG)
+
+下載完之後，解壓縮阿，看到資料夾裡面有個tor.exe，先點開一遍讓他跑完，跑完關掉，跑不完的我看你在一個有網路審查的地方，估計網管再看你它很火。順利的朋友繼續到"C:\Users\自己的使用者名稱阿\AppData\Roaming\tor"這個資料夾底下，新增一個txt，命名為torcc，然後把副檔名拿掉存檔，接下來打開這個電腦辨識不出來是記事本的檔案用記事本開啟，添加幾行
+
+>HiddenServiceDir C:\ #這會是你存'放網站private key 檔案跟public檔案的地方啊，喜歡改地方也可以
+>HiddenServicePort 80 127.0.0.1:81 #左邊的數字是你希望在哪個port開hidden service，右邊是你希望把本地端的哪個port接上去左邊的
+
+![](/image/tor5.PNG)
+
+改完啦，存檔，回到一開始解壓縮的資料夾執行tor.exe，恭喜你hidden service順利搭成功了，網站名稱會出現在剛剛設定的"HiddenServiceDir"中的publickey，privatekey要保存好，public丟掉沒關係，因為tor美運作一次就會從private key重新推倒一遍又會重新建立public key 。這時就可以拿 .onion域名去Tor 瀏覽器 唬唬人了去吧。
+
+[1]https://zh.wikipedia.org/wiki/.onion
+
+[2]https://zh.wikipedia.org/wiki/SHA-1
+
+[3]https://en.wikipedia.org/wiki/Base32
+
+[4]https://www.torproject.org/download/download.html.en
+
+[5]https://www.apachefriends.org/zh_tw/index.html
