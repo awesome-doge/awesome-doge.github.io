@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "IRC 使用筆記"
+title:  "IRC 註冊筆記"
 date:   2019-08-28 18:26:44 +0800
 categories: IRC
 tag: IRC
