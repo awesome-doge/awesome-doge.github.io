@@ -3,6 +3,7 @@ layout: post
 title:  "透過gitbook搭建githubpage＋生成電子書"
 date:   2019-08-26 17:26:44 +0800
 categories: gitbook, githubpage
+tag: gitbook, github, github hompage
 ---
 
 因為已經用了各種不成熟的方法在撰寫書籍，所以精進一下製作工藝。

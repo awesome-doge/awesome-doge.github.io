@@ -3,6 +3,7 @@ layout: post
 title:  "Riot中的IRC"
 date:   2019-08-29 18:26:44 +0800
 categories: IRC
+tag: IRC, telegram, matrixm Riot
 ---
 
 > 在我理解上Riot是一個通信軟體的客戶端，又或者可以是一個品牌但實際上技術核心是matrix 協議。matrix 協議本身是開源的，內容相當複雜，好像牽涉到了一些去中心化協議，還也許多端點加密的選項。Riot 本身自帶一些聊天用戶客群，本身與telegram,facebook,twitter,IRC，互不相關的，但可以透過各種機器人，各種bridge把大家串起來。

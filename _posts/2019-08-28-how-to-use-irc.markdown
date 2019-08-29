@@ -3,6 +3,7 @@ layout: post
 title:  "IRC 使用筆記"
 date:   2019-08-28 18:26:44 +0800
 categories: IRC
+tag: IRC
 ---
 
 > 雖然對IRC的起源並不是了解的太多，但是看到有非常非常多的超大型開源項目，都是透過都是透過這個聊天協議作為討論的平臺。譬如比特幣項目,Linux foundation,hack in Taiwan conference,Tor project,維基百科,Mozilla firefox。當然還有很多非常著名的 channel ，那我就不一一列舉了。
