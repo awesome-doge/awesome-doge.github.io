@@ -8,9 +8,13 @@ tag: IRC, telegram, matrixm Riot
 
 在我理解上Riot是一個通信軟體的客戶端，又或者可以是一個品牌但實際上技術核心是matrix 協議。matrix 協議本身是開源的，內容相當複雜，好像牽涉到了一些去中心化協議，還也許多端點加密的選項。Riot 本身自帶一些聊天用戶客群，本身與telegram,facebook,twitter,IRC，互不相關的，但可以透過各種機器人，各種bridge把大家串起來。
 
+Riot 相關連結：
+* [matrix 協議的客戶端列表](https://matrix.org/docs/projects/try-matrix-now):這列表多到爆炸。
+* [Bridge](https://matrix.org/bridges):最不知道是不是刻意勒，狂做bridge。簡言之就是各種聊天軟體大串連，通通存到Matrix去。不過Bridge的概念是一個中繼器，假設我們想連IRC，結構:`[IRC server]<--->[Bridge server]<--->[matrix client]`，這個Bridge 會帶代替matrix client 使得用戶24小時 在線上，使得你不會遺失任何的聊天記錄。
+
 
 ## Riot 中的IRC Channel
-Riot 本身與IRC Channel 整合的不錯。
+Riot 本身與IRC Channel 整合的不錯，自己搭建了一大堆
 Riot 本身會幫你輸入的nickname加上'[m]'的字符，所以不是本尊，也沒有密碼
 
 ![](https://i.imgur.com/2BsTjTm.png)
