@@ -6,7 +6,7 @@ tags: [bitcoin]
 categories: Bitcoin Technical
 ---
 
->導致 55.82BTC 被駭
+導致 55.82BTC 被駭
 
 在Bitcoin 系統中，所有Bitcoin 餘額的載體對我來說應該就是地址了。
 
