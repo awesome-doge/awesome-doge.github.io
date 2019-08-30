@@ -3,7 +3,7 @@ layout: post
 title: Android Bitcoin Wallet 於2013年 不隨機
 date: 2018-01-28 05:12:19
 tags: [bitcoin]
-categories: Bitcoin Technical
+categories: [Bitcoin]
 ---
 
 導致 55.82BTC 被駭

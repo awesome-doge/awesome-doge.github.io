@@ -3,7 +3,7 @@ layout: post
 title: Onion Browser 2.0 for iOS (tor v2)
 date: 2018-01-27 04:59:04
 tags: [tor]
-categories: Tor Project
+categories: [Tor Project]
 ---
 於2018年1月22日，最新一代的iPhone 上的洋蔥瀏覽器[1]2.0.0版本。在Github上也已經出現了2.0.1的版本。
 ![](/image/tor21.png)

@@ -3,7 +3,7 @@ layout: post
 title: Tor + meek (Mac)
 date: 2018-02-01 19:28:57
 tags: [tor, meek]
-categories: Tor Project
+categories: [Tor Project]
 ---
 
 emmm…會寫這一篇呢，主要是因為某些環境下，在``brew install tor``還有``tor``跑起來之後，並無法順利的抵達Tor directory server，也就無法進一步提取一些中繼節點來建立路徑。

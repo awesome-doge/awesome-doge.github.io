@@ -3,7 +3,7 @@ layout: post
 title: 暴力生成 個性化Bitcoin 地址and alt coin
 date: 2018-01-21 17:53:01
 tags: [tor, bitcoin, bitcoin address]
-categories: Tor Project
+categories: [Tor Project]
 ---
 
 用過比特幣的各位肯定會覺得，哇～比特幣地址好醜、這麼亂、這麼不好記，在這裡將大家說一個做個性化的Bitcoin地址的方法。如果不清楚比特幣地址如何生成，那只要記得，隨機生成一個亂數>>透過橢圓曲線算法算成公鑰>>之後透過各種雜湊函數算一下>>在用base58編成一個比較好看的樣子。看了這麼多還是不懂那就記得隨機生成一把私鑰，只會對應到一個地址（沒有辦法反推）。

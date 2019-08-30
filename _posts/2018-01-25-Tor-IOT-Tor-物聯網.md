@@ -3,7 +3,7 @@ layout: post
 title: Tor IOT (Tor 物聯網)
 date: 2018-01-25 19:28:57
 tags: [tor, iot]
-categories: Tor Project
+categories: [Tor Project]
 ---
 
 導入hidden service 的IOT。IOT的產物多到不能再多了包括車聯網、智能管家、自動電燈開關、IP攝影機、溫度感測器、震動感測器、PM2.5感測器，在考慮使用IP前的時代，大家通常會考慮使用藍牙做裝置的互相連線溝通、傳輸資料，到最後可能會設計一個資料傳輸點的裝置，這台裝置的設計通常同時擁有藍芽、網路介面卡把資料送出去。

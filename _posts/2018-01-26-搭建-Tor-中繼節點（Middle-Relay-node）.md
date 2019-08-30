@@ -3,7 +3,7 @@ layout: post
 title: 搭建 Tor 中繼節點（Middle Relay node）
 date: 2018-01-26 19:28:57
 tags: [tor, tor relay]
-categories: Tor Project
+categories: [Tor Project]
 ---
 
 ![](/image/tor18.png)

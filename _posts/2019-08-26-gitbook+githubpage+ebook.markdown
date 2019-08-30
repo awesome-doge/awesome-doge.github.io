@@ -2,7 +2,7 @@
 layout: post
 title:  "構建電子書＆網站 by gitbook"
 date:   2019-08-26 17:26:44 +0800
-categories: gitbook, githubpage
+categories: [Gitbook]
 tag: gitbook, github, github hompage
 ---
 

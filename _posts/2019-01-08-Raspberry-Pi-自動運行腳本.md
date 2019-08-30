@@ -2,7 +2,7 @@
 layout: post
 title: Raspberry Pi 自動運行腳本
 date: 2019-01-08 16:43:45
-tags: [raspberry pi, python]
+tags: [Raspberry pi]
 ---
 
 方法：

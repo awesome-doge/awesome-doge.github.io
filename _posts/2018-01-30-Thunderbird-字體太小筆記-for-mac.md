@@ -3,6 +3,7 @@ layout: post
 title: Thunderbird 字體太小筆記 (for mac)
 date: 2018-01-30 05:33:06
 tags: [thunderbird, mac]
+categories: [Thunderbird]
 ---
 
 因為mac os 中，要對mail.app設置『獨自』的proxy代理好像有點困難，所以只好跳槽去Thunderbird，但一次裝Thunderbird 發現有些版面字體版面實在是太小了眼睛看不到，而且還沒有地方可以設定，於是爬了一下文。

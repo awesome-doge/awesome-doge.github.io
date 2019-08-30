@@ -3,7 +3,7 @@ layout: post
 title: Tor routing 和 bitcoin關係
 date: 2018-01-17 02:45:13
 tags: [bitcoin, tor]
-categories: Tor Project
+categories: [Tor Project]
 ---
 
 做了這麼久的比特幣研究，結果第一篇博文不是比特幣哈哈

@@ -3,7 +3,7 @@ layout: post
 title: Tor 中的Bitcoin相關網站
 date: 2018-01-20 17:14:09
 tags: [tor, bitcoin]
-categories: Tor Project
+categories: [Tor Project]
 ---
 
 因為研究Bitcoin 在這裡分享一下在洋蔥裡面，其實也有許多知名的比特幣網站，搭建的洋蔥網站（這裡先不提洗錢或是賭場ＸＤ），以下網頁都需要使用Tor Browser瀏覽[1]：

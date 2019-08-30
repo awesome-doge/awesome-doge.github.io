@@ -3,7 +3,7 @@ layout: post
 title: Bitcoin CVE
 date: 2018-09-14 05:39:30
 tags: [bitcoin, cve]
-categories: Bitcoin Technical
+categories: [Bitcoin]
 ---
 
 [Bitcoin CVE](https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures?fbclid=IwAR3szdqKTdEr5Gh-YcUHGGia2F0xmBDcdkay6zSJViTwaz8ZwetnmTMsCz0#CVE-2010-5140)

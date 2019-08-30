@@ -2,7 +2,7 @@
 layout: post
 title:  "Riot中的IRC"
 date:   2019-08-29 18:26:44 +0800
-categories: IRC
+categories: [IRC]
 tag: IRC, telegram, matrixm Riot
 ---
 
