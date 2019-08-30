@@ -167,10 +167,12 @@ ok，應該可以很舒服的執行勒
 	```
 	git commit -am "update"; git add . ;git push origin gh-pages
 	```
-4. 可以回到主目錄勒，如果不知道怎麼回家的
-```
-git checkout master%
-```
+	* 可以回到主目錄勒，如果不知道怎麼回家的
+	```
+	git checkout master%
+	```
+* 檢查一下有沒有發布成功，網址的樣子要是`帳號名稱.github.io/倉庫名稱`，譬如`https://cypherpunks-core.github.io/bitcoinbook_2nd_zh/`，祝您旅途愉快。
+
 
 ### 自動發布腳本
 請在主目錄建立一個文件叫`publish.sh`，把下面內容貼上並存擋。
@@ -193,6 +195,10 @@ git commit -m $1
 git push -u origin gh-pages
 git checkout master%
 ```
+
+## 常見問題
+Q. 
+A. 
 
 ## 參考文獻
 * [gitbook——使用笔记](https://morrowind.gitbooks.io/gitbook_notes/content/qian_yan.html)
