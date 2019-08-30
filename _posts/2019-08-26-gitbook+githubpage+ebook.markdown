@@ -198,10 +198,10 @@ git checkout master%
 
 ### 常見問題
 問. 我發佈啦，怎麼無法在`帳號名稱.github.io/倉庫名稱`域名下看到我的網站勒？
-答1 要等一段時間（看運氣），幾秒鐘到三分鐘不等
-答2 你檢查一下你有推到 `gh-pages`分支嗎？
-答3 既使你推到了`gh-pages`分支，你有順利的把`_book`中的網頁拉出來嗎？最少要`index.html`
-答4 該 repo 的setting 選項當中，有一個預設branch 的選項，檢查一下是否設定在`gh-pages`分支。
+* 要等一段時間（看運氣），幾秒鐘到三分鐘不等
+* 你檢查一下你有推到 `gh-pages`分支嗎？
+* 既使你推到了`gh-pages`分支，你有順利的把`_book`中的網頁拉出來嗎？最少要`index.html`
+* 該 repo 的setting 選項當中，有一個預設branch 的選項，檢查一下是否設定在`gh-pages`分支。
 
 ## 參考文獻
 * [gitbook——使用笔记](https://morrowind.gitbooks.io/gitbook_notes/content/qian_yan.html)
