@@ -8,6 +8,7 @@ tag: gitbook, github, github hompage
 
 gitbook 是一個命令工具，幫助你把一堆`md`,`asciidoc`build 成網頁版的電子書以及mobi, epub, pdf的檔案生成。
 
+閱讀該文章時[markdown](https://gist.github.com/christech1117/6dc5221c177104990767d6490ad8c7ba) 語法是基本常識。
 ![](/images/gitbook.jpg)
 
 因為最近不斷地整理電子書，發現了電子書的遍及格式大致有`markdown`格式，簡稱`md`，還有另外一種叫`asciidoc`，我初次見到到`asciidoc`是在[bitcoinbook](https://github.com/bitcoinbook/bitcoinbook)之後又遇見了[ethereumbook](https://github.com/ethereumbook/ethereumbook)，可是裡面的公式還是呈現不出來，後來遇見了gitbook，讓我很舒服的把`md`,`asciidoc` build 成網頁版的電子書以及mobi, epub, pdf 三種格式，讓大家可以在手機上就可閱讀。
@@ -24,6 +25,7 @@ ps. gitbook 依賴npm，npm的安裝請參考[node js 下載頁面](https://node
 ![](/images/node.js.png)
 
 務必要安裝完才可以執行以下指令安裝`gitbook`，不然無效。
+安裝也是需要一些時間。
 ```
 sudo npm install -g gitbook-cli
 sudo npm install -g gitbook
@@ -44,17 +46,54 @@ info: create README.md
 info: create SUMMARY.md
 info: initialization is finished
 ```
-裡面會有兩個檔案，分別為README.md,  SUMMARY.md。
+裡面會有兩個檔案，分別為`README.md`,  `SUMMARY.md`。
 
+## 書本結構
+`SUMMARY.md`文件定義了整本書的結構。
+結構很簡單，就是一個簡單的markdown語法的清單。
+```
+# Summary
 
-## 編譯
-去生一個書籍出來，進入到ripo
+* [Introduction](README.md)
+* [第一章](ch1.md)
+	* [第一節](ch1-1.md)
+	* [第二節](cd1-2.md)
+* [第二章](ch2.md)
+* [第三章](ch3.md)
+```
+
+## build
+執行該指令可以把`SUMMARY.md`引用到的文件，變成網頁。
 ```
 gitbook build
 ```
-運作成伺服器
+
+build的過程，此時，資料夾內會多一個`_book`資料夾，裡面就是創見出來的網頁：
+```
+➜  book gitbook build
+info: 7 plugins are installed
+info: 6 explicitly listed
+info: loading plugin "highlight"... OK
+info: loading plugin "search"... OK
+info: loading plugin "lunr"... OK
+info: loading plugin "sharing"... OK
+info: loading plugin "fontsettings"... OK
+info: loading plugin "theme-default"... OK
+info: found 1 pages
+info: found 0 asset files
+info: >> generation finished with success in 1.2s !
+```
+
+## 運行 伺服器模式
+運作成伺服器，可以即時瀏覽書籍撰寫的變化，`gitbook serve`會隨時偵測你存擋，刷新網頁。
+
 ```
 gitbook serve
+```
+運行成功如下，就可以前往[http://localhost:4000](http://localhost:4000)瀏覽：
+```
+Starting server ...
+Serving book on http://localhost:4000
 ```
 
 ## 製作成電子書
@@ -65,7 +104,14 @@ gitbook pdf
 gitbook epub
 gitbook mobi
 ```
+如果覺得懶，已可以寫一個`build-book.sh`把以程式碼貼上去，以後只要`sh build-book.sh 書名`就可以自動生成勒。
 
+```
+gitbook pdf $1
+gitbook epub $1
+gitbook mobi $1
+```
+### 問題
 不過如果你直接使用會遇到以下報錯：
 ```
 InstallRequiredError: "ebook-convert" is not installed.
@@ -81,10 +127,10 @@ sudo ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
 ok，應該可以很舒服的執行勒
 
 ## 發佈到github page
-創建一個分支，這個執行一次就好
-```
-git checkout -b gh-pages
-```
+1. 創建一個分支，這個執行一次就好
+	```
+	git checkout -b gh-pages
+	```
 
 以下是一個 自度發佈的腳本，可以創立一個`gitbook.sh`的檔案，可以一直更新
 ```
