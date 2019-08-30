@@ -13,9 +13,10 @@ tag: IRC
 1. 尋找項目IRC頻道頁面：尋找項目的官方IRC channel 的網站。如[freenode-Bitcoin](https://en.bitcoin.it/wiki/IRC_channels)，在這個頁面當中就展示了跟比特幣相關的IRC channel，頁面當中有提供網頁版，對小白友善一點。
 比較著名的IRC channel：
 	* [freenode-Bitcoin](https://en.bitcoin.it/wiki/IRC_channels)
-	* freenode-mozilla
+	* [freenode-mozilla](https://wiki.mozilla.org/IRC)
 	* [oftc-Tor](https://www.torproject.org/contact/)
 	* [mozilla-摩茲工寮](https://moztw.org/space/)
+	* [freenode-維基百科](https://meta.wikimedia.org/wiki/IRC/Channels)
 2. 設定nickname：進入到網站之後。思考一下你要取什麼名字？並且輸入就可以直接登錄。完全不需要密碼，現在那nick name就是你的身份啦。
 3. 尋找channel：沒有意外的話你可以順利的聽到IRC的伺服器。這個時候還沒有進到任何的 channel 。現在就是前往該項目的聯絡頁面，尋找他們的 channel 名稱，以Bitcoin 為例，最多人的是bitcoin chainnel。找到之後，回到你原本的網頁，輸入想進入的 channel 。。
 > 此時此刻的你，雖然已經順利，進入到 channel 了，可是你的賬號也衹是一個臨時賬號。因為從一開始就沒有設定密碼，也就代表說這個賬號不屬於任何人。你可以在下一次登錄的時候換另外一個名字。當然這個名字，也可能之後被人家註冊。所以如果想要永久持有一個地址的話，那就必須完成種下來的程序。
