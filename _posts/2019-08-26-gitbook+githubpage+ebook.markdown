@@ -104,13 +104,8 @@ gitbook pdf
 gitbook epub
 gitbook mobi
 ```
-如果覺得懶，已可以寫一個`build-book.sh`把以程式碼貼上去，以後只要`sh build-book.sh 書名`就可以自動生成勒。
+如果覺得懶，已可以寫一個`build-book.sh`把上述程式碼貼上去，以後只要`sh build-book.sh`就可以自動生成勒。
 
-```
-gitbook pdf $1
-gitbook epub $1
-gitbook mobi $1
-```
 ### 問題
 不過如果你直接使用會遇到以下報錯：
 ```
