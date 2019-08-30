@@ -17,17 +17,34 @@ gitbook 的使用過程:
   * gitbook 伺服：器運行一個gitbook 伺服器，讓你可以在 http://localhost:4000 的位置，喵一下樣子。
   * 編譯成書籍 mobi, epub, pdf 。
 
-## gitbook 安裝
+## 安裝 gitbook 指令
 如果沒有安裝過gitbook的可以執行一下
-ps. npm的問體自己加油嘿，提示node及npm
+ps. gitbook 依賴npm，npm的安裝請參考[node js 下載頁面](https://nodejs.org/en/download/)自己安裝加油嘿。   
+![](/images/node.js.png)
+
+務必要安裝完才可以執行以下指令安裝`gitbook`，不然無效。
 ```
 sudo npm install -g gitbook-cli
 sudo npm install -g gitbook
 ```
-## 初始化一本書
+## 製作一本書
+現在我們來創造一個名字你高興的資料夾（建議是英文書名），進去之後，指行以下指令初始化一下該資料夾（這可能會花一點時間）。
 ```
-gitbook build
+gitbook init
 ```
+
+執行的過程，跑完恭喜你：
+```
+➜  ~ mkdir book
+➜  ~ cd book
+➜  book gitbook init
+warn: no summary file in this book
+info: create README.md
+info: create SUMMARY.md
+info: initialization is finished
+```
+裡面會有兩個檔案，分別為README.md,  SUMMARY.md。
+
 
 ## 編譯
 去生一個書籍出來，進入到ripo
