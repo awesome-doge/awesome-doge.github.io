@@ -17,12 +17,12 @@ Riot 相關連結：
 Riot 本身與IRC Channel 整合的不錯，自己搭建了一大堆
 Riot 本身會幫你輸入的nickname加上'[m]'的字符，所以不是本尊，也沒有密碼
 
-![](https://i.imgur.com/2BsTjTm.png)
+![](/image/irc1.png)
 
 
 ### 插曲
 因為Riot 上的所有IRC channel ，應該都是用託管的方式開的，所以都會有聊天記錄保留，這點挺好的。不過並非所有 channel 都會被保留，如#bitcoin channel ，雖然曾經連線過，但好像脫線了。    
-![](https://i.imgur.com/Mz3I1ge.png)
+![](/image/irc2.png)
 
 ### rito IRC 機器人大全
 Riot 中的 IRC 機器人，幫助你登入個大server
@@ -32,7 +32,7 @@ https://github.com/matrix-org/matrix-appservice-IRC/wiki/Bridged-IRC-networks
 如果已經有telegram群了，希望可以在matrix發展，可以用機器人串起來。
 https://t2bot.io/telegram/
 他會幫你把Riot群裡面的訊息，以機器人的方式轉送到tg群。（所以看到機器人在說話，不過會附註一下平台上的Riot上的user name。圖片的話就更尷尬了。    
-![](https://i.imgur.com/X3DArfm.png)
+![](/image/irc3.png)
 
 ### Riot 番外篇 對接 Telegram 帳號
 
@@ -41,4 +41,4 @@ https://t2bot.io/telegram/
 
 ## 展示
 順利的看到 bitcoin core 的大大們.   
-![](https://i.imgur.com/12AU5VT.png)
+![](/image/irc4.png)
