@@ -193,11 +193,6 @@ git commit -m $1
 git push -u origin gh-pages
 git checkout master%
 ```
-執行的時候在repo裡面
-```
-sh gitbook.sh '更新'
-```
-
 
 ## 參考文獻
 * [gitbook——使用笔记](https://morrowind.gitbooks.io/gitbook_notes/content/qian_yan.html)
