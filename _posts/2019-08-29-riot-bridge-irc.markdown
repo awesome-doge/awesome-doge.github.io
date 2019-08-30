@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Riot bridge IRC"
+date:   2019-08-29 18:26:44 +0800
+categories: [IRC]
+tag: [IRC, matrixm, Riot]
+---
+
+在我理解上Riot是一個通信軟體的客戶端，又或者可以是一個品牌但實際上技術核心是[matrix 協議](https://github.com/matrix-org)。matrix 協議本身是開源的，內容相當複雜，好像牽涉到了一些去中心化協議，還也許多端點加密的選項。Riot 本身自帶一些聊天用戶客群，本身與telegram,facebook,twitter,IRC，互不相關的，但可以透過各種機器人，各種bridge把大家串起來。
+
+Riot 相關連結：
+* [matrix 協議的客戶端列表](https://matrix.org/docs/projects/try-matrix-now):這列表多到爆炸。
+* Bridge[[1](https://matrix.org/bridges)], [[2](https://github.com/matrix-org/matrix-appservice-bridge)]:簡言之就是各種聊天軟體大串連，通通存到Matrix去。不過Bridge的概念是一個中繼器，假設我們想連IRC。
+```
+結構:
+[IRC server]<--->[Bridge server]<--->[matrix server]
+```
+這個Bridge 會帶代替matrix server 使得用戶24小時 在線上，使得你不會遺失任何的聊天記錄。
+實際上它提供了不只是IRC的Bridge，如下圖所示：
+![](/image/riot1.png)
+
+
+## 客戶端
+以下是我個人偏好：
+* ios : https://matrix.org/docs/projects/client/riot-ios
+* android : https://github.com/vector-im/riotX-android
+* mac os : https://riot.im/download/desktop/
+
+## Riot 中的 IRC Channel
+
+### RIOT 自動幫你生成nickname 登入IRC
+在登入Riot的同時，Riot會全自動的幫你註冊IRC的Nickname（如果看不懂nickname是啥，看這[IRC 註冊筆記](https://awesome-doge.github.io/how-to-use-irc/))，這nickname的來源是你註冊的帳號底下的*用戶名*(如果沒做多餘的用戶名重設，應該就是帳號名)。
+而Riot會自動幫你把你輸入的*用戶名*加上'[m]'的字符，生成`用戶名+ [m]`的一個nickname出來，幫你登入。因為IRC的帳號可以不註冊所以你會登入成功。
+
+### Riot 中 IRC bridge
+基本上可以讓你在Riot中看到這麼多頻道，都是因為Riot都幫你街上他們自行搭建的IRC bridge， IRC bridge 隨時保持在線上，所以他會幫我們保存所有的聊天記錄。
+
+ps. 對IRC不熟的可能還要覺得很奇怪，為啥要刻意提起24hr在線，幫你保存聊天記錄，是因為IRC要在線上且進入頻道才可以搜集聊天記錄，如果離線的時間收到訊息都是看不到的，你只能去備份找。
+
+### 各大IRC server 大整合
+Riot 會自動幫你連入個大IRC server，還幫你整理的票票亮亮的一個聊天室搜尋引擎。左邊是搜尋引擎的結果，右邊是支持的 IRC bridge，要要Riot有列出來IRC bridge 才可以連線喔。
+![](/image/irc1.png)
+
+**IRC bridge 中的 channel掉線**：    
+遇過有進到 freednode，但我卻找不到喜歡的 `#bitcoin`頻道，也是可以直接輸入`#bitcoin`強制進入。但是意外的發現是，聊天室內跟真正的freenode上的bitcoin頻道斷線了，所以變成bridge channel裡面的人在自嗨。
+因為Riot 上的所有IRC channel。
+![](/image/irc2.png)
+
+## 展示
+順利的看到 bitcoin core 的大大們.   
+![](/image/irc4.png)
