@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "透過gitbook搭建githubpage＋生成電子書"
+title:  "構建電子書＆網站 by gitbook"
+
 date:   2019-08-26 17:26:44 +0800
 categories: gitbook, githubpage
 tag: gitbook, github, github hompage
@@ -8,15 +9,13 @@ tag: gitbook, github, github hompage
 
 因為最近不斷地整理電子書，發現了電子書的遍及格式大致有`markdown`格式，簡稱`md`，還有另外一種叫`asciidoc`，我初次見到到`asciidoc`是在[bitcoinbook](https://github.com/bitcoinbook/bitcoinbook)之後又遇見了[ethereumbook](https://github.com/ethereumbook/ethereumbook)，可是裡面的公式還是呈現不出來，後來遇見了gitbook，讓我很舒服的把`md`,`asciidoc` build 成網頁版的電子書以及mobi, epub, pdf 三種格式，讓大家可以在手機上就可閱讀。
 
-gitbook 是一個命令工具，幫助你把一堆`md`,`asciidoc`build 成網頁版的電子書以及mobi, epub, pdf生成。
+gitbook 是一個命令工具，幫助你把一堆`md`,`asciidoc`build 成網頁版的電子書以及mobi, epub, pdf的檔案生成。
 
 gitbook 的使用過程:
   * 安裝：安裝所需的指令環境。
   * build ： 生成網頁的電子書文件。
   * gitbook 伺服：器運行一個gitbook 伺服器，讓你可以在 http://localhost:4000 的位置，喵一下樣子。
   * 編譯成書籍 mobi, epub, pdf 。
-
-
 
 ## gitbook 安裝
 如果沒有安裝過gitbook的可以執行一下
