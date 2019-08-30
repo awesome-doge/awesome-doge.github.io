@@ -127,27 +127,71 @@ sudo ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
 ok，應該可以很舒服的執行勒
 
 ## 發佈到github page
-1. 創建一個分支，這個執行一次就好
-	```
-	git checkout -b gh-pages
-	```
 
-以下是一個 自度發佈的腳本，可以創立一個`gitbook.sh`的檔案，可以一直更新
+先前準備：
+* 在 gitbub上創建一個repo
+* 把它clone 到 local 端
+* 進到 該資料夾 初始化變成書 `gitbook init`（已經是書的不要理我
+
+### 開始發布
+進到github clone 下來的 repo
+
+1. 先做一下手腳（這是為了可以讓自動化發布網頁鋪路）：
+	* 在 主目錄創一個 文件 叫`.gitignore`
+	* 內容如下
+	```
+	*~
+	_book
+	.DS_Store
+	```
+	* 來`gitbook build`一下，刷新`_book`內容
+	* 來推到主分之一下避免衝突
+	```
+	git commit -am "update"; git add . ;git push origin master
+	```
+2. 創建一個分支叫做`gh-pages`，這個執行一次就好
+	```
+	git checkout --orphan gh-pages
+	```
+3. 進到`gh-pages`分支
+	* 移除主目錄下根本不是網頁的檔案，如果沒有做第一步的，你屎定了，文件全部都會消失。
+	```
+	git rm --cached -r .
+	git clean -df
+	```
+	* 把`_book`裡面的文件複製出來
+	```
+	cp -r _book/* .
+	```
+	* 堆一波到`gh-page`分支
+	```
+	git commit -am "update"; git add . ;git push origin gh-pages
+	```
+4. 可以回到主目錄勒，如果不知道怎麼回家的
 ```
-gitbook build
+git checkout master%
 ```
 
+### 自動發布腳本
+請在主目錄建立一個文件叫`publish.sh`，把下面內容貼上並存擋。
+執行`sh publish.sh '更新的說明'`就可以勒。
 ```
 git checkout master
+gitbook build 
 git add .
 git commit -m $1
 git push -u origin master
-git checkout gh-pages
+git branch -D gh-pages
+git branch  -r -d  origin/gh-pages
+git push origin :gh-pages
+git checkout --orphan gh-pages
+git rm --cached -r .
+git clean -df
 cp -r _book/* .
 git add .
 git commit -m $1
 git push -u origin gh-pages
-git checkout master
+git checkout master%
 ```
 執行的時候在repo裡面
 ```
