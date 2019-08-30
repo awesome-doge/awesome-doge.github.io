@@ -9,10 +9,7 @@ categories: Bitcoin Technical
 [Bitcoin CVE](https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures?fbclid=IwAR3szdqKTdEr5Gh-YcUHGGia2F0xmBDcdkay6zSJViTwaz8ZwetnmTMsCz0#CVE-2010-5140)
 CVE(Common Vulnerabilities and Exposures,常見的漏洞和風險)
 該項目整理Bitcoin曾經出現過的CVE
-
-<!-- more --> 
-
-![](https://news.sye.host/wp-content/uploads/2018/09/cve-2018-17144-the-aftermath-of-a-catastrophic-bitcoin-bug.jpg)
+![](/images/bitcoin-cve.png)
 
 ## CVE-2010-5137
 > 日期：2010-07-28 

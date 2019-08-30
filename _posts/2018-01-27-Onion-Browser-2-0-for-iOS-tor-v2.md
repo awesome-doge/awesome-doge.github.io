@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Onion Browser 2.0 for iOS (tor v2)
 date: 2018-01-27 04:59:04
 tags: [tor]

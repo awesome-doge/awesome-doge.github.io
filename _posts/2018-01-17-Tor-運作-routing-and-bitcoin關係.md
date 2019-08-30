@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tor 運作 routing and bitcoin關係
+title: Tor routing 和 bitcoin關係
 date: 2018-01-17 02:45:13
 tags: [bitcoin, tor]
 categories: Tor Project
