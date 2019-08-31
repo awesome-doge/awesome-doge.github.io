@@ -2,7 +2,7 @@
 layout: post
 title:  "Riot bridge IRC"
 date:   2019-08-29 18:26:44 +0800
-categories: [IRC]
+categories: [Riot]
 tag: [IRC, matrixm, Riot]
 ---
 

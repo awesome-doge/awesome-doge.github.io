@@ -2,7 +2,7 @@
 layout: post
 title:  "Riot 登入 Telegram"
 date:   2019-08-30 15:26:44 +0800
-categories: [IRC]
+categories: [Riot]
 tag: [telegram, matrixm, Riot]
 ---
 

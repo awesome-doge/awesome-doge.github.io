@@ -19,7 +19,22 @@ gitbook 的使用過程:
   * gitbook 伺服：器運行一個gitbook 伺服器，讓你可以在 http://localhost:4000 的位置，喵一下樣子。
   * 編譯成書籍 mobi, epub, pdf 。
 
-## 安裝 gitbook 指令
+# 大綱
+- [大綱](#%e5%a4%a7%e7%b6%b1)
+- [安裝 gitbook 指令](#%e5%ae%89%e8%a3%9d-gitbook-%e6%8c%87%e4%bb%a4)
+- [製作一本書](#%e8%a3%bd%e4%bd%9c%e4%b8%80%e6%9c%ac%e6%9b%b8)
+	- [書本結構](#%e6%9b%b8%e6%9c%ac%e7%b5%90%e6%a7%8b)
+	- [build](#build)
+- [運行 伺服器模式](#%e9%81%8b%e8%a1%8c-%e4%bc%ba%e6%9c%8d%e5%99%a8%e6%a8%a1%e5%bc%8f)
+- [製作成電子書](#%e8%a3%bd%e4%bd%9c%e6%88%90%e9%9b%bb%e5%ad%90%e6%9b%b8)
+- [問題](#%e5%95%8f%e9%a1%8c)
+- [發佈到github page](#%e7%99%bc%e4%bd%88%e5%88%b0github-page)
+	- [開始發布](#%e9%96%8b%e5%a7%8b%e7%99%bc%e5%b8%83)
+	- [自動發布腳本](#%e8%87%aa%e5%8b%95%e7%99%bc%e5%b8%83%e8%85%b3%e6%9c%ac)
+	- [常見問題](#%e5%b8%b8%e8%a6%8b%e5%95%8f%e9%a1%8c)
+- [參考文獻](#%e5%8f%83%e8%80%83%e6%96%87%e7%8d%bb)
+
+# 安裝 gitbook 指令
 如果沒有安裝過gitbook的可以執行一下
 ps. gitbook 依賴npm，npm的安裝請參考[node js 下載頁面](https://nodejs.org/en/download/)自己安裝加油嘿。   
 ![](/images/node.js.png)
@@ -30,7 +45,7 @@ ps. gitbook 依賴npm，npm的安裝請參考[node js 下載頁面](https://node
 sudo npm install -g gitbook-cli
 sudo npm install -g gitbook
 ```
-## 製作一本書
+# 製作一本書
 現在我們來創造一個名字你高興的資料夾（建議是英文書名），進去之後，指行以下指令初始化一下該資料夾（這可能會花一點時間）。
 ```
 gitbook init
@@ -84,7 +99,7 @@ info: found 0 asset files
 info: >> generation finished with success in 1.2s !
 ```
 
-## 運行 伺服器模式
+# 運行 伺服器模式
 運作成伺服器，可以即時瀏覽書籍撰寫的變化，`gitbook serve`會隨時偵測你存擋，刷新網頁。
 
 ```
@@ -96,7 +111,7 @@ Starting server ...
 Serving book on http://localhost:4000
 ```
 
-## 製作成電子書
+# 製作成電子書
 
 gitbook 可以製作書籍種類
 ```
@@ -106,7 +121,7 @@ gitbook mobi
 ```
 如果覺得懶，已可以寫一個`build-book.sh`把上述程式碼貼上去，以後只要`sh build-book.sh`就可以自動生成勒。
 
-### 問題
+# 問題
 不過如果你直接使用會遇到以下報錯：
 ```
 InstallRequiredError: "ebook-convert" is not installed.
@@ -121,14 +136,14 @@ sudo ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
 ```
 ok，應該可以很舒服的執行勒
 
-## 發佈到github page
+# 發佈到github page
 
 先前準備：
 * 在 gitbub上創建一個repo
 * 把它clone 到 local 端
 * 進到 該資料夾 初始化變成書 `gitbook init`（已經是書的不要理我
 
-### 開始發布
+## 開始發布
 進到github clone 下來的 repo
 
 1. 先做一下手腳（這是為了可以讓自動化發布網頁鋪路）：
@@ -169,7 +184,7 @@ ok，應該可以很舒服的執行勒
 * 檢查一下有沒有發布成功，網址的樣子要是`帳號名稱.github.io/倉庫名稱`，譬如`https://cypherpunks-core.github.io/bitcoinbook_2nd_zh/`，祝您旅途愉快。
 
 
-### 自動發布腳本
+## 自動發布腳本
 請在主目錄建立一個文件叫`publish.sh`，把下面內容貼上並存擋。
 執行`sh publish.sh '更新的說明'`就可以勒。
 ```
@@ -191,14 +206,14 @@ git push -u origin gh-pages
 git checkout master%
 ```
 
-### 常見問題
+## 常見問題
 問. 我發佈啦，怎麼無法在`帳號名稱.github.io/倉庫名稱`域名下看到我的網站勒？
 * 要等一段時間（看運氣），幾秒鐘到三分鐘不等
 * 你檢查一下你有推到 `gh-pages`分支嗎？
 * 既使你推到了`gh-pages`分支，你有順利的把`_book`中的網頁拉出來嗎？最少要`index.html`
 * 該 repo 的setting 選項當中，有一個預設branch 的選項，檢查一下是否設定在`gh-pages`分支。
 
-## 參考文獻
+# 參考文獻
 * [gitbook——使用笔记](https://morrowind.gitbooks.io/gitbook_notes/content/qian_yan.html)
 * [GitBook文档（中文版）](https://chrisniael.gitbooks.io/gitbook-documentation/content/index.html)
 * [Gitbook 安装及使用 ](https://my.oschina.net/lpe234/blog/854226)
