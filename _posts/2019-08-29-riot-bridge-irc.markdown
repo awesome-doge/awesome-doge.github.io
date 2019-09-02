@@ -3,6 +3,7 @@ layout: post
 title:  "Riot 整合 IRC, Telegram"
 date:   2019-08-29 18:26:44 +0800
 categories: [Riot]
+image: image/riot1.png
 tag: [IRC, matrixm, Riot, IRC]
 ---
 
