@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll 搭建 github page"
-image: /image/jekyll1.png
+cover: /image/jekyll1.png
 date: 2019-08-31
 tags: [jekyll]
 categories: [jekyll]
