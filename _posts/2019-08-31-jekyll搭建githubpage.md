@@ -25,8 +25,8 @@ categories: [jekyll]
 - [進階](#%e9%80%b2%e9%9a%8e)
   - [圖片大小、位置控制](#%e5%9c%96%e7%89%87%e5%a4%a7%e5%b0%8f%e4%bd%8d%e7%bd%ae%e6%8e%a7%e5%88%b6)
   - [表格欄位內的換行](#%e8%a1%a8%e6%a0%bc%e6%ac%84%e4%bd%8d%e5%85%a7%e7%9a%84%e6%8f%9b%e8%a1%8c)
-  - [使用 Emoji](#%e4%bd%bf%e7%94%a8-emoji)
   - [數學公式](#%e6%95%b8%e5%ad%b8%e5%85%ac%e5%bc%8f)
+  - [任務列表](#%e4%bb%bb%e5%8b%99%e5%88%97%e8%a1%a8)
 - [參考文獻](#%e5%8f%83%e8%80%83%e6%96%87%e7%8d%bb)
 
 
@@ -40,7 +40,7 @@ categories: [jekyll]
 ```
 jekyll new blog
 ```
-進去之後運行 `jekyll serve`就可以在`http://127.0.0.1:4000` 或是 `http://localhost:4000`看到最乾淨的網站了。
+進去之後運行 `jekyll serve`就可以在[http://127.0.0.1:4000](http://127.0.0.1:4000) 或是 [http://localhost:4000](http://localhost:4000)看到最乾淨的網站了。
 
 ## github page
 來到我一個最重要的一步，我們中了伺服器不是為了在本地端開一個伺服器出來。是為了能夠生成一個文件丟到github上面，進一步讓我變成一個靜態的網頁託管。
@@ -71,7 +71,8 @@ github會給每個user 一個網址，只是看你有沒有拿來用而已，預
 
 在預設的情況下，這個資料夾裡面本來就會存放一些文章。你可以大概學習一下別人大概是怎麼樣去撰寫一篇文章的。
 基本上每一個文章的開頭都有詳細的YAML的格式設定。當中比較特別的是第一行`layout: post`，這邊定義了呈現的頁面樣式，而頁面樣式在`_layouts`資料夾中有詳細的定義。
-![](/image/jekyll6.png)
+
+<div align="center"><img  src="/image/jekyll6.png"/></div>
 
 # build  出 靜態網站文件
 會走到這裡代表你的`_config`文件已經設定完成，還有已經設定好一些文章可以發佈了，即使沒有文章也沒關係。
@@ -86,11 +87,18 @@ github會給每個user 一個網址，只是看你有沒有拿來用而已，預
 ![](/image/jekyll3.png)
 
 ### 自動發布 github page
+為了使得發布更加的快速，做了自動 add, commit, push 的腳本
+首先在目錄底下執行 `nano publish.sh`，創建一個文黨貼上去，contral+o儲存，contral+x退出
+```
+jekyll build; git commit -am $1 ; git add . ;git push origin master
+```
+使用方法`sh publish.sh "更新的commit message"`，就會自動更新勒。
+
 # Markdown 語法
 
 # 進階
 ## 圖片大小、位置控制
-
+[來自[這裡](https://mazhuang.org/2017/09/01/markdown-odd-skills/)]    
 **預設的圖片效果：**    
 原始碼：
 ```
@@ -105,7 +113,7 @@ github會給每個user 一個網址，只是看你有沒有拿來用而已，預
 ```
 <div align="center"><img width="65" height="75" src="/images/doge.png"/></div>
 ## 表格欄位內的換行
-
+[來自[這裡](https://mazhuang.org/2017/09/01/markdown-odd-skills/)]    
 範例程式碼：    
 ```
 | Header1 | Header2                          |
@@ -113,23 +121,54 @@ github會給每個user 一個網址，只是看你有沒有拿來用而已，預
 | item 1  | 1. one<br />2. two<br />3. three |
 ```
 
-效果：    
+效果：  
+  
 | Header1 | Header2                          |
 |---------|----------------------------------|
 | item 1  | 1. one<br />2. two<br />3. three |
 
-## 使用 Emoji
-[https://www.webfx.com/tools/emoji-cheat-sheet/](https://www.webfx.com/tools/emoji-cheat-sheet/)
-範例程式碼：
-```
-:satellite: :zap: :cloud: :lock: :key:
-```
-效果：    
-:satellite: :zap: :cloud: :lock: :key:
 
 ## 數學公式
+[來自[這裡](https://mazhuang.org/2017/09/01/markdown-odd-skills/)]    
+如果是在 GitHub Pages，可以參考 http://wanguolin.github.io/mathmatics_rending/ 使用 MathJax 來優雅地展示數學公式（非圖片）。
 
+如果是在 GitHub 項目的 README 等地方，目前我能找到的方案只能是貼圖了，以下是一種比較方便的貼圖方案：
 
+1. 在 [https://www.codecogs.com/latex/eqneditor.php](https://www.codecogs.com/latex/eqneditor.php) 網頁上部的輸入框裡輸入 LaTeX 公式，比如 `$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$`。
+
+2. 在網頁下部拷貝 URL Encoded 的內容，比如以上公式生成的是 `https://latex.codecogs.com/png.latex?%24%24x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D%24%24`。
+
+3. 在文檔需要的地方使用以上 URL 貼圖，比如:
+原始碼：
+```
+![](https://latex.codecogs.com/png.latex?%24%24x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D%24%24)
+```
+效果：    
+![](https://latex.codecogs.com/png.latex?%24%24x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D%24%24)
+
+## 任務列表
+[來自[這裡](https://mazhuang.org/2017/09/01/markdown-odd-skills/)]    
+在 GitHub 和 GitLab 等網站，除了可以使用有序列表和無序列表外，還可以使用任務列表，很適合要列出一些清單的場景。
+原始碼：
+```
+**購物清單**
+
+- [ ] 一次性水杯
+- [x] 西瓜
+- [ ] 豆漿
+- [x] 可口可樂
+- [ ] 小茗同學
+```
+
+效果： 
+
+**購物清單**
+
+- [ ] 一次性水杯
+- [x] 西瓜
+- [ ] 豆漿
+- [x] 可口可樂
+- [ ] 小茗同學
 
 # 參考文獻
 * [官網連結](https://jekyllrb.com/docs/)
