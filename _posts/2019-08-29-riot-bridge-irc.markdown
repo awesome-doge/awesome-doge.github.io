@@ -88,7 +88,7 @@ This nickname is registered. Please choose a different nickname, or identify via
 # Riot 登入 Telegram
 如果已經有telegram群了，希望可以在matrix發展，可以用[t2bot機器人](https://t2bot.io/telegram/)串起來。他會幫你把Riot群裡面的訊息，以機器人的方式轉送到tg群。（所以看到機器人在說話，不過會附註一下平台上的Riot上的user name。圖片的話就更尷尬了。
 
-![](/image/irc3.png)
+<div align="center"><img src="/image/irc3.png"/></div>
 
 ## Riot 番外篇 對接 Telegram 帳號
 
