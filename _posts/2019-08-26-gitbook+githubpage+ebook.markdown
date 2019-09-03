@@ -38,7 +38,7 @@ gitbook 的使用過程:
 # 安裝 gitbook 指令
 如果沒有安裝過gitbook的可以執行一下
 ps. gitbook 依賴npm，npm的安裝請參考[node js 下載頁面](https://nodejs.org/en/download/)自己安裝加油嘿。   
-![](/images/node.js.png)
+<div align="center"><img src="/images/node.js.png"/></div>
 
 務必要安裝完才可以執行以下指令安裝`gitbook`，不然無效。
 安裝也是需要一些時間。
