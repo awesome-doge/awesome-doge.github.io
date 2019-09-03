@@ -34,7 +34,7 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: awesome-doge
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-131051587-2
@@ -90,3 +90,6 @@ exclude:
 # Where are tags and categories displayed
 tag_page: '/tags/'
 category_page: '/categories/'
+
+paginate: 7
+paginate_path: "/page:num/"
