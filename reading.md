@@ -4,8 +4,31 @@ title: "Reading"
 permalink: /reading.html
 ---
 
+**大綱**
+- [Bitcoin related](#bitcoin-related)
+  - [github](#github)
+  - [blog](#blog)
+  - [資源](#%e8%b3%87%e6%ba%90)
+  - [論文](#%e8%ab%96%e6%96%87)
+  - [書](#%e6%9b%b8)
+- [翻牆 相關](#%e7%bf%bb%e7%89%86-%e7%9b%b8%e9%97%9c)
+  - [資源](#%e8%b3%87%e6%ba%90-1)
+  - [論文](#%e8%ab%96%e6%96%87-1)
+  - [書](#%e6%9b%b8-1)
+- [What Bitcoin Core doing?(英文)](#what-bitcoin-core-doing%e8%8b%b1%e6%96%87)
+  - [Bitcoin books](#bitcoin-books)
+  - [Video](#video)
+  - [Other list](#other-list)
+- [洋蔥筆記](#%e6%b4%8b%e8%94%a5%e7%ad%86%e8%a8%98)
+  - [搜尋引擎：](#%e6%90%9c%e5%b0%8b%e5%bc%95%e6%93%8e)
+  - [Website Directory：](#website-directory)
+  - [毒品](#%e6%af%92%e5%93%81)
+
+
 * [fanquake/core-review](https://github.com/fanquake/core-review)參與bitcoin core的工具清單
-### github
+
+# Bitcoin related
+## github
 
 * [zkSNACKs/WasabiDoc](https://github.com/zkSNACKs/WasabiDoc)Wasabi 文件，裡面有coinjoin
     * https://docs.wasabiwallet.io
@@ -33,36 +56,34 @@ permalink: /reading.html
 * [jimmysong](https://github.com/jimmysong)
     * [jimmysong/programmingbitcoin](https://github.com/jimmysong/programmingbitcoin)
 
-### blog
+## blog
 * [Laanwj's blog](https://laanwj.github.io/) bitcoin core 首席
 * [lopp](https://lopp.net)
 * [lopp Medium](https://medium.com/@lopp)
 * [Jimmy Song Medium](https://medium.com/@jimmysong)
 
-### 資源
+## 資源
 * [bitcointalk](https://bitcointalk.org/i)
 * [bitcoin wiki](https://en.bitcoin.it/wiki/Main_Page)
 
-### 論文
+## 論文
 * [以太坊白皮書](https://github.com/cypherpunks-core/ethereum_whitepaper_zh)
 * [比特幣白皮書](https://github.com/cypherpunks-core/bitcoin_whitepaper_zh)
 * [比特幣閃電網路白皮書](https://github.com/cypherpunks-core/lightning_network_whitepaper_zh)
 
-### 書
+## 書
 * [精通比特幣第二版](https://github.com/cypherpunks-core/bitcoinbook_2nd_zh)
 * [精通以太坊](https://github.com/cypherpunks-core/ethereumbook_zh)
 * [密碼龐克](https://github.com/cypherpunks-core/cyherpunksbook_zh)
 
-## 翻牆
-
-
-### 資源
-### 論文
-### 書
+# 翻牆 相關
+## 資源
+## 論文
+## 書
 * [这本书能让你连接互联网 Ⅱ](https://hoodiearon.github.io/fq-book/#/)
 
 
-# What Bitcoin Core doing?
+# What Bitcoin Core doing?(英文)
 ## Bitcoin books
 * [Bitcoin Developer Guide](https://bitcoin.org/en/developer-guide)
 * [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook)
@@ -73,8 +94,6 @@ permalink: /reading.html
 * An Introduction to Bitcoin (by Saravanan Vijayakumaran)
     * [Paper](https://www.ee.iitb.ac.in/~sarva/bitcoin/bitcoin-notes-v0.1.pdf) 
     * [PPT](https://www.ee.iitb.ac.in/~sarva/bitcoin/iitm-191217.pdf)
-
-<!-- more --> 
 
 ## Video
 * Chaincode Labs
@@ -107,12 +126,12 @@ permalink: /reading.html
 https://www.deepwebsiteslinks.com/
 https://darkwebnews.com/
 
-搜尋引擎：
+## 搜尋引擎：
 * [DuckDuckGo!](https://3g2upl4pq6kufc4m.onion/?q=&t=h_)
 * [searx](http://5plvrsgydwy2sgce.onion/)
 * [not Evil](http://hss3uro2hsxfogfq.onion/)
 
-Website Directory：
+## Website Directory：
 * [The Hidden Wiki](http://wikitjerrta4qgz4.onion/)
 * [Tor 官網](http://expyuzz4wqqyqhjn.onion/)
 * [OnionShare](http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/)
@@ -122,6 +141,6 @@ Website Directory：
 * [維基解密投稿網站](http://wlupld3ptjvsgwqw.onion/wlupload.en.html)
 * [deep.dot.web](https://hackmd.io/nWxdL5JiSwS0vTB1ftxs_w)
 
-毒品
+## 毒品
 * [絲綢之路](http://silkroad7rn2puhj.onion/)
 * [Dream Market](http://6khhxwj7viwe5xjm.onion/)
