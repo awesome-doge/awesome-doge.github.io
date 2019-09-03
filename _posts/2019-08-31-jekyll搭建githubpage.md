@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Jekyll 搭建 github page"
-image: image/jekyll1.png
 date: 2019-08-31
 tags: [jekyll]
 categories: [jekyll]
+image: image/jekyll1.png
 ---
 
 如果今天想要搭建一個Blog或是個人網站甚至是一個公司產品的網站，卻又懶得去租用一個VPS伺服器，這篇文章會是一個不錯的教學。因為其實每一個人的github都可以搭建成一個靜態網站，而每一個repo都可以搭建成子網站，換言之。可以在這樣子的github page架構下搭建很多很多很多的網站。
