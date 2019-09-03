@@ -4,6 +4,7 @@ title: Bitcoin CVE
 date: 2018-09-14 05:39:30
 tags: [bitcoin, cve]
 categories: [Bitcoin]
+image: "images/bitcoin-cve.png"
 ---
 
 [Bitcoin CVE](https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures?fbclid=IwAR3szdqKTdEr5Gh-YcUHGGia2F0xmBDcdkay6zSJViTwaz8ZwetnmTMsCz0#CVE-2010-5140)
@@ -21,6 +22,7 @@ CVE(Common Vulnerabilities and Exposures,常見的漏洞和風險)
 - [CVE-2012-1909](#cve-2012-1909)
 - [CVE-2012-1910](#cve-2012-1910)
 - [CVE-2012-2459](#cve-2012-2459)
+- [CVE-2012-3789](#cve-2012-3789)
 - [CVE-2012-4682](#cve-2012-4682)
 - [CVE-2012-4683](#cve-2012-4683)
 - [CVE-2012-4684](#cve-2012-4684)
@@ -97,7 +99,8 @@ CVE(Common Vulnerabilities and Exposures,常見的漏洞和風險)
 > 修復部署: 100%
 > 
 > Bitcoin-Qt 0.5.0.x在0.5.0.5之前; 0.5.3.1之前的0.5.1.x，0.5.2.x和0.5.3.x;在Windows上0.6.0rc4之前的0.6.x和0.6.x不使用MinGW多執行緒安全異常處理，它允許遠程攻擊者通過精心設計的Bitcoin協議消息導致拒絕服務（應用程序崩潰）或可能執行任意程式碼。
-> 
+
+
 ## CVE-2012-2459
 > 日期：2012-05-14 
 > 摘要：區塊Hash值碰撞（通過 Merkle Tree）
@@ -106,7 +109,7 @@ CVE(Common Vulnerabilities and Exposures,常見的漏洞和風險)
 > 可以通過複製 Merkle Tree 中的Tx來輕鬆地進行區塊Hash值碰撞。這樣的碰撞是無效的，但如果記錄（如0.6.1之前的Bitcoin-Qt和bitcoind那樣）將阻止接受具有相同Hash值的合法區塊。這可以用來分叉區塊鏈，包括深度雙花攻擊。
 > 
 
-* [CVE-2012-3789](https://en.bitcoin.it/wiki/CVE-2012-3789)
+## [CVE-2012-3789](https://en.bitcoin.it/wiki/CVE-2012-3789)
 > 日期：2012-06-20 
 > 摘要:(缺乏）孤兒txn資源限制
 > 修復部署：100％
@@ -135,21 +138,21 @@ CVE(Common Vulnerabilities and Exposures,常見的漏洞和風險)
 > 修復部署：100％
 > 
 > 然而，在先前版本 0.7.0 中，警報由消息的散列標識，其中包括簽名。Bitcoin 接受 BED 編碼的簽名，這些簽名具有可塑性。攻擊者通過更改仍在循環中的警報的簽名以高速率構建新簽名，從而顯著增加在網絡上傳播的有效警報的數量。這導致在大約 4 小時內 RAM 耗盡而停止網絡中的所有 Bitcoin 節點。攻擊是持久的，因為如果重新啟動的節點被在線對等體再次淹沒。
-> 
+
 ## CVE-2013-2272
 > 日期：2013-01-11 
 > 摘要：遠端發現節點的錢包地址
 > 修復部署：99.99％
 > 
 > 他在 bitcoind 中的 CTxMemPool :: accept 方法中使用了 penny-flooding 保護機制，允許遠程攻擊者通過一系列費用不足的大型 Bitcoin Tx  來確定錢包地址和IP地址之間的關聯。
-> 
+
 ## CVE-2013-2273
 > 日期：2013-01-30 
 > 摘要：可預測的更改輸出
 > 修復部署：99.99％
 > 
 > bitcoind 和 Bitcoin-Qt 0.4.9rc1 之前版本，0.5.8rc1之前的0.5。X版本，0.6.0.11rc1之前的0.6.0版本，0.6.1至0.6.5rc1之前的0.6.5版本，0.7.3rc1之前的0.7.x版本中存在漏洞。通過利用在 Bitcoin Tx 的輸出中一定的可預測性，遠程攻擊者利用該漏洞獲得有關返回變更的潛在敏感信息。
-> 
+
 ## CVE-2013-2292
 > 日期: 2013-01-30 
 > 摘要: 需要至少3分鐘才能驗證的Tx
@@ -179,28 +182,32 @@ CVE(Common Vulnerabilities and Exposures,常見的漏洞和風險)
 > 修復部署：99.99％
 > 
 > 錯誤的評估區塊的大小是否可能需要過多的資料庫鎖，允許遠程攻擊者通過觸發錯誤的 Berkeley DB鎖定的大區塊來導致拒絕服務（分裂）並啟用某些雙花功能。
-> 
+
+
 ## CVE-2013-4627
 > 日期: 2013-06-？？
 > 摘要: 大量 Tx 信息導致記憶體耗盡
 > 修復部署: 99.9%
 > 
 > 允許遠端攻擊者通過大量 Tx 消息資料導致拒絕服務 (記憶體消耗)。
-> 
+
+
 ## CVE-2013-4165
 > 日期：2013-07-20 
 > 摘要：RPC身份驗證中的時間洩漏
 > 修復部署：99.9％
 > 
 > bitcoind 0.8.1 中 bitcoinrpc.cpp 中的 HTTPAuthorized 函數在檢測到密碼的第一個錯誤字節時提供有關身份驗證失敗的信息，這使遠程攻擊者更容易通過**定時側通道攻擊來確定密碼**。
-> 
+
+
 ## CVE-2013-5700
 > 日期：2013-09-04 
 > 摘要：通過bloom過濾器導致遠程p2p崩潰
 > 修復部署：99.9％
 > 
 > bitcoind 中的 Bloom Filter 實現和 0.8.4rc1 之前的 Bitcoin-Qt 0.8.x 允許遠程攻擊者通過精心設計的消息序列導致拒絕服務（被零除錯誤和守護進程崩潰）。
-> 
+
+
 ## CVE-2016-8889
 
 > 發佈時間: 2016-10-27 
@@ -208,11 +215,12 @@ CVE(Common Vulnerabilities and Exposures,常見的漏洞和風險)
 > 修復部署: 100%
 > 
 > 在Bitcoin Knots v0.11.0.ljr20150711 到 v0.13.0.knots20160814（修復於v0.13.1.knots20161027）中，除錯控制台在其指令歷史記錄中，儲存包括私鑰和錢包密碼的敏感信息。
-> 
+
+
 ## CVE-2018-17144
 >日期：2018-09-17 
 摘要：缺少檢查重複輸入
 修復部署：13％
 
 1. [CVE-2018-17144: The Aftermath of a Catastrophic Bitcoin Bug](https://news.sye.host/cve-2018-17144-the-aftermath-of-a-catastrophic-bitcoin-bug/)
-1. [Bitcoin Core Bug CVE-2018–17144: An Analysis](https://medium.com/@jimmysong/bitcoin-core-bug-cve-2018-17144-an-analysis-f80d9d373362)
+2. [Bitcoin Core Bug CVE-2018–17144: An Analysis](https://medium.com/@jimmysong/bitcoin-core-bug-cve-2018-17144-an-analysis-f80d9d373362)
