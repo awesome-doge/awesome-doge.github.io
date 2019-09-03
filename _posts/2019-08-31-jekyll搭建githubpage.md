@@ -27,6 +27,10 @@ image: image/jekyll1.png
   - [表格欄位內的換行](#%e8%a1%a8%e6%a0%bc%e6%ac%84%e4%bd%8d%e5%85%a7%e7%9a%84%e6%8f%9b%e8%a1%8c)
   - [數學公式](#%e6%95%b8%e5%ad%b8%e5%85%ac%e5%bc%8f)
   - [任務列表](#%e4%bb%bb%e5%8b%99%e5%88%97%e8%a1%a8)
+- [加入 Open Graph 讓你的連結有縮圖](#%e5%8a%a0%e5%85%a5-open-graph-%e8%ae%93%e4%bd%a0%e7%9a%84%e9%80%a3%e7%b5%90%e6%9c%89%e7%b8%ae%e5%9c%96)
+  - [指定 標題](#%e6%8c%87%e5%ae%9a-%e6%a8%99%e9%a1%8c)
+  - [指定 簡介](#%e6%8c%87%e5%ae%9a-%e7%b0%a1%e4%bb%8b)
+  - [添加 圖片縮圖](#%e6%b7%bb%e5%8a%a0-%e5%9c%96%e7%89%87%e7%b8%ae%e5%9c%96)
 - [參考文獻](#%e5%8f%83%e8%80%83%e6%96%87%e7%8d%bb)
 
 
@@ -169,6 +173,51 @@ jekyll build; git commit -am $1 ; git add . ;git push origin master
 - [ ] 豆漿
 - [x] 可口可樂
 - [ ] 小茗同學
+
+# 加入 Open Graph 讓你的連結有縮圖
+要修改的檔案位置`/_includes/meta.html`
+## 指定 標題
+加入`/_includes/meta.html`的程式碼：
+```
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+    {% endif %}
+```
+`_posts`資料夾底下的md文件的頭部：
+```
+---
+title: "Jekyll 搭建 github page"
+---
+```
+## 指定 簡介
+加入`/_includes/meta.html`的程式碼：
+```
+    {% if page.description %}
+    <meta content="{{ page.description }}" property="og:description">
+    {% else %}
+    <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
+```
+`_posts`資料夾底下的md文件的頭部：
+```
+---
+description: "要參與一些大型開源項目，加入IRC是第一步"
+---
+```
+## 添加 圖片縮圖
+加入`/_includes/meta.html`的程式碼：
+```
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+    {% endif %}
+```
+`_posts`資料夾底下的md文件的頭部：
+```
+---
+image: image/jekyll1.png
+---
+```
 
 # 參考文獻
 * [官網連結](https://jekyllrb.com/docs/)
