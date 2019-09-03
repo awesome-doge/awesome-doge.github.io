@@ -5,6 +5,7 @@ date: 2019-08-31
 tags: [jekyll]
 categories: [jekyll]
 image: image/jekyll1.png
+description: "手把手用jekyll搭建github靜態網頁"
 ---
 
 如果今天想要搭建一個Blog或是個人網站甚至是一個公司產品的網站，卻又懶得去租用一個VPS伺服器，這篇文章會是一個不錯的教學。因為其實每一個人的github都可以搭建成一個靜態網站，而每一個repo都可以搭建成子網站，換言之。可以在這樣子的github page架構下搭建很多很多很多的網站。
@@ -27,10 +28,11 @@ image: image/jekyll1.png
   - [表格欄位內的換行](#%e8%a1%a8%e6%a0%bc%e6%ac%84%e4%bd%8d%e5%85%a7%e7%9a%84%e6%8f%9b%e8%a1%8c)
   - [數學公式](#%e6%95%b8%e5%ad%b8%e5%85%ac%e5%bc%8f)
   - [任務列表](#%e4%bb%bb%e5%8b%99%e5%88%97%e8%a1%a8)
-- [加入 Open Graph 讓你的連結有縮圖](#%e5%8a%a0%e5%85%a5-open-graph-%e8%ae%93%e4%bd%a0%e7%9a%84%e9%80%a3%e7%b5%90%e6%9c%89%e7%b8%ae%e5%9c%96)
-  - [指定 標題](#%e6%8c%87%e5%ae%9a-%e6%a8%99%e9%a1%8c)
-  - [指定 簡介](#%e6%8c%87%e5%ae%9a-%e7%b0%a1%e4%bb%8b)
-  - [添加 圖片縮圖](#%e6%b7%bb%e5%8a%a0-%e5%9c%96%e7%89%87%e7%b8%ae%e5%9c%96)
+  - [加入 Open Graph 讓你的連結有縮圖](#%e5%8a%a0%e5%85%a5-open-graph-%e8%ae%93%e4%bd%a0%e7%9a%84%e9%80%a3%e7%b5%90%e6%9c%89%e7%b8%ae%e5%9c%96)
+    - [指定 標題](#%e6%8c%87%e5%ae%9a-%e6%a8%99%e9%a1%8c)
+    - [指定 簡介](#%e6%8c%87%e5%ae%9a-%e7%b0%a1%e4%bb%8b)
+    - [添加 圖片縮圖](#%e6%b7%bb%e5%8a%a0-%e5%9c%96%e7%89%87%e7%b8%ae%e5%9c%96)
+  - [新增頁面](#%e6%96%b0%e5%a2%9e%e9%a0%81%e9%9d%a2)
 - [參考文獻](#%e5%8f%83%e8%80%83%e6%96%87%e7%8d%bb)
 
 
@@ -99,7 +101,9 @@ jekyll build; git commit -am $1 ; git add . ;git push origin master
 使用方法`sh publish.sh "更新的commit message"`，就會自動更新勒。
 
 # Markdown 語法
-
+* [MarkDown語法大全](https://hackmd.io/@eMP9zQQ0Qt6I8Uqp2Vqy6w/SyiOheL5N/%2FBVqowKshRH246Q7UDyodFA?type=book)
+* [Markdown語法教學](https://hackmd.io/@bwMrIJGoSwyHxPVocWmFmw/rJqeVSOrV?type=view)
+  
 # 進階
 ## 圖片大小、位置控制
 [來自[這裡](https://mazhuang.org/2017/09/01/markdown-odd-skills/)]    
@@ -174,10 +178,10 @@ jekyll build; git commit -am $1 ; git add . ;git push origin master
 - [x] 可口可樂
 - [ ] 小茗同學
 
-# 加入 Open Graph 讓你的連結有縮圖
+## 加入 Open Graph 讓你的連結有縮圖
 要修改的檔案位置`/_includes/meta.html`
-[Facebook測試工具](https://developers.facebook.com/tools/debug/sharing/?q=https%3A%2F%2Fawesome-doge.github.io%2Fhow-to-use-irc%2F)、[twitter測試工具](https://cards-dev.twitter.com/validator)
-## 指定 標題
+[Facebook測試工具](https://developers.facebook.com/tools/debug/sharing/?q=https%3A%2F%2Fawesome-doge.github.io%2Fhow-to-use-irc%2F)、[twitter測試工具](https://cards-dev.twitter.com/validator)。我自己的參數設定[網站](https://github.com/awesome-doge/awesome-doge.github.io/blob/master/_includes/meta.html)
+### 指定 標題
 加入`/_includes/meta.html`的程式碼：
 ```
     {% if page.title %}
@@ -191,7 +195,7 @@ jekyll build; git commit -am $1 ; git add . ;git push origin master
 title: "Jekyll 搭建 github page"
 ---
 ```
-## 指定 簡介
+### 指定 簡介
 加入`/_includes/meta.html`的程式碼：
 ```
     {% if page.description %}
@@ -206,7 +210,7 @@ title: "Jekyll 搭建 github page"
 description: "要參與一些大型開源項目，加入IRC是第一步"
 ---
 ```
-## 添加 圖片縮圖
+### 添加 圖片縮圖
 加入`/_includes/meta.html`的程式碼：
 ```
     {% if page.image %}
@@ -219,6 +223,23 @@ description: "要參與一些大型開源項目，加入IRC是第一步"
 image: image/jekyll1.png
 ---
 ```
+
+## 新增頁面
+在我們得到一個現成的模板後，像我就只有Blog,About兩個頁面。 可是要多加幾頁得到如下的效果該怎們辦呢？自己又添加了 閱讀、主題，兩個頁面。
+![](/image/jekyll7.png)
+* 首先，在主目錄底下創一個自己高興的`.md`文件，像我多加了`reading.md`。ok這樣是不夠的，系統是已經幫
+  ![](/image/jekyll8.png)
+* ok這樣是不夠的，系統是已經幫你創建了頁面，但是你必須要修改一下預設模板，位置在`_layouts/default.html`，看自己的需求進行排版調整。
+  ```
+            <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/reading">閱讀</a>
+            <a href="{{ site.baseurl }}/categories">主題</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+            
+            <!-- <a href="{{ site.baseurl }}/tags">tags</a> -->
+          </nav>
+  ```
 
 # 參考文獻
 * [官網連結](https://jekyllrb.com/docs/)
