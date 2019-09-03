@@ -176,6 +176,7 @@ jekyll build; git commit -am $1 ; git add . ;git push origin master
 
 # 加入 Open Graph 讓你的連結有縮圖
 要修改的檔案位置`/_includes/meta.html`
+[Facebook測試工具](https://developers.facebook.com/tools/debug/sharing/?q=https%3A%2F%2Fawesome-doge.github.io%2Fhow-to-use-irc%2F)、[twitter測試工具](https://cards-dev.twitter.com/validator)
 ## 指定 標題
 加入`/_includes/meta.html`的程式碼：
 ```
@@ -223,3 +224,6 @@ image: image/jekyll1.png
 * [官網連結](https://jekyllrb.com/docs/)
 * [簡體中文官網](https://jekyllcn.com)
 * [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)
+* [讓網頁在 Twitter 推文時顯示圖片 - 在 github pages 中加上 Twitter Cards 與 Open Graph 標籤](http://rocksaying.tw/archives/2016/讓網頁在Twitter推文時顯示圖片-在github-pages中加上Twitter-Cards.html)
+* [adding-open-graph-tags-to-jekyll.html](https://gist.github.com/davidensinger/5431869)
+* [Jekyll and Facebook OG Images](https://danaleegibson.com/jekyll-and-facebook-og-images/)
