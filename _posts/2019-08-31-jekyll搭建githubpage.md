@@ -4,7 +4,7 @@ title: "Jekyll 搭建 github page"
 date: 2019-08-31
 tags: [jekyll]
 categories: [jekyll]
-image: image/jekyll1.png
+image: image/jekyll10.png
 description: "手把手用jekyll搭建github靜態網頁"
 ---
 
@@ -56,6 +56,10 @@ jekyll new blog
 因為在jekyll已經不是什麼小項目了，他已經存在了非常多年，所以也會有許多熱情的開發者撰寫了很多公開的模板給大家使用，[http://jekyllthemes.org](http://jekyllthemes.org)，如果在裡面有你看起來高興的樣子，就可以直接拿來用，直接`fork`一個很快的。這樣可以省去很多開發時間，也對一個小白是非常友善的。
 所以如果挑到喜歡的，那就讓我們分叉一個吧。
 ![](/image/jekyll1.png)
+個人覺得很有意思的模板：
+* [Windows 95](http://jekyllthemes.org/themes/windows-95/)    
+  ![](/image/jekyll9.png)
+
 
 #### 分叉 變成 主網頁
 github會給每個user 一個網址，只是看你有沒有拿來用而已，預設是`xxx.github.io`，其中xxx是你自己的名字。
