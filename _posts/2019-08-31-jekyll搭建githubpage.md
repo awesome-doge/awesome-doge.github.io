@@ -9,6 +9,7 @@ description: "手把手用jekyll搭建github靜態網頁"
 ---
 
 如果今天想要搭建一個Blog或是個人網站甚至是一個公司產品的網站，卻又懶得去租用一個VPS伺服器，這篇文章會是一個不錯的教學。因為其實每一個人的github都可以搭建成一個靜態網站，而每一個repo都可以搭建成子網站，換言之。可以在這樣子的github page架構下搭建很多很多很多的網站。
+<div align="center"><img  src="/image/jekyll10.png"/></div>
 
 - [環境搭建](#%e7%92%b0%e5%a2%83%e6%90%ad%e5%bb%ba)
 - [生成網站](#%e7%94%9f%e6%88%90%e7%b6%b2%e7%ab%99)
