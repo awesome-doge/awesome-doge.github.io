@@ -9,9 +9,9 @@ description: "透過gitbook生成電子書，且發佈到github page"
 ---
 
 gitbook 是一個命令工具，幫助你把一堆`md`,`asciidoc`build 成網頁版的電子書以及mobi, epub, pdf的檔案生成。
+<div align="center"><img  src="/images/gitbook.png"/></div>
 
 閱讀該文章時[markdown](https://gist.github.com/christech1117/6dc5221c177104990767d6490ad8c7ba) 語法是基本常識。
-<div align="center"><img  src="/images/gitbook.png"/></div>
 
 因為最近不斷地整理電子書，發現了電子書的遍及格式大致有`markdown`格式，簡稱`md`，還有另外一種叫`asciidoc`，我初次見到到`asciidoc`是在[bitcoinbook](https://github.com/bitcoinbook/bitcoinbook)之後又遇見了[ethereumbook](https://github.com/ethereumbook/ethereumbook)，可是裡面的公式還是呈現不出來，後來遇見了gitbook，讓我很舒服的把`md`,`asciidoc` build 成網頁版的電子書以及mobi, epub, pdf 三種格式，讓大家可以在手機上就可閱讀。
 
