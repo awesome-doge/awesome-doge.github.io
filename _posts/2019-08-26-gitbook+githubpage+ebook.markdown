@@ -5,6 +5,7 @@ date:   2019-08-26 17:26:44 +0800
 categories: [Gitbook]
 tag: [gitbook, github, github hompage]
 image: images/gitbook.jpg
+description: "透過gitbook生成電子書，且發佈到github"
 ---
 
 gitbook 是一個命令工具，幫助你把一堆`md`,`asciidoc`build 成網頁版的電子書以及mobi, epub, pdf的檔案生成。
