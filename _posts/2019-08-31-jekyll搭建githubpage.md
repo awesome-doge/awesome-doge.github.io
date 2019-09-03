@@ -34,6 +34,7 @@ description: "手把手用jekyll搭建github靜態網頁"
     - [指定 簡介](#%e6%8c%87%e5%ae%9a-%e7%b0%a1%e4%bb%8b)
     - [添加 圖片縮圖](#%e6%b7%bb%e5%8a%a0-%e5%9c%96%e7%89%87%e7%b8%ae%e5%9c%96)
   - [新增頁面](#%e6%96%b0%e5%a2%9e%e9%a0%81%e9%9d%a2)
+  - [添加翻頁功能](#%e6%b7%bb%e5%8a%a0%e7%bf%bb%e9%a0%81%e5%8a%9f%e8%83%bd)
 - [參考文獻](#%e5%8f%83%e8%80%83%e6%96%87%e7%8d%bb)
 
 
@@ -245,6 +246,30 @@ image: image/jekyll1.png
             <!-- <a href="{{ site.baseurl }}/tags">tags</a> -->
           </nav>
   ```
+
+## 添加翻頁功能
+* 在主目錄下`nano Gemfile`，存入以下內容
+  ```
+  group :jekyll_plugins do
+    gem "jekyll-paginate"
+    gem "jekyll"
+  end
+  ```
+* 在主目錄下`_config.yml`文件添加兩行：
+  ```
+  paginate: 7
+	paginate_path: "/page:num/"
+  ```
+* 跑到主目錄下的 `index.html`，按照[這樣](https://github.com/awesome-doge/awesome-doge.github.io/commit/6044caa5857754c449b643fa72cfae5f5d1b5964#diff-eacf331f0ffc35d4b482f1d15a887d3b)修改
+* 執行以下指令：
+  ```
+  gem install jekyll bundler
+  bundle exec jekyll serve
+  bundle install
+  jekyll serve --trace
+  ```
+
+結束
 
 # 參考文獻
 * [官網連結](https://jekyllrb.com/docs/)
