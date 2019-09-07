@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-這個 Blog 是搭建在 Github page 上，如果想要嘗試運行可執行以下代碼（依賴`jekyll`）：
+該靜態網站是部署在 Github page 上，主要透過jekyll進行部署
 ```
 git clone https://github.com/awesome-doge/awesome-doge.github.io
 cd awesome-doge.github
