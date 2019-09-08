@@ -4,7 +4,7 @@ title: "Miniscript: 簡化 Bitcoin Scripting"
 date: 2019-09-09
 tags: [github]
 categories: [github]
-image: image/lfs2.png
+image: image/miniscript1.png
 description: "Miniscript 是一種以結構化方式表示Bitcoin  Script 的語言，可實現高效的分析、結構(composition)、一般簽名等"
 ---
 
