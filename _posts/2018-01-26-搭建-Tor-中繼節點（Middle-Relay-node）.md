@@ -2,7 +2,7 @@
 layout: post
 title: 搭建 Tor 中繼節點（Middle Relay node）
 date: 2018-01-26 19:28:57
-tags: [tor, tor relay]
+tags: [tor, tor relay, hidden, tor v2, tor v3,anonymous]
 categories: [Tor Project]
 ---
 

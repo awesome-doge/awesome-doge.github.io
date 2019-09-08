@@ -2,7 +2,7 @@
 layout: post
 title: Tor routing 和 bitcoin關係
 date: 2018-01-17 02:45:13
-tags: [bitcoin, tor]
+tags: [bitcoin, tor, tor v3, tor v2, tor routing, hidden,anonymous]
 categories: [Tor Project]
 ---
 

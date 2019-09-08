@@ -2,7 +2,7 @@
 layout: post
 title: Tor 中的Bitcoin相關網站
 date: 2018-01-20 17:14:09
-tags: [tor, bitcoin,web site]
+tags: [tor, bitcoin,web site, hidden, tor v2, tor v3,anonymous]
 categories: [Tor Project]
 ---
 
