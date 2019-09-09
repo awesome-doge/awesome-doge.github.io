@@ -134,13 +134,18 @@ Blockstream 的 Andrew Poelstra 正在努力接受[實施PSBT](https://github.co
 
 隨著擴展的形成，它被分成 Bitcoin Script 的結構化子集，它成為Miniscript，以及直接表示支付條件的簡單“ policy 語言”，可以編譯為 Miniscript。 2019年1月，[Wuille在史丹佛區塊鏈會議上提交了初步結果](https://www.youtube.com/watch?v=XM1lzN4Zfks)。
 
+
 接下來的五月，Sanket Kanjalkar 加入 Blockstream 進行為期三個月的實習，專注於為 Miniscript 實施工具並幫助將其與 Bitcoin Core 集成。在他的幫助下，Miniscript被完全重複地重新設計為更小，更高效，更易於分析，並且更好地防止延展性。最後一組更改是根據Bitcoin共識和標準規則驗證大量隨機 Miniscript 相容 Script。這些迭代的結果是今天的 Miniscript。
 
 # 相關工作
 
 Miniscript 構建於 Bitcoin 生態系統的許多其他項目之上並與之集成。特別是，如上所述，Miniscript 擴展了 Bitcoin Core的錢包的**輸出描述符**和補充**PSBT**以啟用完全通用的更新程序和終結器。
 
+![](/image/miniscript5.png)
+
 Miniscript可以[與**Ivy**相比](https://mobile.twitter.com/danrobinson/status/1091149043563036672)，這是另一種旨在使 Bitcoin Script的高級功能可訪問的語言。然而，當Ivy 編譯為 Script時，Miniscript 是一個(子集) Script 的直接表示，這意味著“miniscripts”的正確性和健全性可以通過計算有效地驗證。 Miniscript也適用於許多其他形式的靜態分析，無論是Script還是Ivy。
+
+![](/image/miniscript6.png)
 
 Miniscript的 policy 語言類似於Ivy，因為兩者都是抽象，必須編譯成(Mini)Script以便在區塊鏈上使用。但是，Miniscript的 policy 語言在結構上類似於Miniscript本身，因此可以輕鬆驗證編譯器的輸出以匹配編譯器的輸入 - 實際上，甚至可以手動檢查 - 並且可以輕鬆驗證以符合使用者的期望。
 
