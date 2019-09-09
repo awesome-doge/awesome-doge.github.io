@@ -57,7 +57,7 @@ Bitcoin 一直有一種機制，可以通過更複雜的 policy 花費coin，而
 ![](/image/miniscript12.png)
 **Miniscript**，這是一種以結構化方式表示Bitcoin  Script 的語言，可實現高效的分析、結構(composition)、一般簽名等。
 
-比如Bitcoin Script
+比如Bitcoin Script 表示法
 ```
 <A> OP_CHECKSIG OP_IFDUP OP_NOTIF OP_DUP OP_HASH160 <hash160(B)> OP_EQUALVERIFY OP_CHECKSIGVERIFY <144> OP_CSV OP_ENDIF
 ```
@@ -69,7 +69,7 @@ or_d(c:pk(A),and_v(vc:pk_h(B),older(144)))
 
 這種表示法明確指出，Script 的語義允許支付 when either A signs, or when B signs after 144 blocks。 可以用這種方式編寫大部分有意義的 Script。
 
-使人類(或工程師......)可讀的Script只是Miniscript的功能之一。 其主要目的是實現對 Script 的自動推理，如下面的使用案例所示。
+使人類(或工程師......)可讀的 Script 只是 Miniscript 的功能之一。 其主要目的是實現對 Script 的自動推理，如下面的使用案例所示。
 
 # 使用案例 Use Cases
 
@@ -78,7 +78,7 @@ or_d(c:pk(A),and_v(vc:pk_h(B),older(144)))
 ## 優化的Script Optimized Script
 
 ![](/image/miniscript10.png)
-一個這樣的案例是找到實現給定的一組支付條件的最佳 Script。 在Bitcoin Script中，有許多不同的方法來請求簽名、描述連詞或分斷或實施門檻。 即使對於經驗豐富的 Bitcoin Script 開發者，正確的選擇可能取決於滿足的不同條件的相對機率，並且難以計算。 我們的[線上編譯器](http://bitcoin.sipa.be/miniscript/)，也可以[作為C ++原始碼](https://github.com/sipa/miniscript)，或作為[rust- miniscript](http://bitcoin.sipa.be/miniscript/)庫，可以立即找到與給定支付 policy 相對應的最佳Miniscript。
+一個這樣的案例是找到實現給定的一組支付條件的最佳 Script。 在Bitcoin Script中，有許多不同的方法來請求簽名、描述連詞或分斷或實施門檻。 即使對於經驗豐富的 Bitcoin Script 開發者，正確的選擇可能取決於滿足的不同條件的相對機率，並且難以計算。 我們的[線上編譯器](http://bitcoin.sipa.be/miniscript/)，也可以[作為C ++原始碼](https://github.com/sipa/miniscript)，或作為[rust- miniscript](http://bitcoin.sipa.be/miniscript/)庫，可以立即找到與給定支付 policy 相對應的Miniscript表達式。
 
 
 
