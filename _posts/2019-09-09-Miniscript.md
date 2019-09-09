@@ -41,6 +41,7 @@ Bitcoin 一直有一種機制，可以通過更複雜的 policy 花費coin，而
 
 ![](/image/miniscript4.png)
 ![](/image/miniscript7.png)
+![](/image/miniscript9.png)
 
 ## 難以驗證 Difficult to Verify
 
@@ -74,6 +75,7 @@ or_d(c:pk(A),and_v(vc:pk_h(B),older(144)))
 
 ## 優化的Script Optimized Script
 
+![](/image/miniscript10.png)
 一個這樣的案例是找到實現給定的一組支付條件的最佳 Script。 在Bitcoin Script中，有許多不同的方法來請求簽名、描述連詞或分斷或實施門檻。 即使對於經驗豐富的 Bitcoin Script 開發者，正確的選擇可能取決於滿足的不同條件的相對機率，並且難以計算。 我們的[線上編譯器](http://bitcoin.sipa.be/miniscript/)，也可以[作為C ++原始碼](https://github.com/sipa/miniscript)，或作為[rust- miniscript](http://bitcoin.sipa.be/miniscript/)庫，可以立即找到與給定支付 policy 相對應的最佳Miniscript。
 
 
