@@ -135,7 +135,7 @@ Miniscript的概念在2018年夏天湊在一起，成為當時正在開發的幾
 ![](/image/miniscript13.png)
 
 PSBT的一個重要組成部分是*終結者(finalizer)*，參與者根據PSBT中包含的簽名者數據集合匯總實際的 Bitcoin 交易。這個程序集需要理解要滿足的 Script，這意味著PSBT支持的錢包執行非常重要的事情必須實現自己的專用終結器，需要冗餘開發和限制互操作性。
-
+![](/image/miniscript14.png)
 Blockstream 的 Andrew Poelstra 正在努力接受[實施PSBT](https://github.com/rust-bitcoin/rust-bitcoin/pull/103)for rust-bitcoin，一種用於Rust編程語言的通用Bitcoin庫。這樣的實現是由Carl Dong提出的，但沒有包括足以支持圖書館所有使用者的終結器。 Poelstra [在IRC上觀察](http://gnusha.org/rust-bitcoin/2018-07-31.log)“如果你有高度結構化的Script模板，你可以逃脫而不是真正理解 Script”，這個想法是成為Miniscript的核心。
 
 無關緊要的是，Poelstra 和 Wuille 一直致力於一個與監管相關的項目，並且由於缺乏可用於復雜多參與者 Script 的標準工具而感到沮喪。兩人在2018年8月開會討論這個問題.Vuille建議將這些“高度結構化的 Script模板”作為Bitcoin Core輸出描述符的擴展。
