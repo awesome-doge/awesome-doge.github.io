@@ -54,6 +54,7 @@ Bitcoin 一直有一種機制，可以通過更複雜的 policy 花費coin，而
 
 # Miniscript
 
+![](/image/miniscript12.png)
 **Miniscript**，這是一種以結構化方式表示Bitcoin  Script 的語言，可實現高效的分析、結構(composition)、一般簽名等。
 
 比如Bitcoin Script
