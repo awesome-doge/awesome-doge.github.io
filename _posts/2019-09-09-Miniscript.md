@@ -42,6 +42,7 @@ Bitcoin 一直有一種機制，可以通過更複雜的 policy 花費coin，而
 ![](/image/miniscript4.png)
 ![](/image/miniscript7.png)
 ![](/image/miniscript9.png)
+![](/image/miniscript11.png)
 
 ## 難以驗證 Difficult to Verify
 
