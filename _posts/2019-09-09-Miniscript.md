@@ -132,6 +132,7 @@ Miniscript 功能的一個具體例子可以在[Blockstream的Liquid sidechain](
 # 歷史
 
 Miniscript的概念在2018年夏天湊在一起，成為當時正在開發的幾個想法的熱潮。 7月中旬，Pieter Wuille 向 Bitcoin Core引入了輸出描述符，這是一種描述 Core 支持的眾多不同地址類型的通用方法。同時，部分簽名 Bitcoin 交易(PSBT，在[BIP 174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)中描述)，由Andy Chow開發的錢包互操作性協議，當時那個夏天他在Blockstream實習時，正在錢包領域越來越受歡迎。
+![](/image/miniscript13.png)
 
 PSBT的一個重要組成部分是*終結者(finalizer)*，參與者根據PSBT中包含的簽名者數據集合匯總實際的 Bitcoin 交易。這個程序集需要理解要滿足的 Script，這意味著PSBT支持的錢包執行非常重要的事情必須實現自己的專用終結器，需要冗餘開發和限制互操作性。
 
