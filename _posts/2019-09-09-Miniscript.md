@@ -40,6 +40,7 @@ Bitcoin 一直有一種機制，可以通過更複雜的 policy 花費coin，而
 然而，這不是它能做的全部。 Script 可用於表示發布交易所需的複雜條件 - 例如 (two of A, B, C)和(D or (E and F))，其中A到F各自代表一個唯一的 key - 以及 hash preimage 檢查、時間鎖( timelocks)和一些更奇特的結構。
 
 ![](/image/miniscript4.png)
+![](/image/miniscript7.png)
 
 ## 難以驗證 Difficult to Verify
 
@@ -104,6 +105,8 @@ Miniscript 憑藉直接代表消費條件，允許表達任意 policy ，以便�
 ## 支付 policy 的組成 Composition of Spending Policies
 
 讓我們看一下受互操作性需求限制的 Bitcoin Script 開發者的具體示例。考慮一家公司託管大量Bitcoin的情況，並希望這些coin只有在大多數董事的同意下才能消費。但是，一些個人董事希望使用自己的錢包軟體和硬體，進行複雜的簽名設置，涉及跨不同裝置的多個key，並且不希望使用專用應用程式所提供的 single key 簽名的方案。
+
+![](/image/miniscript8.png)
 
 如果沒有 Miniscript，製作一個包含所有簽名者要求的 Script，同時向所有簽名者保證完整的 Script 完整，並且他們的錢包軟體與結果相容，則會出現一個不可逾越的問題。
 
