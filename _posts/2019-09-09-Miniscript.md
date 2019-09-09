@@ -167,6 +167,8 @@ Miniscript的 policy 語言類似於Ivy，因為兩者都是抽象，必須編�
 
 在設計 Miniscript 時，我們開始使 Bitcoin Script 更易於訪問。 雖然很多工作都集中在研究和提出 Script 和 Bitcoin 共識規則的未來變化以增加額外功能，但我們認為甚至使用已經存在的通用、安全、可組合和可互操作的方式的功能也缺少基礎設施。
 
+![](/image/miniscript16.png)
+
 這項工作尚未完成。 我們有Miniscript(C ++和Rust)和 policy 編譯器的兩個功能實現，但是為了使這個技術可訪問，我們需要集成在常用的軟體中。 通過與 Miniscript 相容的 PSBT 實現(更新程序和終結程序)，即使沒有明確的支持，許多 PSBT 簽名者(包括基於硬體錢包的簽名者)也可以用於復雜的 Script。 編譯器也可以進行改進，因為 policy 中有許多優化來編寫尚未考慮的轉換 Script。
 
 在此過程中，我們學到了很多東西：
