@@ -11,6 +11,25 @@ description: "Miniscript 是一種以結構化方式表示Bitcoin  Script 的語
 [原文](https://medium.com/blockstream/miniscript-bitcoin-scripting-3aeff3853620)*By Pieter Wuille & Andrew Poelstra*
 ![](https://miro.medium.com/max/1600/0*S7Kqs5tYkppoJQkV)
 
+**大綱**
+- [介紹](#%e4%bb%8b%e7%b4%b9)
+  - [Bitcoin Script](#bitcoin-script)
+  - [難以驗證 Difficult to Verify](#%e9%9b%a3%e4%bb%a5%e9%a9%97%e8%ad%89-difficult-to-verify)
+- [Miniscript](#miniscript)
+- [使用案例 Use Cases](#%e4%bd%bf%e7%94%a8%e6%a1%88%e4%be%8b-use-cases)
+  - [優化的Script Optimized Script](#%e5%84%aa%e5%8c%96%e7%9a%84script-optimized-script)
+  - [一般支付 Generic Spending](#%e4%b8%80%e8%88%ac%e6%94%af%e4%bb%98-generic-spending)
+  - [儲備證明 Proof-of-Reserves](#%e5%84%b2%e5%82%99%e8%ad%89%e6%98%8e-proof-of-reserves)
+  - [支付 policy 的組成 Composition of Spending Policies](#%e6%94%af%e4%bb%98-policy-%e7%9a%84%e7%b5%84%e6%88%90-composition-of-spending-policies)
+  - [動態聯盟 Dynamic Federations](#%e5%8b%95%e6%85%8b%e8%81%af%e7%9b%9f-dynamic-federations)
+- [歷史](#%e6%ad%b7%e5%8f%b2)
+- [相關工作](#%e7%9b%b8%e9%97%9c%e5%b7%a5%e4%bd%9c)
+- [未來的工作和結論](#%e6%9c%aa%e4%be%86%e7%9a%84%e5%b7%a5%e4%bd%9c%e5%92%8c%e7%b5%90%e8%ab%96)
+- [開始構建Miniscript](#%e9%96%8b%e5%a7%8b%e6%a7%8b%e5%bb%baminiscript)
+
+![](/image/miniscript2.png)
+
+
 # 介紹
 
 ## Bitcoin Script
