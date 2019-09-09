@@ -35,8 +35,11 @@ description: "Miniscript 是一種以結構化方式表示Bitcoin  Script 的語
 ## Bitcoin Script
 
 Bitcoin 一直有一種機制，可以通過更複雜的 policy 花費coin，而不僅僅是一個 single key ：Script系統。 雖然 Script 主要用於 single-key 支付，但它也是各種 multisig 錢包、原子交換(atomic swap)結構和 Lightning Network的基礎。
+![](/image/miniscript3.png)
 
 然而，這不是它能做的全部。 Script 可用於表示發布交易所需的複雜條件 - 例如 (two of A, B, C)和(D or (E and F))，其中A到F各自代表一個唯一的 key - 以及 hash preimage 檢查、時間鎖( timelocks)和一些更奇特的結構。
+
+![](/image/miniscript4.png)
 
 ## 難以驗證 Difficult to Verify
 
