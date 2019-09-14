@@ -1,4 +1,13 @@
-## Scaling Bitcoin 2019 "Yesod"
+---
+layout: post
+title: "Scaling Bitcoin 2019 "Yesod""
+date: 2019-09-14
+tags: [Bitcoin, bitcoin, Scaling Bitcoin, Scripts, Network]
+categories: [Bitcoin]
+image: images/bitcoin1.jpeg
+description: "Organize all the presentations of "Scaling Bitcoin 2019"."
+---
+
 * [Invited Talk: A Survey of Progress in Succinct Zero Knowledge Proofs: Towards Trustless SNARKs](https://youtu.be/-gdfxNalDIc?t=1757) by Ben Fisch (Stanford University)
 
 
