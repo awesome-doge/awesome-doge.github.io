@@ -99,7 +99,7 @@ Education
 
 * [A Lucas Critique to the Difficulty Adjustment Algorithm of the Bitcoin System](https://youtu.be/Uh6Ywxrobzw?t=17446) by Yoshinori Hashimoto (BUIDL, Ltd)
 
-* [Offline Transactions (inspired]() by Blockchain Ethics)](https://youtu.be/Uh6Ywxrobzw?t=18036) by Daniel Marquez (MIT Media Lab)
+* [Offline Transactions (inspired by Blockchain Ethics)](https://youtu.be/Uh6Ywxrobzw?t=18036) by Daniel Marquez (MIT Media Lab)
 
 * [Conditional Transfer of Tokens on Top of Bitcoin](https://youtu.be/Uh6Ywxrobzw?t=18284) by Thomas Eizinger
 
