@@ -2,7 +2,7 @@
 layout: post
 title: "Minisketch：降低節點頻寬要求"
 date: 2019-09-24
-tags: [Bitcoin, bitcoin, Scaling Bitcoin, Scripts, Network, MuSig]
+tags: [Bitcoin, bitcoin, Minisketch, Scripts, Network]
 categories: [Bitcoin]
 image: images/minisckecth.jpg
 description: "Minisketch：將能夠減少在分佈式系統中同步數據時所需的頻寬。"
