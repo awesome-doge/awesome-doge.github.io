@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "torv3 hidden service 設定 + ssh 連線"
+title: "tor v3 hidden service 設定 + ssh 連線"
 date: 2020-03-11
-tags: [tor]
-categories: [tor]
+tags: [tor, hidden, tor v3,anonymous]
+categories: [Tor Project]
 image: /image/tor33.png
-description: "簡單介紹一些ssh的使用方法"
+description: "搭建hidden service、搭建hidden ssh、連線hidden ssh"
 ---
 
 搭建hidden service、搭建hidden ssh、連線hidden ssh
