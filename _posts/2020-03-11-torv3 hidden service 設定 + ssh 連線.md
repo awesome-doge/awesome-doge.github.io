@@ -11,7 +11,6 @@ description: "搭建hidden service、搭建hidden ssh、連線hidden ssh"
 搭建hidden service、搭建hidden ssh、連線hidden ssh
 ![](/image/tor33.png)
 
-# tor hidden service 設定 + ssh 連線
 ## server setting
 
 ### 1個 hidden address service
