@@ -8,21 +8,21 @@ permalink: /reading.html
 - [Bitcoin related](#bitcoin-related)
   - [github](#github)
   - [blog](#blog)
-  - [資源](#%e8%b3%87%e6%ba%90)
-  - [論文](#%e8%ab%96%e6%96%87)
-  - [書](#%e6%9b%b8)
-- [翻牆 相關](#%e7%bf%bb%e7%89%86-%e7%9b%b8%e9%97%9c)
-  - [資源](#%e8%b3%87%e6%ba%90-1)
-  - [論文](#%e8%ab%96%e6%96%87-1)
-  - [書](#%e6%9b%b8-1)
-- [What Bitcoin Core doing?(英文)](#what-bitcoin-core-doing%e8%8b%b1%e6%96%87)
+  - [資源](#資源)
+  - [論文](#論文)
+  - [書](#書)
+- [翻牆 相關](#翻牆-相關)
+  - [資源](#資源-1)
+  - [論文](#論文-1)
+  - [書](#書-1)
+- [What Bitcoin Core doing?(英文)](#what-bitcoin-core-doing英文)
   - [Bitcoin books](#bitcoin-books)
   - [Video](#video)
   - [Other list](#other-list)
-- [洋蔥筆記](#%e6%b4%8b%e8%94%a5%e7%ad%86%e8%a8%98)
-  - [搜尋引擎：](#%e6%90%9c%e5%b0%8b%e5%bc%95%e6%93%8e)
+- [洋蔥筆記](#洋蔥筆記)
+  - [搜尋引擎：](#搜尋引擎)
   - [Website Directory：](#website-directory)
-  - [毒品](#%e6%af%92%e5%93%81)
+  - [毒品](#毒品)
 
 
 * [fanquake/core-review](https://github.com/fanquake/core-review)參與bitcoin core的工具清單
@@ -55,6 +55,7 @@ permalink: /reading.html
     * [jlopp/lopp.net](https://lopp.net)
 * [jimmysong](https://github.com/jimmysong)
     * [jimmysong/programmingbitcoin](https://github.com/jimmysong/programmingbitcoin)
+* [The MIT Digital Currency Initiative @ Media Lab](https://github.com/mit-dci)
 
 ## blog
 * [Laanwj's blog](https://laanwj.github.io/) bitcoin core 首席
@@ -108,6 +109,7 @@ permalink: /reading.html
 * Bitcoin Edge Dev++ 
     * [Bitcoin Edge Dev++ 2017](https://www.youtube.com/playlist?list=PLlWSs86hGNb8QKRuRP3maUsVmZm8uVmIR&fbclid=IwAR34zuKGGpab-5lEsaSE1M57mnS83SgYSHuC4Mt9iPTZvHnNXGWPHaFj56E) 
     * [Bitcoin Edge Dev++ 2018](https://www.youtube.com/playlist?list=PLlWSs86hGNb8bUsTnDmZz2ZvMfHy9fS_t&fbclid=IwAR1SBgFG4vDTqfinc7aamENqlGskup2B3xHqR-zdkHl-4zcDH4jhYbKXK84)
+* [MIT Digital Currency Initiative](https://www.youtube.com/c/MITDigitalCurrencyInitiative/videos)
 
 ## Other list
 * [Awesome Bitcoin](https://github.com/igorbarinov/awesome-bitcoin)
