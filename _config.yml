@@ -92,7 +92,7 @@ exclude:
 tag_page: '/tags/'
 category_page: '/categories/'
 
-paginate: 7
+paginate: 10
 paginate_path: "/page:num/"
 
 title: awesome doge
