@@ -4,37 +4,16 @@ title: "Reading"
 permalink: /reading.html
 ---
 
-**大綱**
-- [Bitcoin related](#bitcoin-related)
-  - [github](#github)
-  - [blog](#blog)
-  - [資源](#資源)
-  - [論文](#論文)
-  - [書](#書)
-- [翻牆 相關](#翻牆-相關)
-  - [資源](#資源-1)
-  - [論文](#論文-1)
-  - [書](#書-1)
-- [What Bitcoin Core doing?(英文)](#what-bitcoin-core-doing英文)
-  - [Bitcoin books](#bitcoin-books)
-  - [Video](#video)
-  - [Other list](#other-list)
-- [洋蔥筆記](#洋蔥筆記)
-  - [搜尋引擎：](#搜尋引擎)
-  - [Website Directory：](#website-directory)
-  - [毒品](#毒品)
+* [fanquake/core-review](https://github.com/fanquake/core-review) - 參與bitcoin core的工具清單
 
-
-* [fanquake/core-review](https://github.com/fanquake/core-review)參與bitcoin core的工具清單
-
-# Bitcoin related
+# Bitcoin
 ## github
 
-* [zkSNACKs/WasabiDoc](https://github.com/zkSNACKs/WasabiDoc)Wasabi 文件，裡面有coinjoin
+* [zkSNACKs/WasabiDoc](https://github.com/zkSNACKs/WasabiDoc) - Wasabi 文件，裡面有coinjoin
     * https://docs.wasabiwallet.io
-* [Andrew Poelstra](https://github.com/apoelstra)blockstream首席
-    * [apoelstra/mimblewimble-paper](https://github.com/apoelstra/mimblewimble-paper) 最早的mimblewimble 白皮書
-    * [apoelstra/coinjoin](https://github.com/apoelstra/coinjoin)最早的coin join
+* [Andrew Poelstra](https://github.com/apoelstra) - blockstream首席
+    * [apoelstra/mimblewimble-paper](https://github.com/apoelstra/mimblewimble-paper)  - 最早的mimblewimble 白皮書
+    * [apoelstra/coinjoin](https://github.com/apoelstra/coinjoin) - 最早的coin join
 * [Blockstream](https://github.com/Blockstream)
     * [Blockstream/docs](https://github.com/Blockstream/docs)
 * [Pieter Wuille](https://github.com/sipa)
@@ -43,7 +22,7 @@ permalink: /reading.html
     * [bitcoin/bitcoin/doc](https://github.com/bitcoin/bitcoin/tree/master/doc)
 * [bitcoin-core](https://github.com/bitcoin-core)
 * [Bitcoin Optech](https://github.com/bitcoinops)
-    * [bitcoinops/btc-dashboard](https://github.com/bitcoinops/btc-dashboard)漂亮的狀態檢視
+    * [bitcoinops/btc-dashboard](https://github.com/bitcoinops/btc-dashboard) - 漂亮的狀態檢視
     * [bitcoinops/taproot](https://github.com/bitcoinops/taproot)
     * [bitcoinops/scaling-book](https://github.com/bitcoinops/scaling-book)
 * [David A. Harding](https://github.com/harding)
@@ -51,14 +30,14 @@ permalink: /reading.html
     * https://elementsproject.org/
     * [ElementsProject/lightning](https://github.com/ElementsProject/lightning)
 * [jlopp](https://github.com/jlopp) 
-    * [jlopp/statoshi](https://github.com/jlopp/statoshi)Statoshi: Bitcoin Core + statistics logging顯示所有比特幣網路的狀態
+    * [jlopp/statoshi](https://github.com/jlopp/statoshi) - Statoshi: Bitcoin Core + statistics logging顯示所有比特幣網路的狀態
     * [jlopp/lopp.net](https://lopp.net)
 * [jimmysong](https://github.com/jimmysong)
     * [jimmysong/programmingbitcoin](https://github.com/jimmysong/programmingbitcoin)
 * [The MIT Digital Currency Initiative @ Media Lab](https://github.com/mit-dci)
 
 ## blog
-* [Laanwj's blog](https://laanwj.github.io/) bitcoin core 首席
+* [Laanwj's blog](https://laanwj.github.io/)  - bitcoin core 首席
 * [lopp](https://lopp.net)
 * [lopp Medium](https://medium.com/@lopp)
 * [Jimmy Song Medium](https://medium.com/@jimmysong)
@@ -88,7 +67,7 @@ permalink: /reading.html
 ## Bitcoin books
 * [Bitcoin Developer Guide](https://bitcoin.org/en/developer-guide)
 * [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook)
-* [Bitcoin and Cryptocurrency Technologies](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf)(普林斯頓大學 教課書)
+* [Bitcoin and Cryptocurrency Technologies](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf) - (普林斯頓大學 教課書)
 * [Bitcoin Developer Reference](https://github.com/minium/Bitcoin-Spec/blob/master/Bitcoin.pdf) (by Krzysztof Okupski)
 * [Programming with Bitcoin Core and Lightning](https://github.com/ChristopherA/Learning-Bitcoin-from-the-Command-Line)
 * [Programming Blockchain in C#](https://programmingblockchain.gitbook.io/programmingblockchain)
