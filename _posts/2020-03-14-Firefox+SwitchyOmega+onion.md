@@ -3,7 +3,7 @@ layout: post
 title: "Firefox+SwitchyOmega+onion"
 date: 2020-03-14
 tags: [tor, hidden, tor v3,anonymous, proxy, firefox]
-categories: [Tor Project]
+categories: [SwitchyOmega]
 image: /image/ProxySwitchyOmega.png
 description: ""
 ---
