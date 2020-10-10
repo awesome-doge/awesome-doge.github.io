@@ -12,7 +12,7 @@ description: ""
 
 [TOC]
 
-## 取 github action token
+## 取得 github action token
 * 取得新的 token [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
 ![](/image/github-action-3.png)
 
