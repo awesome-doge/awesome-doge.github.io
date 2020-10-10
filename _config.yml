@@ -78,6 +78,7 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate # laanwj
   - jekyll-seo-tag
+  - github-pages
 # Exclude these files from your production _site
 #  - jekyll-archives
 
@@ -97,7 +98,7 @@ paginate_path: "/page:num/"
 
 title: awesome doge
 description: Freedom is priceless.
-url: https://awesome-doge.github.io/
+url: 'https://awesome-doge.github.io'
 author: awesome-doge
 twitter:
   username: awesome-doge
