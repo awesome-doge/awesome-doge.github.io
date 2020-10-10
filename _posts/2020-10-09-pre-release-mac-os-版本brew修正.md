@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "github action + gitbook"
+title: "pre release mac os 版本 brew 修正"
 date: 2020-10-9
 tags: [brew]
 categories: [brew]
