@@ -9,6 +9,7 @@ description: "apache log 位置 重啟指令 just for bitnami"
 ---
 
 apache log 位置 重啟指令 just for bitnami
+![](/image/apache.png)
 
 重啟server
 ```
