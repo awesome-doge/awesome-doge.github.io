@@ -4,9 +4,10 @@ title: "Firefox+SwitchyOmega+onion"
 date: 2020-03-14
 tags: [tor, hidden, tor v3,anonymous, proxy, firefox]
 categories: [Tor Project]
-image: /image/tor33.png
+image: /image/ProxySwitchyOmega.png
 description: ""
 ---
+![](/image/ProxySwitchyOmega.png)
 
 本文將以firefox為基礎，設置proxy 規則，讓 .onion 地址 走 tor routin，一般地址正常上網。
 
