@@ -5,9 +5,9 @@ date: 2020-10-9
 tags: [github action]
 categories: [github action]
 image: image/github-action-6.png
-description: ""
+description: "透過github action自動編譯、部署jekyll 網頁到 gh-pages"
 ---
-
+在過去的jekyll網站部署中，流程為在本地撰寫md文件，跑一下`bundle exec jekyll serve`取得編譯完成的網頁html檔案，再丟上去gh-page，每次手動都很麻煩。github 推出了自家的ci/cd 叫做github action，本教學教您如何透過github action自動編譯、部署jekyll 網頁到 gh-pages。
 ![](/image/github-action-6.png)
 
 [TOC]
