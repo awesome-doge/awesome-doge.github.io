@@ -264,9 +264,8 @@ image: image/jekyll1.png
 * 執行以下指令：
   ```
   gem install jekyll bundler
-  bundle exec jekyll serve
   bundle install
-  jekyll serve --trace
+  bundle exec jekyll serve
   ```
 
 結束
