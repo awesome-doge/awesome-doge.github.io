@@ -1,15 +1,37 @@
-name: Jekyll Deploy
+name: Testing the GitHub Pages publication
 
-on: [push]
+on:
+  push
 
-jobs: 
-  build_and_deploy:
-    runs-on: ubuntu-latest
+jobs:
+  jekyll:
+    runs-on: ubuntu-16.04
     steps:
-      - uses: actions/checkout@v1
-      - name: Build & Deploy to GitHub Pages
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-        uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+    - uses: actions/checkout@v2
+
+    # Use GitHub Actions' cache to shorten build times and decrease load on servers
+    - uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+
+    # Standard usage
+    - uses:  helaili/jekyll-action@2.0.4
+      env:
+        JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+
+    # Specify the Jekyll source location as a parameter
+    - uses: helaili/jekyll-action@2.0.4
+      env:
+        JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+      with:
+        jekyll_src: 'sample_site'
+
+    # Specify the target branch (optional)
+    - uses: helaili/jekyll-action@2.0.4
+      env:
+        JEKYLL_PAT: ${{ github.actor }}:${{ github.token }}
+      with:
+        target_branch: 'gh-pages'
