@@ -7,9 +7,9 @@ categories: [Tor Project]
 image: /image/ProxySwitchyOmega.png
 description: ""
 ---
-![](/image/ProxySwitchyOmega.png)
 
 本文將以firefox為基礎，設置proxy 規則，讓 .onion 地址 走 tor routin，一般地址正常上網。
+![](/image/ProxySwitchyOmega.png)
 
 純粹使用tor browser 有以下問題：
 * cookie 每次重新開啟都會被刪除，導致每次都要重新登入
