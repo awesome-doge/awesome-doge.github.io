@@ -10,8 +10,6 @@ description: "brew 對 xcode-select  有很強的依賴，所以必須尋找xcod
 
 最近很熱情裝了 mac os beta版本，結果許多brew update,brew install 遇到許多問題，因為brew 對 xcode-select  有很強的依賴，所以必須尋找xcode-select 的beta版本以解決該問題。
 
-# pre release mac os 版本 brew 修正
-
 **問題**
 可以看到`xcrun:`那列 系統是滿頭問號的
 ```
