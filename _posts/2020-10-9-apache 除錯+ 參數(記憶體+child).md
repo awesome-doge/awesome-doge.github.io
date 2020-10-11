@@ -21,7 +21,7 @@ log 位置：
 ```
 sudo tail -f /opt/bitnami/php/var/log/php-fpm.log
 sudo tail -f /opt/bitnami/apache2/logs/error_log
-sudo tail -f /home/g01360086/custom-restarts.log
+sudo tail -f /home/user/custom-restarts.log
 ```
 
 參數設定位置：
