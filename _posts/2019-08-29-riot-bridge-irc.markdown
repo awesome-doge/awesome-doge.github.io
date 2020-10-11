@@ -9,17 +9,18 @@ description: "Riot 透過bridge串連telegram,facebook,twitter,IRC"
 ---
 
 在我理解上Riot是一個通信軟體的客戶端，又或者可以是一個品牌但實際上技術核心是[matrix 協議](https://github.com/matrix-org)。matrix 協議本身是開源的，內容相當複雜，好像牽涉到了一些去中心化協議，還也許多端點加密的選項。Riot 本身自帶一些聊天用戶客群，本身與telegram,facebook,twitter,IRC，互不相關的，但可以透過各種機器人，各種bridge把大家串起來。
+![](/image/irc5.png)
 
-- [Riot 相關連結：](#riot-%e7%9b%b8%e9%97%9c%e9%80%a3%e7%b5%90)
-  - [客戶端](#%e5%ae%a2%e6%88%b6%e7%ab%af)
-- [Riot 中的 IRC Channel](#riot-%e4%b8%ad%e7%9a%84-irc-channel)
-  - [RIOT 自動幫你生成nickname 登入IRC](#riot-%e8%87%aa%e5%8b%95%e5%b9%ab%e4%bd%a0%e7%94%9f%e6%88%90nickname-%e7%99%bb%e5%85%a5irc)
-  - [Riot 中 IRC bridge](#riot-%e4%b8%ad-irc-bridge)
-  - [各大IRC server 大整合](#%e5%90%84%e5%a4%a7irc-server-%e5%a4%a7%e6%95%b4%e5%90%88)
-  - [展示](#%e5%b1%95%e7%a4%ba)
-- [Riot 登入自己的 IRC nickname](#riot-%e7%99%bb%e5%85%a5%e8%87%aa%e5%b7%b1%e7%9a%84-irc-nickname)
-- [Riot 登入 Telegram](#riot-%e7%99%bb%e5%85%a5-telegram)
-  - [Riot 番外篇 對接 Telegram 帳號](#riot-%e7%95%aa%e5%a4%96%e7%af%87-%e5%b0%8d%e6%8e%a5-telegram-%e5%b8%b3%e8%99%9f)
+- [Riot 相關連結：](#riot-相關連結)
+  - [客戶端](#客戶端)
+- [Riot 中的 IRC Channel](#riot-中的-irc-channel)
+  - [RIOT 自動幫你生成nickname 登入IRC](#riot-自動幫你生成nickname-登入irc)
+  - [Riot 中 IRC bridge](#riot-中-irc-bridge)
+  - [各大IRC server 大整合](#各大irc-server-大整合)
+  - [展示](#展示)
+- [Riot 登入自己的 IRC nickname](#riot-登入自己的-irc-nickname)
+- [Riot 登入 Telegram](#riot-登入-telegram)
+  - [Riot 番外篇 對接 Telegram 帳號](#riot-番外篇-對接-telegram-帳號)
 
 # Riot 相關連結：
 * [matrix 協議的客戶端列表](https://matrix.org/docs/projects/try-matrix-now):這列表多到爆炸。
