@@ -3,6 +3,7 @@ layout: page
 title: Tor
 permalink: /tor/
 ---
+[https://hackmd.io/XQOPkkIaS7aEmMfq_yPDGA](https://hackmd.io/XQOPkkIaS7aEmMfq_yPDGA)
 
 洋蔥網路的英文名字叫做The onion routing，主要功能也就只是把你的IP洗一洗，使得有心人士比較不容易對你的下手，是一種保障個人隱私的體現，未必是壞事。
 但是很多人常常認為洋蔥網路跟暗網士畫上等號的，這概念不OK，洋蔥網路提拱給你一個，很隱私的地方。
