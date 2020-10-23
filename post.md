@@ -61,3 +61,87 @@ The blockstream blockchain explorer has developed a version of the Lightning Net
 bluewallet 支援了 Payjoin ，使交易更匿名
 [https://blockstream.com/2018/08/08/en-improving-privacy-using-pay-to-endpoint/](https://blockstream.com/2018/08/08/en-improving-privacy-using-pay-to-endpoint/)
 
+---
+
+**2020/10/20**   
+原來現在的預設連線數量 是 10     
+The current default number of connections is 10
+
+![](https://i.imgur.com/cRM0T4D.png)
+
+
+---
+
+**2020/10/20**   
+
+只是在mac os big sur 編譯看看bitcoincore 結果遇到問題...
+
+Just compile and check bitcoin core on mac os big sur and I have problems...
+
+[https://github.com/bitcoin/bitcoin/blob/master/doc/build-osx.md](https://github.com/bitcoin/bitcoin/blob/master/doc/build-osx.md)
+
+[https://github.com/bitcoin/bitcoin/pull/20195](https://github.com/bitcoin/bitcoin/pull/20195)
+[https://github.com/bitcoin/bitcoin/issues/19411](https://github.com/bitcoin/bitcoin/issues/19411)
+
+---
+
+**2020/10/20**   
+
+bitcoin core 0.21.0
+* 廢除 Tor v2 支援Tor v3 
+* 啟動描述符錢包
+* 預設不在初始化一個比特幣錢包     
+
+bitcoin core 0.21.0
+* Abolish Tor v2 and support Tor v3
+* Start Descriptor Wallet
+* The default is not to initialize a Bitcoin wallet
+
+[https://github.com/bitcoin-core/bitcoin-devwiki/wiki/0.21.0-Release-Notes-Draft](https://github.com/bitcoin-core/bitcoin-devwiki/wiki/0.21.0-Release-Notes-Draft)
+
+
+---
+
+**2020/10/18** 
+
+大概花了我10個小時編修
+
+It took me about 10 hours to edit
+
+![](https://i.imgur.com/L1p8EB9.png)
+
+---
+
+**2020/10/14**    
+
+UTorrent v2 廢除sha1 改採用 sha256
+同時加入merkle tree結構
+
+UTorrent v2 abolished sha1 and adopted sha256
+At the same time join the merkle tree structure
+
+[https://blog.libtorrent.org/2020/09/bittorrent-v2/](https://blog.libtorrent.org/2020/09/bittorrent-v2/)
+
+---
+
+**2020/10/11**    
+
+OpenSSH 8.4 的版本 關閉了 ssh-rsa  的功能
+主要是因爲ssh-rsa 使用的是sha-1 ，在未來依舊可以使用rsa-sha2-256/512
+當然現在上車使用 橢圓曲線會更好  ssh-ed25519  ecdsa-sha2-nistp256/384/521
+
+The version of OpenSSH 8.4 closed the function of ssh-rsa
+Mainly because ssh-rsa uses sha-1, rsa-sha2-256/512 can still be used in the future
+Of course, it would be better to use elliptic curve in the car now ssh-ed25519 ecdsa-sha2-nistp256/384/521
+
+[https://portswigger.net/daily-swig/collision-avoidance-openssh-lays-out-plans-to-ditch-aging-sha-1-hashing-algorithm](https://portswigger.net/daily-swig/collision-avoidance-openssh-lays-out-plans-to-ditch-aging-sha-1-hashing-algorithm)
+
+---
+
+**2020/09/22**
+
+原來 礦池分潤這麼多種...
+
+It turns out that there are so many kinds of mining pools...
+
+[https://en.bitcoin.it/wiki/Comparison_of_mining_pools](https://en.bitcoin.it/wiki/Comparison_of_mining_pools)
