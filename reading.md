@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Reading"
-permalink: /reading.html
+permalink: /reading/
 ---
 
 * [fanquake/core-review](https://github.com/fanquake/core-review) - 參與bitcoin core的工具清單
