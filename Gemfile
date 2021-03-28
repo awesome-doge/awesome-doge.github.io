@@ -7,3 +7,4 @@ group :jekyll_plugins do
     gem "jekyll-sitemap"
     gem "jekyll-archives"
 end
+gem "webrick", "~> 1.7"

@@ -264,6 +264,7 @@ image: image/jekyll1.png
 * 執行以下指令：
   ```
   gem install jekyll bundler
+  bundle add webrick
   bundle install
   bundle exec jekyll serve
   ```
