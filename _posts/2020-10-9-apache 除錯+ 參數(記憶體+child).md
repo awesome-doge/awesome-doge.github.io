@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "apache 除錯+ 參數(記憶體+child)"
+title: "apache 除錯+ 參數 (記憶體+child)"
 date: 2020-10-9
 tags: [wordpress]
 categories: [wordpress]

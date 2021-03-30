@@ -21,7 +21,7 @@ My research interests include bitcoin, blockchain, onion networks, cryptography,
 ### 聯繫我
 - Facebook: <a href="https://www.facebook.com/dogewwoww">嗷嗚</a>
 - Freenode IRC: awesome-doge
-- facebook: [https://www.facebook.com/pw.chen.bitcoiner](https://www.facebook.com/pw.chen.bitcoiner)
+- facebook: [pw.chen.bitcoiner](https://www.facebook.com/pw.chen.bitcoiner)
 
 研究領域：
 * 比特幣 # 地址生成、網路、交易、閃電網路、腦錢包攻擊、交易監管

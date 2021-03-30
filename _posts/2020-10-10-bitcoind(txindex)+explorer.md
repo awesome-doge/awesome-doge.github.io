@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "bitcoind(txindex)+rpc explorer"
+title: "bitcoind(txindex) + rpc explorer"
 date: 2020-10-10
 tags: [bitcoin]
 categories: [bitcoin]
