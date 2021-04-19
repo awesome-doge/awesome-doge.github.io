@@ -36,3 +36,4 @@ IRI是internationalized resource identifier的缩写。IRI是URI的国际化版�
 參考文獻：
 * IRI, URI, URL, URN and their differences, https://fusion.cs.uni-jena.de/fusion/blog/2016/11/18/iri-uri-url-urn-and-their-differences/
 * https://blog.csdn.net/ttyy1112/article/details/105216380
+*  Internationalized Resource Identifiers (IRIs), https://tools.ietf.org/html/rfc3987
