@@ -4,6 +4,7 @@ title: URI, URL, URN
 date: '2021-04-19 12:00:54 +0800'
 ---
 
+![](https://i.imgur.com/YcdVaKb.png)
 * URI = Uniform Resource Identifier 统一资源标志符
 * URL = Uniform Resource Locator 统一资源定位符
 * URN = Uniform Resource Name 统一资源名称
