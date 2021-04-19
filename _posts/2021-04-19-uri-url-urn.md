@@ -34,6 +34,24 @@ IRI是internationalized resource identifier的缩写。IRI是URI的国际化版�
 
 
 參考文獻：
+
+IRI, URI, URL, URN
 * IRI, URI, URL, URN and their differences, https://fusion.cs.uni-jena.de/fusion/blog/2016/11/18/iri-uri-url-urn-and-their-differences/
 * https://blog.csdn.net/ttyy1112/article/details/105216380
 *  Internationalized Resource Identifiers (IRIs), https://tools.ietf.org/html/rfc3987
+
+Json-LD
+* https://www.slideshare.net/gkellogg1/favorites
+* https://www.slideshare.net/gkellogg1/presentations
+* https://json-ld.org/learn.html
+* https://www.w3.org/TR/json-ld11/
+
+
+HTTPRange-14
+* https://en.wikipedia.org/wiki/HTTPRange-14
+
+LinkedData
+* https://www.w3.org/wiki/LinkedData
+
+NFT Use case
+* https://github.com/interNFT/nft-rfc/blob/main/nft-rfc-002.md
