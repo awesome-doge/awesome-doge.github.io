@@ -40,6 +40,10 @@ IRI, URI, URL, URN
 * https://blog.csdn.net/ttyy1112/article/details/105216380
 *  Internationalized Resource Identifiers (IRIs), https://tools.ietf.org/html/rfc3987
 
+RDF
+* RDF 1.1 Concepts and Abstract Syntax, https://www.w3.org/TR/rdf11-concepts/
+* W3CHINA.ORG开放翻译计划（OTP）, http://zh.transwiki.org/cn/rdfprimer.htm
+
 Json-LD
 * https://www.slideshare.net/gkellogg1/favorites
 * https://www.slideshare.net/gkellogg1/presentations
