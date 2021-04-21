@@ -46,6 +46,8 @@ date: '2021-04-20 16:12:59 +0800'
     ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421112857.png)
     ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421112916.png)
     ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421112936.png)
+* [DID 去中心化數字身份](https://www.chainnews.com/zh-hant/articles/855126602963.htm)
+* [did.baidu](https://did.baidu.com/did-concepts/)
 
 **其他**
 - [w3c-ccg.github.io/amira/](https://w3c-ccg.github.io/amira/)
