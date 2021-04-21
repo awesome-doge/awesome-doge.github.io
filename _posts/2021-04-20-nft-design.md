@@ -8,11 +8,11 @@ date: '2021-04-20 16:12:59 +0800'
 - [DID 重要文獻](#did-重要文獻)
 - [DID 工具包 spruceid](#did-工具包-spruceid)
 - [DID 架構定位](#did-架構定位)
-  - [**會議論文**](#會議論文)
+  - [會議論文](#會議論文)
   - [黑客松作品](#黑客松作品)
   - [btcr](#btcr)
   - [Use Case](#use-case)
-- [**代幣分類架構圖**](#代幣分類架構圖)
+- [代幣分類架構圖](#代幣分類架構圖)
 - [系統設計與實現](#系統設計與實現)
 
 
@@ -87,7 +87,7 @@ ERC725/735 identities
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421104440.png)
 
 
-### **會議論文**
+### 會議論文
 * [Rebooting the Web of Trust VI: Santa Barbara (March 2018)](https://github.com/WebOfTrustInfo/rwot6-santabarbara)
 * [Rebooting the Web of Trust VII: Toronto (September 2018)
 ](https://github.com/WebOfTrustInfo/rwot7-toronto)
@@ -131,7 +131,7 @@ ERC725/735 identities
 
 ---
 
-## **代幣分類架構圖**
+## 代幣分類架構圖
 > [InterWorkAlliance/TokenTaxonomyFramework/blob/main/token-taxonomy.md](https://github.com/InterWorkAlliance/TokenTaxonomyFramework/blob/main/token-taxonomy.md)
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210420161424.png?token=AM6DPO2FVYDXSPANC6WFLSDAP2GZ4)
