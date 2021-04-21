@@ -20,7 +20,7 @@ date: '2021-04-20 16:12:59 +0800'
   > 參考文獻
   > * [維基百科](https://zh.wikipedia.org/wiki/%E8%B3%87%E6%BA%90%E6%8F%8F%E8%BF%B0%E6%A1%86%E6%9E%B6)
   > * [w3c 中文](http://zh.transwiki.org/cn/rdfprimer.htm)
-  
+
 * IRI (Json base)
   * URI
     * URL
@@ -101,7 +101,9 @@ eg: device leg summer source assault drill pilot include excess sausage immense 
 - [wiki/Turtle_(syntax)](https://en.wikipedia.org/wiki/Turtle_(syntax))
 
 ERC725/735 identities
-* [https://github.com/ERC725Alliance/ERC725/blob/master/docs/use-cases.md](https://github.com/ERC725Alliance/ERC725/blob/master/docs/use-cases.md)
+* [ERC725Alliance/ERC725/blob/master/docs/use-cases.md](https://github.com/ERC725Alliance/ERC725/blob/master/docs/use-cases.md)
+* [ethereum/eips/issues/735](https://github.com/ethereum/eips/issues/735)
+* [https://eth.wiki/ideas/erc-735](https://eth.wiki/ideas/erc-735)
 
 ## DID 工具大禮包 spruceid
 - [spruceid](https://github.com/spruceid/)
