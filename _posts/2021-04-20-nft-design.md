@@ -105,7 +105,7 @@ ERC725/735 identities
 * [WebOfTrustInfo/btcr-did-tools-js](https://github.com/WebOfTrustInfo/btcr-did-tools-js)
 * [WebOfTrustInfo/btcr-tx-playground.github.io](https://github.com/WebOfTrustInfo/btcr-tx-playground.github.io)
 * [WebOfTrustInfo/txref-conversion-js](https://github.com/WebOfTrustInfo/txref-conversion-js)
-* [decentralized-identity/uni-resolver-driver-did-btcr](https://github.com/decentralized-identity/uni-resolver-driver-did-btcr)
+* [**decentralized-identity/uni-resolver-driver-did-btcr**](https://github.com/decentralized-identity/uni-resolver-driver-did-btcr)
 * [WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/btcr_0_1.pdf](https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/btcr_0_1.pdf)
 * [w3c-ccg.github.io/didm-btcr/](https://w3c-ccg.github.io/didm-btcr/)
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421110641.png)
