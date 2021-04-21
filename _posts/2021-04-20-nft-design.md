@@ -20,6 +20,7 @@ date: '2021-04-20 16:12:59 +0800'
   > 參考文獻
   > * [維基百科](https://zh.wikipedia.org/wiki/%E8%B3%87%E6%BA%90%E6%8F%8F%E8%BF%B0%E6%A1%86%E6%9E%B6)
   > * [w3c 中文](http://zh.transwiki.org/cn/rdfprimer.htm)
+  
 * IRI (Json base)
   * URI
     * URL
@@ -116,7 +117,8 @@ ERC725/735 identities
 > [ssimeetup.org/dids-demystified-hands-intro-dids-btcr-did-method-kim-hamilton-duffy-webinar-5/](https://ssimeetup.org/dids-demystified-hands-intro-dids-btcr-did-method-kim-hamilton-duffy-webinar-5/)
 > [medium.com/@kimdhamilton](https://medium.com/@kimdhamilton)
 > [medium.com/@kimdhamilton/btcr-did-method-updates-d0fd14386139](https://medium.com/@kimdhamilton/btcr-did-method-updates-d0fd14386139)
-> 
+
+
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421103132.png)
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421103729.png)
@@ -147,6 +149,8 @@ ERC725/735 identities
 
 **Use Case**
 > [w3c.github.io/did-spec-registries/#did-methods](https://w3c.github.io/did-spec-registries/#did-methods)
+
+
 - 網易 [netease-chain/Future-DID-Method-Specification/blob/main/README.md](https://github.com/netease-chain/Future-DID-Method-Specification/blob/main/README.md)
 - IBM Digital Health Pass DID方法（hpass）[IBM/hpass/blob/main/doc/did-spec.md](https://github.com/IBM/hpass/blob/main/doc/did-spec.md)
 - Binance DID方法規範 [ontology-tech/DID-method-specs/blob/master/did-bnb/DID-Method-bnb.md](https://github.com/ontology-tech/DID-method-specs/blob/master/did-bnb/DID-Method-bnb.md)
