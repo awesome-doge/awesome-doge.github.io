@@ -115,6 +115,8 @@ ERC725/735 identities
 
 **重要**
 幣安DID 設計：[ontology-tech/DID-solidity/binance-did/doc/zh/design_zh.md](https://github.com/ontology-tech/DID-solidity/blob/binance-did/doc/zh/design_zh.md)
+* [proxy-patterns](https://blog.openzeppelin.com/proxy-patterns/)
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421153605.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421153736.png)
 
 清單：
 - 網易 [netease-chain/Future-DID-Method-Specification/blob/main/README.md](https://github.com/netease-chain/Future-DID-Method-Specification/blob/main/README.md)
@@ -139,7 +141,7 @@ ERC725/735 identities
 ---
 
 ## 代幣分類架構圖
-> [InterWorkAlliance/TokenTaxonomyFramework/blob/main/token-taxonomy.md](https://github.com/InterWorkAlliance/TokenTaxonomyFramework/blob/main/token-taxonomy.md)
+[InterWorkAlliance/TokenTaxonomyFramework](https://github.com/InterWorkAlliance/TokenTaxonomyFramework/blob/main/token-taxonomy.md)
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210420161424.png?token=AM6DPO2FVYDXSPANC6WFLSDAP2GZ4)
 
