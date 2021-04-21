@@ -172,7 +172,7 @@ ERC725/735 identities
 
 **特色化應用**：
 
-結合 HD Wallet 結構
+結合 HD Wallet 結構 [GrgChain/DID-method-specs](https://github.com/GrgChain/DID-method-specs/blob/master/README.md)
 
 ```jsx
 eg: device leg summer source assault drill pilot include excess sausage immense year m/1 m/2
