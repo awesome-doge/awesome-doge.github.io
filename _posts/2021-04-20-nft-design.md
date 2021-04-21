@@ -13,6 +13,7 @@ date: '2021-04-20 16:12:59 +0800'
   - [btcr](#btcr)
   - [Use Case](#use-case)
 - [代幣分類架構圖](#代幣分類架構圖)
+- [Claims](#claims)
 - [系統設計與實現](#系統設計與實現)
 
 
@@ -112,7 +113,10 @@ ERC725/735 identities
 ### Use Case
 > [w3c.github.io/did-spec-registries/#did-methods](https://w3c.github.io/did-spec-registries/#did-methods)
 
+**重要**
+幣安DID 設計：[ontology-tech/DID-solidity/binance-did/doc/zh/design_zh.md](https://github.com/ontology-tech/DID-solidity/blob/binance-did/doc/zh/design_zh.md)
 
+清單：
 - 網易 [netease-chain/Future-DID-Method-Specification/blob/main/README.md](https://github.com/netease-chain/Future-DID-Method-Specification/blob/main/README.md)
 - IBM Digital Health Pass DID方法（hpass）[IBM/hpass/blob/main/doc/did-spec.md](https://github.com/IBM/hpass/blob/main/doc/did-spec.md)
 - Binance DID方法規範 [ontology-tech/DID-method-specs/blob/master/did-bnb/DID-Method-bnb.md](https://github.com/ontology-tech/DID-method-specs/blob/master/did-bnb/DID-Method-bnb.md)
@@ -140,6 +144,12 @@ ERC725/735 identities
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210420161424.png?token=AM6DPO2FVYDXSPANC6WFLSDAP2GZ4)
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210420162004.png?token=AM6DPO4TW2EI4PPBXM3CLUDAP2HPE)
+
+---
+
+## Claims
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421140855.png) ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421140958.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-21%20%E4%B8%8B%E5%8D%883.26.48.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-21%20%E4%B8%8B%E5%8D%883.25.46.png)
 
 ---
 
