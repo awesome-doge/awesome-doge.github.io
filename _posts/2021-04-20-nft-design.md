@@ -4,6 +4,8 @@ title: NFT Design
 date: '2021-04-20 16:12:59 +0800'
 ---
 
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421175124.png)
+
 - [數據描述的方法](#數據描述的方法)
 - [DID 重要文獻](#did-重要文獻)
 - [DID 工具包 spruceid](#did-工具包-spruceid)
@@ -49,7 +51,7 @@ date: '2021-04-20 16:12:59 +0800'
     ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421112936.png)
 * [DID 去中心化數字身份](https://www.chainnews.com/zh-hant/articles/855126602963.htm)
 * [did.baidu](https://did.baidu.com/did-concepts/)
-  > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165145.png)j![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165103.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165445.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165641.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165721.png)
+  > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165145.png)j![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165103.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165445.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165641.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165721.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165827.png)
 * [告別網路個資外洩-去中心化分散式身份識別 W3C Decentralized Identifiers (DIDs)技術探討](https://www.syscom.com.tw/ePaper_New_Content.aspx?id=784&EPID=271&TableName=sgEPArticle)
 
 **其他**
