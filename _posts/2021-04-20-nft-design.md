@@ -82,10 +82,25 @@ eg: device leg summer source assault drill pilot include excess sausage immense 
 * [w3.org/TR/vc-data-model](https://www.w3.org/TR/vc-data-model/)
 * [w3.org/TR/2021/NOTE-did-spec-registries-20210409/#blockchainaccountid](https://www.w3.org/TR/2021/NOTE-did-spec-registries-20210409/#blockchainaccountid)
 * [w3c-ccg.github.io/did-primer](https://w3c-ccg.github.io/did-primer/)
+* [w3.org/TR/2021/NOTE-did-use-cases-20210317/](https://www.w3.org/TR/2021/NOTE-did-use-cases-20210317/)
+    > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421112756.png)
+    ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421112830.png)
+    ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421112857.png)
+    ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421112916.png)
+    ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421112936.png)
 
 **其他**
 - [w3c-ccg.github.io/amira/](https://w3c-ccg.github.io/amira/)
 - [en.bitcoin.it/wiki/BIP_0136](https://en.bitcoin.it/wiki/BIP_0136)
+- [w3schools.com/tags/tag_link.asp](https://www.w3schools.com/tags/tag_link.asp)
+- [w3schools.com/html/html_links.asp](https://www.w3schools.com/html/html_links.asp)
+- [hackmd.io/5c0ksa5sRBW9EwtRbJeiag](https://hackmd.io/5c0ksa5sRBW9EwtRbJeiag)
+- [wiki/HTTPRange-14](https://en.wikipedia.org/wiki/HTTPRange-14)
+- [wiki/Resource_Description_Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework)
+- [wiki/Turtle_(syntax)](https://en.wikipedia.org/wiki/Turtle_(syntax))
+
+ERC725/735 identities
+* [https://github.com/ERC725Alliance/ERC725/blob/master/docs/use-cases.md](https://github.com/ERC725Alliance/ERC725/blob/master/docs/use-cases.md)
 
 ## DID 工具大禮包 spruceid
 - [spruceid](https://github.com/spruceid/)
