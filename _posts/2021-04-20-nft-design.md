@@ -116,9 +116,9 @@ ERC725/735 identities
 
 ## DID 架構定位
 
-> [ssimeetup.org/dids-demystified-hands-intro-dids-btcr-did-method-kim-hamilton-duffy-webinar-5/](https://ssimeetup.org/dids-demystified-hands-intro-dids-btcr-did-method-kim-hamilton-duffy-webinar-5/)
-> [medium.com/@kimdhamilton](https://medium.com/@kimdhamilton)
-> [medium.com/@kimdhamilton/btcr-did-method-updates-d0fd14386139](https://medium.com/@kimdhamilton/btcr-did-method-updates-d0fd14386139)
+> * [ssimeetup.org/dids-demystified-hands-intro-dids-btcr-did-method-kim-hamilton-duffy-webinar-5/](https://ssimeetup.org/dids-demystified-hands-intro-dids-btcr-did-method-kim-hamilton-duffy-webinar-5/)
+> * [medium.com/@kimdhamilton](https://medium.com/@kimdhamilton)
+> * [medium.com/@kimdhamilton/btcr-did-method-updates-d0fd14386139](https://medium.com/@kimdhamilton/btcr-did-method-updates-d0fd14386139)
 
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421103132.png)
