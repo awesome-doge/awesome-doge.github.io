@@ -5,9 +5,9 @@ date: '2021-04-19 12:00:54 +0800'
 ---
 
 ![](https://i.imgur.com/YcdVaKb.png)
-* URI = Uniform Resource Identifier 统一资源标志符
-* URL = Uniform Resource Locator 统一资源定位符
-* URN = Uniform Resource Name 统一资源名称
+* URI = Uniform Resource Identifier 統一資源標誌符
+* URL = Uniform Resource Locator 統一資源定位符
+* URN = Uniform Resource Name 統一資源名稱
 
 ```
 IRI is a superset of URI (IRI ⊃ URI)
@@ -16,21 +16,21 @@ URI is a superset of URN (URI ⊃ URN)
 URL and URN are disjoint (URL ∩ URN = ∅)
 ```
  
-大白话，就是URI是抽象的定义，不管用什么方法表示，只要能定位一个资源，就叫URI，本来设想的的使用两种方法定位：
+大白話，就是URI是抽象的定義，不管用什麼方法錶示，隻要能定位一個資源，就叫URI，本來設想的的使用兩種方法定位：
 1. URL，用地址定位；
-2. URN 用名称定位。举个例子：去村子找个具体的人（URI），如果用地址：某村多少号房子第几间房的主人 就是URL， 如果用身份证号+名字 去找就是URN了。结果就是 目前WEB上就URL流行开了，平常见得URI 基本都是URL。
+2. URN 用名稱定位。舉個例子：去村子找個具體的人（URI），如果用地址：某村多少號房子第幾間房的主人 就是URL， 如果用身份證號+名字 去找就是URN了。結果就是 目前WEB上就URL流行開了，平常見得URI 基本都是URL。
 
-许多人知道URI是一种类似URL的东西，但是并不是真正知道URI和URL的关系，或者URI跟其他缩略词IRI和URN之间的关系。
+許多人知道URI是一種類似URL的東西，但是並不是真正知道URI和URL的關係，或者URI跟其他縮略詞IRI和URN之間的關係。
 
-大多数人对URL(uniform resource locators)比较熟悉，如http://…, ftp://…, \mailto:…​:. 简单来说URL表示一个资源的地址。
+大多數人對URL(uniform resource locators)比較熟悉，如http://…, ftp://…, \mailto:…​:. 簡單來說URL錶示一個資源的地址。
 
-URI(uniform resource identifier) 是一个URL或URN。因此要想完全理解URI，我们需要首先理解什么是URN。
+URI(uniform resource identifier) 是一個URL或URN。因此要想完全理解URI，我們需要首先理解什麼是URN。
 
-URN是uniform resource name 的缩写。在世界上有许多“唯一标识符”模式，例如，ISBNs(globally unique for books)，social security numbers(国家范围内唯一）,customer numbers(在一个公司的客户数据库中唯一) 以及 电话号码。 每一个“唯一标识符”模式都有自己的编码方式。URN是对各种不同“唯一标识符”模式的统一包装。URN的语法是 urn:<scheme-name>:<unique-identifier>. 一个URN码唯一标识了一个资源，如一本书、一个人或一台设备。URN码本身并不指定资源的地址。取而代之的，它假设有一个注册器提供资源URN到它的地址的匹配关系。URN规范并没有规定注册器的格式，它可以是数据库、可以是服务器应用、可以是一张图表或其他方便的任何东西。一些RUNs的假设示例有：urn:employee:08765245, urn:customer:uk:3458:hul8 and urn:foo:0000-0000-9E59-0000-5E-2。URN的<scheme-name>(示例中的employee、customer、foo)部分暗含了解析和解释<unique-identifier>的方法。一个武断的URN是没有意义的，除非：(1) 你知道<scheme-name>暗含的语义， 并且(2) 你可以访问<scheme-name>的注册器。一个注册器不一定是公开的或全球可访问的。如 urn:employee:08765245 可能仅在某个特定的公司内有意义。
+URN是uniform resource name 的縮寫。在世界上有許多“唯一標識符”模式，例如，ISBNs(globally unique for books)，social security numbers(國家範圍內唯一）,customer numbers(在一個公司的客戶數據庫中唯一) 以及 電話號碼。 每一個“唯一標識符”模式都有自己的編碼方式。URN是對各種不同“唯一標識符”模式的統一包裝。URN的文法是 urn:<scheme-name>:<unique-identifier>. 一個URN碼唯一標識了一個資源，如一本書、一個人或一臺設備。URN碼本身並不指定資源的地址。取而代之的，它假設有一個註冊器提供資源URN到它的地址的匹配關係。URN規範並冇有規定註冊器的格式，它可以是數據庫、可以是服務器應用、可以是一張圖錶或其他方便的任何東西。一些RUNs的假設示例有：urn:employee:08765245, urn:customer:uk:3458:hul8 and urn:foo:0000-0000-9E59-0000-5E-2。URN的<scheme-name>(示例中的employee、customer、foo)部分暗含了解析和解釋<unique-identifier>的方法。一個武斷的URN是冇有意義的，除非：(1) 你知道<scheme-name>暗含的語義， 並且(2) 你可以訪問<scheme-name>的註冊器。一個註冊器不一定是公開的或全球可訪問的。如 urn:employee:08765245 可能僅在某個特定的公司內有意義。
 
-现在，URNs已经不像URLs那样流行了，因此URI被广泛的误用为URL的同义词。
+現在，URNs已經不像URLs那樣流行了，因此URI被廣泛的誤用為URL的同義詞。
 
-IRI是internationalized resource identifier的缩写。IRI是URI的国际化版本。特别的，一个URI包含US-ASCII字符集中的字母和数字，除此之外，IRI还包含欧洲字符、希腊字符、中文等。
+IRI是internationalized resource identifier的縮寫。IRI是URI的國際化版本。特別的，一個URI包含US-ASCII字符集中的字母和數字，除此之外，IRI還包含歐洲字符、希臘字符、中文等。
 
 
 參考文獻：
@@ -40,9 +40,12 @@ IRI, URI, URL, URN
 * https://blog.csdn.net/ttyy1112/article/details/105216380
 *  Internationalized Resource Identifiers (IRIs), https://tools.ietf.org/html/rfc3987
 
+A Universally Unique IDentifier (UUID) URN Namespace
+* https://tools.ietf.org/html/rfc4122
+
 RDF
 * RDF 1.1 Concepts and Abstract Syntax, https://www.w3.org/TR/rdf11-concepts/
-* W3CHINA.ORG开放翻译计划（OTP）, http://zh.transwiki.org/cn/rdfprimer.htm
+* W3CHINA.ORG開放翻譯計畫（OTP）, http://zh.transwiki.org/cn/rdfprimer.htm
 
 Json-LD
 * https://www.slideshare.net/gkellogg1/favorites
