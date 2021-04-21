@@ -54,7 +54,9 @@ date: '2021-04-20 16:12:59 +0800'
   > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165145.png)j![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165103.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165445.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165641.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165721.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421165827.png)
 * [告別網路個資外洩-去中心化分散式身份識別 W3C Decentralized Identifiers (DIDs)技術探討](https://www.syscom.com.tw/ePaper_New_Content.aspx?id=784&EPID=271&TableName=sgEPArticle)
 * [microsoft](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/toward-scalable-decentralized-identifier-systems/ba-p/560168)
-    > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421181417.png)
+    > * ion
+    > * [sidetree](https://github.com/decentralized-identity/sidetree/tree/master/docs)
+    > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421181417.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421182521.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421182620.png)
 
 **其他**
 - [w3c-ccg.github.io/amira/](https://w3c-ccg.github.io/amira/)
