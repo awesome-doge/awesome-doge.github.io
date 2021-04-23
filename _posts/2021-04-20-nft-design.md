@@ -113,6 +113,26 @@ ERC725/735 identities
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.47.04.png)
 
+---
+
+[簡短](https://www.youtube.com/watch?v=SHuRRaOBMz4)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.52.15.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.54.14.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.54.51.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.55.40.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.56.26.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.57.21.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.58.30.png)
+
+---
+
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421103132.png)
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421103729.png)
