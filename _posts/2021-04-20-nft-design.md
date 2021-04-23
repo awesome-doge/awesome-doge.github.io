@@ -56,7 +56,7 @@ date: '2021-04-20 16:12:59 +0800'
 * [microsoft](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/toward-scalable-decentralized-identifier-systems/ba-p/560168)
     > * ion
     > * [sidetree](https://github.com/decentralized-identity/sidetree/tree/master/docs)
-    > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421181417.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421182521.png)![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421182620.png)
+    > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421181417.png) ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421182521.png) ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421182620.png)
 
 **其他**
 - [w3c-ccg.github.io/amira/](https://w3c-ccg.github.io/amira/)
@@ -88,6 +88,15 @@ ERC725/735 identities
 > * [medium.com/@kimdhamilton](https://medium.com/@kimdhamilton)
 > * [medium.com/@kimdhamilton/btcr-did-method-updates-d0fd14386139](https://medium.com/@kimdhamilton/btcr-did-method-updates-d0fd14386139)
 
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.02.15.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.33.29.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.34.50.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.35.50.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.37.58.png)
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421103132.png)
 
