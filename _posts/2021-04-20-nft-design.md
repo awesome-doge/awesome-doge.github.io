@@ -60,6 +60,7 @@ date: '2021-04-20 16:12:59 +0800'
     > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.28.22.png)
     > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.29.54.png)
     > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.33.41.png)
+  
 
 **其他**
 - [w3c-ccg.github.io/amira/](https://w3c-ccg.github.io/amira/)
@@ -118,6 +119,18 @@ ERC725/735 identities
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.47.04.png)
 
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.42.17.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.43.27.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.44.08.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.44.38.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.46.05.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.46.47.png)
+
 ---
 
 [簡短](https://www.youtube.com/watch?v=SHuRRaOBMz4)
@@ -148,6 +161,21 @@ ERC725/735 identities
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.56.26.png)
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.57.21.png)
+
+[Decentralized Identity: No Promises Edition
+](https://www.youtube.com/watch?v=ybKpC1xYabU)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.48.44.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.50.00.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.50.47.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%883.44.09.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%883.46.41.png)
+
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%883.47.20.png)
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.25.26.png)
 
