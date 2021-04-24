@@ -88,7 +88,9 @@ ERC725/735 identities
 > * [medium.com/@kimdhamilton](https://medium.com/@kimdhamilton)
 > * [medium.com/@kimdhamilton/btcr-did-method-updates-d0fd14386139](https://medium.com/@kimdhamilton/btcr-did-method-updates-d0fd14386139)
 
-**[did 作者說明文件](https://www.youtube.com/watch?v=SHuRRaOBMz4)**
+* [Decentralized identifiers (DIDs) fundamentals and deep dive](https://www.youtube.com/watch?v=SHuRRaOBMz4)
+* [Decentralized Identifiers (DIDs) - The Fundamental Building Block of Self Sovereign Identity](https://www.youtube.com/watch?v=Jcfy9wd5bZI)
+
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.02.15.png)
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.33.29.png)
