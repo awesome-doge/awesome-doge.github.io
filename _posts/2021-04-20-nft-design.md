@@ -57,6 +57,9 @@ date: '2021-04-20 16:12:59 +0800'
     > * ion
     > * [sidetree](https://github.com/decentralized-identity/sidetree/tree/master/docs)
     > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421181417.png) ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421182521.png) ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421182620.png)
+    > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.28.22.png)
+    > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.29.54.png)
+    > ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.33.41.png)
 
 **其他**
 - [w3c-ccg.github.io/amira/](https://w3c-ccg.github.io/amira/)
@@ -140,11 +143,17 @@ ERC725/735 identities
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.55.40.png)
 
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.16.50.png)
+
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.56.26.png)
 
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.57.21.png)
 
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-24%20%E4%B8%8B%E5%8D%882.25.26.png)
+
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/%E6%88%AA%E5%9C%96%202021-04-23%20%E4%B8%8B%E5%8D%881.58.30.png)
+
+
 
 ---
 
