@@ -4,6 +4,8 @@ title: NFT Design
 date: '2021-04-20 16:12:59 +0800'
 ---
 
+![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210427085754.png)
+
 ![](https://raw.githubusercontent.com/awesome-doge/picgo/main/20210421175124.png)
 
 - [數據描述的方法](#數據描述的方法)
