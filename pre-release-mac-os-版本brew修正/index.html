@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pre release mac os 版本 brew 修正 – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="最近很熱情裝了 mac os beta版本，結果許多brew update,brew install 遇到許多問題，因為brew 對 xcode-select  有很強的依賴，所以必須尋找xcode-select 的beta版本以解決該問題。
+" />
+    <meta property="og:description" content="最近很熱情裝了 mac os beta版本，結果許多brew update,brew install 遇到許多問題，因為brew 對 xcode-select  有很強的依賴，所以必須尋找xcode-select 的beta版本以解決該問題。
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="pre release mac os 版本 brew 修正" />
+    <meta property="twitter:title" content="pre release mac os 版本 brew 修正" />
+    
+    
+    
+    <meta property="og:image" content="https://awesome-doge.github.io/image/xcode-select.png">
+    
+    
+    
+    <meta content="brew 對 xcode-select  有很強的依賴，所以必須尋找xcode-select 的beta版本以解決該問題。" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>pre release mac os 版本 brew 修正 | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="pre release mac os 版本 brew 修正" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="brew 對 xcode-select 有很強的依賴，所以必須尋找xcode-select 的beta版本以解決該問題。" />
+<meta property="og:description" content="brew 對 xcode-select 有很強的依賴，所以必須尋找xcode-select 的beta版本以解決該問題。" />
+<link rel="canonical" href="https://awesome-doge.github.io/pre-release-mac-os-%E7%89%88%E6%9C%ACbrew%E4%BF%AE%E6%AD%A3/" />
+<meta property="og:url" content="https://awesome-doge.github.io/pre-release-mac-os-%E7%89%88%E6%9C%ACbrew%E4%BF%AE%E6%AD%A3/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:image" content="https://awesome-doge.github.io/image/xcode-select.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-09T00:00:00+00:00" />
+<meta name="twitter:card" content="Cypherpunks" />
+<meta property="twitter:image" content="https://awesome-doge.github.io/image/xcode-select.png" />
+<meta property="twitter:title" content="pre release mac os 版本 brew 修正" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"brew 對 xcode-select 有很強的依賴，所以必須尋找xcode-select 的beta版本以解決該問題。","headline":"pre release mac os 版本 brew 修正","dateModified":"2020-10-09T00:00:00+00:00","datePublished":"2020-10-09T00:00:00+00:00","url":"https://awesome-doge.github.io/pre-release-mac-os-%E7%89%88%E6%9C%ACbrew%E4%BF%AE%E6%AD%A3/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/pre-release-mac-os-%E7%89%88%E6%9C%ACbrew%E4%BF%AE%E6%AD%A3/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"image":"https://awesome-doge.github.io/image/xcode-select.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>pre release mac os 版本 brew 修正</h1>
+
+  <div class="entry">
+    <p>最近很熱情裝了 mac os beta版本，結果許多brew update,brew install 遇到許多問題，因為brew 對 xcode-select  有很強的依賴，所以必須尋找xcode-select 的beta版本以解決該問題。</p>
+
+<p><strong>問題</strong>
+可以看到<code class="language-plaintext highlighter-rouge">xcrun:</code>那列 系統是滿頭問號的</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~  brew config
+HOMEBREW_VERSION: 2.5.5-19-g87942d1
+ORIGIN: https://github.com/Homebrew/brew
+HEAD: 87942d17482d41568ef3c10b71a1196c08305a1c
+Last commit: 70 minutes ago
+Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
+Core tap HEAD: 62667b011c5f166af0285955de56c4672f6b0145
+Core tap last commit: 39 minutes ago
+Core tap branch: master
+HOMEBREW_PREFIX: /usr/local
+HOMEBREW_CASK_OPTS: []
+HOMEBREW_MAKE_JOBS: 4
+Homebrew Ruby: 2.6.3 =&gt; /usr/local/Homebrew/Library/Homebrew/vendor/portable-ruby/2.6.3_2/bin/ruby
+CPU: quad-core 64-bit kabylake
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+Clang: N/A
+Git: 2.28.0 =&gt; /usr/local/bin/git
+Curl: 7.64.1 =&gt; /usr/bin/curl
+macOS: 11.0-x86_64
+CLT: N/A
+Xcode: 12.2 =&gt; /Applications/Xcode-beta.app/Contents/Developer
+</code></pre></div></div>
+<p><strong>安裝gcc 失敗的慘況</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install gcc
+Warning: You are using macOS 11.0.
+We do not provide support for this pre-release version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Discourse, Twitter or IRC. You are responsible for resolving any issues you
+experience while you are running this pre-release version.
+</code></pre></div></div>
+<p><strong>網路上查到說要安裝xcode-select</strong>，但是系統跳出來的所有安裝版本都是正式版本，測試版的mac os 無法正常安裝</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xcode-select --install
+xcode-select: note: install requested for command line developer tools
+</code></pre></div></div>
+<h2 id="解決方案">解決方案</h2>
+<p>前往 <a href="https://developer.apple.com/download/more/">https://developer.apple.com/download/more/</a> 下載需要的版本 Command_Line_Tools_for_Xcode_12.2_beta_2.dmg 安裝他</p>
+
+<p><img src="/image/xcode-select.png" alt="" /></p>
+
+<p><strong>結果可以跑了</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ brew install gcc
+Updating Homebrew...
+Warning: You are using macOS 11.0.
+We do not provide support for this pre-release version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Discourse, Twitter or IRC. You are responsible for resolving any issues you
+experience while you are running this pre-release version.
+
+==&gt; Downloading https://homebrew.bintray.com/bottles/gcc-10.2.0.catalina.bottle.tar.gz
+==&gt; Downloading from https://d29vzk4ow07wi7.cloudfront.net/8dbccea194c20b1037b7e8180986e98a8ee3e37eaac12c7d223c89be3deaac6a?res
+######################################################################## 100.0%
+==&gt; Pouring gcc-10.2.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gcc/10.2.0: 1,463 files, 338.7MB
+</code></pre></div></div>
+
+  </div>
+
+  <div class="date">
+    Written on October  9, 2020
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/pre-release-mac-os-%E7%89%88%E6%9C%ACbrew%E4%BF%AE%E6%AD%A3/',
+		  'title': 'pre release mac os 版本 brew 修正'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Riot 整合 IRC, Telegram – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="在我理解上Riot是一個通信軟體的客戶端，又或者可以是一個品牌但實際上技術核心是matrix 協議。matrix 協議本身是開源的，內容相當複雜，好像牽涉到了一些去中心化協議，還也許多端點加密的選項。Riot 本身自帶一些聊天用戶客群，本身與telegram,facebook,twitter,IRC，互不相關的，但可以透過各種機器人，各種bridge把大家串起來。
+
+" />
+    <meta property="og:description" content="在我理解上Riot是一個通信軟體的客戶端，又或者可以是一個品牌但實際上技術核心是matrix 協議。matrix 協議本身是開源的，內容相當複雜，好像牽涉到了一些去中心化協議，還也許多端點加密的選項。Riot 本身自帶一些聊天用戶客群，本身與telegram,facebook,twitter,IRC，互不相關的，但可以透過各種機器人，各種bridge把大家串起來。
+
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="Riot 整合 IRC, Telegram" />
+    <meta property="twitter:title" content="Riot 整合 IRC, Telegram" />
+    
+    
+    
+    <meta property="og:image" content="https://awesome-doge.github.ioimage/riot1.png">
+    
+    
+    
+    <meta content="Riot 透過bridge串連telegram,facebook,twitter,IRC" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Riot 整合 IRC, Telegram | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Riot 整合 IRC, Telegram" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Riot 透過bridge串連telegram,facebook,twitter,IRC" />
+<meta property="og:description" content="Riot 透過bridge串連telegram,facebook,twitter,IRC" />
+<link rel="canonical" href="https://awesome-doge.github.io/riot-bridge-irc/" />
+<meta property="og:url" content="https://awesome-doge.github.io/riot-bridge-irc/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:image" content="https://awesome-doge.github.io/image/riot1.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-29T10:26:44+00:00" />
+<meta name="twitter:card" content="Cypherpunks" />
+<meta property="twitter:image" content="https://awesome-doge.github.io/image/riot1.png" />
+<meta property="twitter:title" content="Riot 整合 IRC, Telegram" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"Riot 透過bridge串連telegram,facebook,twitter,IRC","headline":"Riot 整合 IRC, Telegram","dateModified":"2019-08-29T10:26:44+00:00","datePublished":"2019-08-29T10:26:44+00:00","url":"https://awesome-doge.github.io/riot-bridge-irc/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/riot-bridge-irc/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"image":"https://awesome-doge.github.io/image/riot1.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Riot 整合 IRC, Telegram</h1>
+
+  <div class="entry">
+    <p>在我理解上Riot是一個通信軟體的客戶端，又或者可以是一個品牌但實際上技術核心是<a href="https://github.com/matrix-org">matrix 協議</a>。matrix 協議本身是開源的，內容相當複雜，好像牽涉到了一些去中心化協議，還也許多端點加密的選項。Riot 本身自帶一些聊天用戶客群，本身與telegram,facebook,twitter,IRC，互不相關的，但可以透過各種機器人，各種bridge把大家串起來。
+<img src="/image/irc5.png" alt="" /></p>
+
+<ul>
+  <li><a href="#riot-相關連結">Riot 相關連結：</a>
+    <ul>
+      <li><a href="#客戶端">客戶端</a></li>
+    </ul>
+  </li>
+  <li><a href="#riot-中的-irc-channel">Riot 中的 IRC Channel</a>
+    <ul>
+      <li><a href="#riot-自動幫你生成nickname-登入irc">RIOT 自動幫你生成nickname 登入IRC</a></li>
+      <li><a href="#riot-中-irc-bridge">Riot 中 IRC bridge</a></li>
+      <li><a href="#各大irc-server-大整合">各大IRC server 大整合</a></li>
+      <li><a href="#展示">展示</a></li>
+    </ul>
+  </li>
+  <li><a href="#riot-登入自己的-irc-nickname">Riot 登入自己的 IRC nickname</a></li>
+  <li><a href="#riot-登入-telegram">Riot 登入 Telegram</a>
+    <ul>
+      <li><a href="#riot-番外篇-對接-telegram-帳號">Riot 番外篇 對接 Telegram 帳號</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="riot-相關連結">Riot 相關連結：</h1>
+<ul>
+  <li><a href="https://matrix.org/docs/projects/try-matrix-now">matrix 協議的客戶端列表</a>:這列表多到爆炸。</li>
+  <li>Bridge[<a href="https://matrix.org/bridges">1</a>], [<a href="https://github.com/matrix-org/matrix-appservice-bridge">2</a>]:簡言之就是各種聊天軟體大串連，通通存到Matrix去。不過Bridge的概念是一個中繼器，假設我們想連IRC。
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>結構:
+[IRC server]&lt;---&gt;[Bridge server]&lt;---&gt;[matrix server]
+</code></pre></div>    </div>
+    <p>這個Bridge 會帶代替matrix server 使得用戶24小時 在線上，使得你不會遺失任何的聊天記錄。
+實際上它提供了不只是IRC的Bridge，如下圖所示：
+<img src="/image/riot1.png" alt="" /></p>
+  </li>
+</ul>
+
+<h2 id="客戶端">客戶端</h2>
+<p>以下是我個人偏好：</p>
+<ul>
+  <li>ios : https://matrix.org/docs/projects/client/riot-ios</li>
+  <li>android : https://github.com/vector-im/riotX-android</li>
+  <li>mac os : https://riot.im/download/desktop/</li>
+</ul>
+
+<h1 id="riot-中的-irc-channel">Riot 中的 IRC Channel</h1>
+
+<h2 id="riot-自動幫你生成nickname-登入irc">RIOT 自動幫你生成nickname 登入IRC</h2>
+<p>在登入Riot的同時，Riot會全自動的幫你註冊IRC的Nickname（如果看不懂nickname是啥，看這<a href="https://awesome-doge.github.io/how-to-use-irc/">IRC 註冊筆記</a>)，這nickname的來源是你註冊的帳號底下的<em>用戶名</em>(如果沒做多餘的用戶名重設，應該就是帳號名)。
+而Riot會自動幫你把你輸入的<em>用戶名</em>加上’[m]’的字符，生成<code class="language-plaintext highlighter-rouge">用戶名+ [m]</code>的一個nickname出來，幫你登入。因為IRC的帳號可以不註冊所以你會登入成功。</p>
+
+<h2 id="riot-中-irc-bridge">Riot 中 IRC bridge</h2>
+<p>基本上可以讓你在Riot中看到這麼多頻道，都是因為Riot都幫你街上他們自行搭建的IRC bridge， IRC bridge 隨時保持在線上，所以他會幫我們保存所有的聊天記錄。</p>
+
+<p>ps. 對IRC不熟的可能還要覺得很奇怪，為啥要刻意提起24hr在線，幫你保存聊天記錄，是因為IRC要在線上且進入頻道才可以搜集聊天記錄，如果離線的時間收到訊息都是看不到的，你只能去備份找。</p>
+
+<h2 id="各大irc-server-大整合">各大IRC server 大整合</h2>
+<p>Riot 會自動幫你連入個大IRC server，還幫你整理的票票亮亮的一個聊天室搜尋引擎。左邊是搜尋引擎的結果，右邊是支持的 IRC bridge，要要Riot有列出來IRC bridge 才可以連線喔。
+<img src="/image/irc1.png" alt="" /></p>
+
+<p><strong>IRC bridge 中的 channel掉線</strong>：  <br />
+遇過有進到 freednode，但我卻找不到喜歡的 <code class="language-plaintext highlighter-rouge">#bitcoin</code>頻道，也是可以直接輸入<code class="language-plaintext highlighter-rouge">#bitcoin</code>強制進入。但是意外的發現是，聊天室內跟真正的freenode上的bitcoin頻道斷線了，所以變成bridge channel裡面的人在自嗨。
+因為Riot 上的所有IRC channel。
+<img src="/image/irc2.png" alt="" /></p>
+
+<h2 id="展示">展示</h2>
+<p>順利的看到 bitcoin core 的大大們. <br />
+<img src="/image/irc4.png" alt="" /></p>
+
+<h1 id="riot-登入自己的-irc-nickname">Riot 登入自己的 IRC nickname</h1>
+<p>這時有很多人做了IRC Bridge，做了很棒的 IRC 機器人讓你好好登入自己的nickname。
+<a href="https://github.com/matrix-org/matrix-appservice-IRC/wiki/Bridged-IRC-networks">機器人列表</a></p>
+
+<p>準備：你必須要在各大平台註冊過nickname取得密碼後再來。</p>
+<ol>
+  <li>找你高興的機器人，如我像好好登入freenode，機器人叫做<code class="language-plaintext highlighter-rouge">@appservice-irc:matrix.org</code></li>
+  <li>在Riot中跟他開房間聊天，邀請他<code class="language-plaintext highlighter-rouge">@appservice-irc:matrix.org</code></li>
+  <li>他不會主動理你，你需要跟他說話。我們要來打註冊的指令，指令不難理解，把awesome-doge換成你自己註冊過的有密碼的nickname。
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>!nick awesome-doge
+</code></pre></div>    </div>
+    <p>enter 之後，他會告訴你他幫你把名字換成你指定的nickname勒</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Nick changed from 'awesome-doge[m]' to 'awesome-doge'.
+</code></pre></div>    </div>
+    <p>這時候不用再跟他聊天了，沒他的事了。</p>
+  </li>
+  <li>會挑出一個新的機器人跟你聊天，跟你要密碼如下
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify &lt;password&gt;.
+</code></pre></div>    </div>
+    <p>你回答只需要<code class="language-plaintext highlighter-rouge">identify &lt;password&gt;</code>就可以勒。恭喜大大</p>
+  </li>
+</ol>
+
+<h1 id="riot-登入-telegram">Riot 登入 Telegram</h1>
+<p>如果已經有telegram群了，希望可以在matrix發展，可以用<a href="https://t2bot.io/telegram/">t2bot機器人</a>串起來。他會幫你把Riot群裡面的訊息，以機器人的方式轉送到tg群。（所以看到機器人在說話，不過會附註一下平台上的Riot上的user name。圖片的話就更尷尬了。</p>
+
+<div align="center"><img src="/image/irc3.png" /></div>
+
+<h2 id="riot-番外篇-對接-telegram-帳號">Riot 番外篇 對接 Telegram 帳號</h2>
+
+<p>在對街群的過程中，會意外的把 telegram的帳號直接綁定到 Riot上，使得Riot可以直接跟 tg所有用戶說話。但所有聯絡人必須得到Riot客戶端批准才會收到信息。</p>
+
+  </div>
+
+  <div class="date">
+    Written on August 29, 2019
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/riot-bridge-irc/',
+		  'title': 'Riot 整合 IRC, Telegram'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

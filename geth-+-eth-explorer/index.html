@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>geth + eth-netstats – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+  安裝 geth
+  跑起來
+    geth --rpc --rpcaddr="0.0.0.0" --rpccorsdomain "*"
+    
+  
+
+" />
+    <meta property="og:description" content="
+
+  安裝 geth
+  跑起來
+    geth --rpc --rpcaddr="0.0.0.0" --rpccorsdomain "*"
+    
+  
+
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="geth + eth-netstats" />
+    <meta property="twitter:title" content="geth + eth-netstats" />
+    
+    
+    
+    <meta property="og:image" content="https://awesome-doge.github.io/image/geth.png">
+    
+    
+    
+    <meta content="" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>geth + eth-netstats | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="geth + eth-netstats" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Freedom is priceless." />
+<meta property="og:description" content="Freedom is priceless." />
+<link rel="canonical" href="https://awesome-doge.github.io/geth-+-eth-explorer/" />
+<meta property="og:url" content="https://awesome-doge.github.io/geth-+-eth-explorer/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:image" content="https://awesome-doge.github.io/image/geth.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-10T00:00:00+00:00" />
+<meta name="twitter:card" content="Cypherpunks" />
+<meta property="twitter:image" content="https://awesome-doge.github.io/image/geth.png" />
+<meta property="twitter:title" content="geth + eth-netstats" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"Freedom is priceless.","headline":"geth + eth-netstats","dateModified":"2020-10-10T00:00:00+00:00","datePublished":"2020-10-10T00:00:00+00:00","url":"https://awesome-doge.github.io/geth-+-eth-explorer/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/geth-+-eth-explorer/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"image":"https://awesome-doge.github.io/image/geth.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>geth + eth-netstats</h1>
+
+  <div class="entry">
+    <p><img src="/image/geth.png" alt="" /></p>
+<ul>
+  <li>安裝 geth</li>
+  <li>跑起來
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>geth --rpc --rpcaddr="0.0.0.0" --rpccorsdomain "*"
+</code></pre></div>    </div>
+  </li>
+  <li>下載、安裝 eth-netstats
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/cubedro/eth-netstats
+cd eth-netstats
+npm install
+sudo npm install -g grunt-cli
+</code></pre></div>    </div>
+  </li>
+  <li>下載、安裝  eth-net-intelligence-api
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/cubedro/eth-net-intelligence-api
+cd eth-net-intelligence-api
+npm install
+</code></pre></div>    </div>
+  </li>
+  <li>安裝 pm2
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo npm install -g pm2
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="文件修改">文件修改</h2>
+<p>app.json</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+  {
+    "name"              : "eth-netstate",
+    "script"            : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"        : false,
+    "watch"             : false,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "node",
+    "exec_mode"         : "fork_mode",
+    "env":
+    {
+      "WS_SECRET"       : "password",
+    }
+  }
+]
+
+</code></pre></div></div>
+
+<p>app.json</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+  {
+    "name"              : "eth-net-intelligence-api",
+    "script"            : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"        : false,
+    "watch"             : false,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "node",
+    "exec_mode"         : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"        : "production",
+      "RPC_HOST"        : "localhost",
+      "RPC_PORT"        : "8545",
+      "LISTENING_PORT"  : "30303",
+      "INSTANCE_NAME"   : "2333.wtf",
+      "CONTACT_DETAILS" : "",
+      "WS_SERVER"       : "http://localhost:3000",
+      "WS_SECRET"       : "password",
+      "VERBOSITY"       : 2
+    }
+  }
+]
+</code></pre></div></div>
+
+<h2 id="run">run</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /home/user/eth-net-intelligence-api
+pm2 start app.json
+pm2 status
+pm2 delete node-app
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /home/user/eth-netstats
+
+WS_SECRET=password npm run start
+
+pm2 start app.json
+pm2 status
+pm2 delete node-app
+</code></pre></div></div>
+
+  </div>
+
+  <div class="date">
+    Written on October 10, 2020
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/geth-+-eth-explorer/',
+		  'title': 'geth + eth-netstats'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

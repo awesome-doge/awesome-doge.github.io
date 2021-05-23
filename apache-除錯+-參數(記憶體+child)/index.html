@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>apache 除錯+ 參數 (記憶體+child) – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="apache log 位置 重啟指令 just for bitnami
+
+" />
+    <meta property="og:description" content="apache log 位置 重啟指令 just for bitnami
+
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="apache 除錯+ 參數 (記憶體+child)" />
+    <meta property="twitter:title" content="apache 除錯+ 參數 (記憶體+child)" />
+    
+    
+    
+    <meta property="og:image" content="https://awesome-doge.github.io/image/apache.png">
+    
+    
+    
+    <meta content="apache log 位置 重啟指令 just for bitnami" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>apache 除錯+ 參數 (記憶體+child) | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="apache 除錯+ 參數 (記憶體+child)" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="apache log 位置 重啟指令 just for bitnami" />
+<meta property="og:description" content="apache log 位置 重啟指令 just for bitnami" />
+<link rel="canonical" href="https://awesome-doge.github.io/apache-%E9%99%A4%E9%8C%AF+-%E5%8F%83%E6%95%B8(%E8%A8%98%E6%86%B6%E9%AB%94+child)/" />
+<meta property="og:url" content="https://awesome-doge.github.io/apache-%E9%99%A4%E9%8C%AF+-%E5%8F%83%E6%95%B8(%E8%A8%98%E6%86%B6%E9%AB%94+child)/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:image" content="https://awesome-doge.github.io/image/apache.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-09T00:00:00+00:00" />
+<meta name="twitter:card" content="Cypherpunks" />
+<meta property="twitter:image" content="https://awesome-doge.github.io/image/apache.png" />
+<meta property="twitter:title" content="apache 除錯+ 參數 (記憶體+child)" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"apache log 位置 重啟指令 just for bitnami","headline":"apache 除錯+ 參數 (記憶體+child)","dateModified":"2020-10-09T00:00:00+00:00","datePublished":"2020-10-09T00:00:00+00:00","url":"https://awesome-doge.github.io/apache-%E9%99%A4%E9%8C%AF+-%E5%8F%83%E6%95%B8(%E8%A8%98%E6%86%B6%E9%AB%94+child)/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/apache-%E9%99%A4%E9%8C%AF+-%E5%8F%83%E6%95%B8(%E8%A8%98%E6%86%B6%E9%AB%94+child)/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"image":"https://awesome-doge.github.io/image/apache.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>apache 除錯+ 參數 (記憶體+child)</h1>
+
+  <div class="entry">
+    <p>apache log 位置 重啟指令 just for bitnami
+<img src="/image/apache.png" alt="" /></p>
+
+<p>重啟server</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo /opt/bitnami/ctlscript.sh restart php-fpm
+sudo /opt/bitnami/ctlscript.sh restart apache
+</code></pre></div></div>
+
+<p>log 位置：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo tail -f /opt/bitnami/php/var/log/php-fpm.log
+sudo tail -f /opt/bitnami/apache2/logs/error_log
+sudo tail -f /home/user/custom-restarts.log
+</code></pre></div></div>
+
+<p>參數設定位置：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano /opt/bitnami/php/etc/php-fpm.conf
+sudo nano /opt/bitnami/php/etc/common-ondemand.conf
+sudo nano /opt/bitnami/php/etc/common-dynamic.conf
+sudo nano /opt/bitnami/php/etc/php.ini
+sudo nano /opt/bitnami/apache2/conf/httpd.conf
+</code></pre></div></div>
+
+<p>wordpress-pool<code class="language-plaintext highlighter-rouge">/opt/bitnami/php/etc/php-fpm.conf</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emergency_restart_threshold 10
+emergency_restart_interval 1m
+process_control_timeout 10s
+</code></pre></div></div>
+<p><strong>針對 pool too busy 的問題</strong></p>
+<ul>
+  <li>https://serverfault.com/questions/807453/warning-pool-www-seems-busy-you-may-need-to-increase-pm-start-servers-or-pm-m</li>
+</ul>
+
+<p>記憶體調整<code class="language-plaintext highlighter-rouge">/opt/bitnami/php/etc/php.ini</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>memory_limit = 2048M
+</code></pre></div></div>
+
+<h2 id="參考文獻">參考文獻</h2>
+<ul>
+  <li><a href="Optimizing PHP-FPM for High Performance">https://geekflare.com/php-fpm-optimization/</a></li>
+  <li><a href="https://kejyuntw.gitbooks.io/ubuntu-learning-notes/content/web/php/web-php-max-children.html">PHP FPM Max Children</a></li>
+  <li><a href="https://blog.gtwang.org/wordpress/fix-wordpress-memory-exhausted-error-increase-php-memory/">解決 WordPress 網站記憶體不足的 PHP 錯誤問題</a></li>
+  <li><a href="https://docs.bitnami.com/aws/faq/administration/control-services/">Start Or Stop Services</a></li>
+</ul>
+
+  </div>
+
+  <div class="date">
+    Written on October  9, 2020
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/apache-%E9%99%A4%E9%8C%AF+-%E5%8F%83%E6%95%B8(%E8%A8%98%E6%86%B6%E9%AB%94+child)/',
+		  'title': 'apache 除錯+ 參數 (記憶體+child)'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

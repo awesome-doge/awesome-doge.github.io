@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bitcoind(txindex) + rpc explorer – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+" />
+    <meta property="og:description" content="
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="bitcoind(txindex) + rpc explorer" />
+    <meta property="twitter:title" content="bitcoind(txindex) + rpc explorer" />
+    
+    
+    
+    <meta property="og:image" content="https://awesome-doge.github.io/image/bitcoind.png">
+    
+    
+    
+    <meta content="" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>bitcoind(txindex) + rpc explorer | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="bitcoind(txindex) + rpc explorer" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Freedom is priceless." />
+<meta property="og:description" content="Freedom is priceless." />
+<link rel="canonical" href="https://awesome-doge.github.io/bitcoind(txindex)+explorer/" />
+<meta property="og:url" content="https://awesome-doge.github.io/bitcoind(txindex)+explorer/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:image" content="https://awesome-doge.github.io/image/bitcoind.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-10T00:00:00+00:00" />
+<meta name="twitter:card" content="Cypherpunks" />
+<meta property="twitter:image" content="https://awesome-doge.github.io/image/bitcoind.png" />
+<meta property="twitter:title" content="bitcoind(txindex) + rpc explorer" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"Freedom is priceless.","headline":"bitcoind(txindex) + rpc explorer","dateModified":"2020-10-10T00:00:00+00:00","datePublished":"2020-10-10T00:00:00+00:00","url":"https://awesome-doge.github.io/bitcoind(txindex)+explorer/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/bitcoind(txindex)+explorer/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"image":"https://awesome-doge.github.io/image/bitcoind.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>bitcoind(txindex) + rpc explorer</h1>
+
+  <div class="entry">
+    <p><img src="/image/bitcoind.png" alt="" /></p>
+
+<h2 id="bitcoindtxindex">bitcoind(txindex)</h2>
+<ol>
+  <li>bitcoind 跑一個</li>
+  <li>設定一下bitcoin.conf (<code class="language-plaintext highlighter-rouge">\AppData\Roaming\Bitcoin</code>) <a href="https://github.com/bitcoin/bitcoin/blob/master/share/examples/bitcoin.conf">bitcoin/bitcoin</a></li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>txindex=1
+server=1
+rpcport=8332
+rpcuser=username
+rpcpassword=password
+</code></pre></div></div>
+
+<p>重啟</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill -9 -f bitcoind
+./bitcoind -daemon
+</code></pre></div></div>
+
+<h2 id="btc-rpc-explorer">btc-rpc-explorer</h2>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">npm install -g btc-rpc-explorer</code></li>
+  <li><code class="language-plaintext highlighter-rouge">btc-rpc-explorer -u username -w password -p 80 -i 0.0.0.0 --demo --rpc-allowall</code></li>
+</ol>
+
+<h2 id="todo">todo</h2>
+<ul>
+  <li>https 可以搭配 caddy 使用</li>
+</ul>
+
+<h2 id="參考文獻">參考文獻</h2>
+<ul>
+  <li><a href="https://github.com/janoside/btc-rpc-explorer">https://github.com/janoside/btc-rpc-explorer</a></li>
+  <li><a href="https://github.com/janoside/btc-rpc-explorer/blob/master/.env-sample">https://github.com/janoside/btc-rpc-explorer/blob/master/.env-sample</a></li>
+</ul>
+
+  </div>
+
+  <div class="date">
+    Written on October 10, 2020
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/bitcoind(txindex)+explorer/',
+		  'title': 'bitcoind(txindex) + rpc explorer'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

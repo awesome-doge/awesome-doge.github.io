@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>搭建tor 中的.onion 網站 – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="首先再次聲明”.onion”的域名[1]，跟我們腦袋中的DNS不一樣它沒有一個IP對照表，所以不會洩漏hidden server的主機位置，至於怎麼生成一個網址我就姑且當作RSA private key算出public key 然後經過已經過時的sha1[2]算一下雜湊值，再用base 32[3]重新編一次得到我們超級醜的.onion域名，範例”http://oxoujukneztb6wxg.onion”，base32當中應該沒有大寫有沒有奇怪的符號。
+
+" />
+    <meta property="og:description" content="首先再次聲明”.onion”的域名[1]，跟我們腦袋中的DNS不一樣它沒有一個IP對照表，所以不會洩漏hidden server的主機位置，至於怎麼生成一個網址我就姑且當作RSA private key算出public key 然後經過已經過時的sha1[2]算一下雜湊值，再用base 32[3]重新編一次得到我們超級醜的.onion域名，範例”http://oxoujukneztb6wxg.onion”，base32當中應該沒有大寫有沒有奇怪的符號。
+
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="搭建tor 中的.onion 網站" />
+    <meta property="twitter:title" content="搭建tor 中的.onion 網站" />
+    
+    
+    
+    
+    
+    <meta content="Freedom is priceless." property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>搭建tor 中的.onion 網站 | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="搭建tor 中的.onion 網站" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="首先再次聲明”.onion”的域名[1]，跟我們腦袋中的DNS不一樣它沒有一個IP對照表，所以不會洩漏hidden server的主機位置，至於怎麼生成一個網址我就姑且當作RSA private key算出public key 然後經過已經過時的sha1[2]算一下雜湊值，再用base 32[3]重新編一次得到我們超級醜的.onion域名，範例”http://oxoujukneztb6wxg.onion”，base32當中應該沒有大寫有沒有奇怪的符號。" />
+<meta property="og:description" content="首先再次聲明”.onion”的域名[1]，跟我們腦袋中的DNS不一樣它沒有一個IP對照表，所以不會洩漏hidden server的主機位置，至於怎麼生成一個網址我就姑且當作RSA private key算出public key 然後經過已經過時的sha1[2]算一下雜湊值，再用base 32[3]重新編一次得到我們超級醜的.onion域名，範例”http://oxoujukneztb6wxg.onion”，base32當中應該沒有大寫有沒有奇怪的符號。" />
+<link rel="canonical" href="https://awesome-doge.github.io/%E6%90%AD%E5%BB%BAtor-%E4%B8%AD%E7%9A%84-onion-%E7%B6%B2%E7%AB%99/" />
+<meta property="og:url" content="https://awesome-doge.github.io/%E6%90%AD%E5%BB%BAtor-%E4%B8%AD%E7%9A%84-onion-%E7%B6%B2%E7%AB%99/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-01-18T16:52:02+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="搭建tor 中的.onion 網站" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"首先再次聲明”.onion”的域名[1]，跟我們腦袋中的DNS不一樣它沒有一個IP對照表，所以不會洩漏hidden server的主機位置，至於怎麼生成一個網址我就姑且當作RSA private key算出public key 然後經過已經過時的sha1[2]算一下雜湊值，再用base 32[3]重新編一次得到我們超級醜的.onion域名，範例”http://oxoujukneztb6wxg.onion”，base32當中應該沒有大寫有沒有奇怪的符號。","headline":"搭建tor 中的.onion 網站","dateModified":"2018-01-18T16:52:02+00:00","datePublished":"2018-01-18T16:52:02+00:00","url":"https://awesome-doge.github.io/%E6%90%AD%E5%BB%BAtor-%E4%B8%AD%E7%9A%84-onion-%E7%B6%B2%E7%AB%99/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/%E6%90%AD%E5%BB%BAtor-%E4%B8%AD%E7%9A%84-onion-%E7%B6%B2%E7%AB%99/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>搭建tor 中的.onion 網站</h1>
+
+  <div class="entry">
+    <p>首先再次聲明”.onion”的域名[1]，跟我們腦袋中的DNS不一樣它沒有一個IP對照表，所以不會洩漏hidden server的主機位置，至於怎麼生成一個網址我就姑且當作RSA private key算出public key 然後經過已經過時的sha1[2]算一下雜湊值，再用base 32[3]重新編一次得到我們超級醜的.onion域名，範例”http://oxoujukneztb6wxg.onion”，base32當中應該沒有大寫有沒有奇怪的符號。
+<img src="/image/tor4.png" alt="" /></p>
+
+<!-- more -->
+
+<blockquote>
+  <p>.onion網站的搭建不需要以公有ＩＰ的方是搭建
+.onion的網站不需要在防火牆新增port規則</p>
+</blockquote>
+
+<p>那如何搭建一個.onion網站呢，首先你在你自己的電腦中搭建一個網站，最簡單的去XAMPP[5]下載一個，搓一下很快。好了我們有個網站了，接下來去Tor project下載是windows 的話選windows”Expert Bundle”[4]，不要選瀏覽器壓我就不了你。</p>
+
+<p>下載完之後，解壓縮阿，看到資料夾裡面有個tor.exe，先點開一遍讓他跑完，跑完關掉，跑不完的我看你在一個有網路審查的地方，估計網管再看你它很火。順利的朋友繼續到”C:\Users\自己的使用者名稱阿\AppData\Roaming\tor”這個資料夾底下，新增一個txt，命名為torcc，然後把副檔名拿掉存檔，接下來打開這個電腦辨識不出來是記事本的檔案用記事本開啟，添加幾行</p>
+
+<blockquote>
+  <p>HiddenServiceDir C:\ #這會是你存’放網站private key 檔案跟public檔案的地方啊，喜歡改地方也可以
+HiddenServicePort 80 127.0.0.1:81 #左邊的數字是你希望在哪個port開hidden service，右邊是你希望把本地端的哪個port接上去左邊的</p>
+</blockquote>
+
+<p><img src="/image/tor5.png" alt="" /></p>
+
+<p>改完啦，存檔，回到一開始解壓縮的資料夾執行tor.exe，恭喜你hidden service順利搭成功了，網站名稱會出現在剛剛設定的”HiddenServiceDir”中的publickey，privatekey要保存好，public丟掉沒關係，因為tor美運作一次就會從private key重新推倒一遍又會重新建立public key 。這時就可以拿 .onion域名去Tor 瀏覽器 唬唬人了去吧。</p>
+
+<p>[1]https://zh.wikipedia.org/wiki/.onion</p>
+
+<p>[2]https://zh.wikipedia.org/wiki/SHA-1</p>
+
+<p>[3]https://en.wikipedia.org/wiki/Base32</p>
+
+<p>[4]https://www.torproject.org/download/download.html.en</p>
+
+<p>[5]https://www.apachefriends.org/zh_tw/index.html</p>
+
+  </div>
+
+  <div class="date">
+    Written on January 18, 2018
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/%E6%90%AD%E5%BB%BAtor-%E4%B8%AD%E7%9A%84-onion-%E7%B6%B2%E7%AB%99/',
+		  'title': '搭建tor 中的.onion 網站'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

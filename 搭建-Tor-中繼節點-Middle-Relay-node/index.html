@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>搭建 Tor 中繼節點（Middle Relay node） – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+" />
+    <meta property="og:description" content="
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="搭建 Tor 中繼節點（Middle Relay node）" />
+    <meta property="twitter:title" content="搭建 Tor 中繼節點（Middle Relay node）" />
+    
+    
+    
+    
+    
+    <meta content="Freedom is priceless." property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>搭建 Tor 中繼節點（Middle Relay node） | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="搭建 Tor 中繼節點（Middle Relay node）" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Freedom is priceless." />
+<meta property="og:description" content="Freedom is priceless." />
+<link rel="canonical" href="https://awesome-doge.github.io/%E6%90%AD%E5%BB%BA-Tor-%E4%B8%AD%E7%B9%BC%E7%AF%80%E9%BB%9E-Middle-Relay-node/" />
+<meta property="og:url" content="https://awesome-doge.github.io/%E6%90%AD%E5%BB%BA-Tor-%E4%B8%AD%E7%B9%BC%E7%AF%80%E9%BB%9E-Middle-Relay-node/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-01-26T19:28:57+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="搭建 Tor 中繼節點（Middle Relay node）" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"Freedom is priceless.","headline":"搭建 Tor 中繼節點（Middle Relay node）","dateModified":"2018-01-26T19:28:57+00:00","datePublished":"2018-01-26T19:28:57+00:00","url":"https://awesome-doge.github.io/%E6%90%AD%E5%BB%BA-Tor-%E4%B8%AD%E7%B9%BC%E7%AF%80%E9%BB%9E-Middle-Relay-node/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/%E6%90%AD%E5%BB%BA-Tor-%E4%B8%AD%E7%B9%BC%E7%AF%80%E9%BB%9E-Middle-Relay-node/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>搭建 Tor 中繼節點（Middle Relay node）</h1>
+
+  <div class="entry">
+    <p><img src="/image/tor18.png" alt="" /></p>
+
+<p>在洋蔥網路中有分目錄節點（Directory node）、入口節點（EntryGguard node）、中繼節點（Middle Relay node）、出口節點（Exit Relay node）。也有各式各樣的網橋技術主要是為了避過網路審查，如obfs3、obfs4、meek之類。進入洋蔥網路要先到目錄節點尋找入口（多個）、中繼（多個）、出口（多個）節點資訊，本地端會隨機挑選入口、中繼、出口節點形成一條路徑。</p>
+
+<!-- more -->
+
+<p>目錄節點好像不是一般人可以搭建，入口、出口節點太明顯容易被攻擊或是被喝茶，所以今天說的是中繼節點。</p>
+
+<h3 id="一前置作業">一、前置作業</h3>
+
+<p>Mac：</p>
+
+<ol>
+  <li>請先安裝brew</li>
+  <li>之後執行 brew install tor</li>
+  <li>執行完一次看到100%可以先control+c 咖掉</li>
+</ol>
+
+<p>windows：</p>
+
+<ol>
+  <li>到Tor Project[1]下載Expert Bundle</li>
+  <li>下載完之後壓縮到你喜歡的地方</li>
+  <li>進到Tor資料夾，點擊Tor.exe，完整運行看到100% 可以關掉了</li>
+</ol>
+
+<p>Ubuntu/Debian：</p>
+
+<ol>
+  <li>sudo apt-get install tor</li>
+  <li>terminnal 執行 tor ，看到100% 可以control+c 咖掉</li>
+</ol>
+
+<h3 id="二接下來配置torrc文件">二、接下來配置Torrc文件</h3>
+
+<p>最新版的原始Torrc 配置文件在此[2]</p>
+
+<blockquote>
+  <p>各個版本的配置文件位置
+Mac：/usr/local/etc/tor/torrc
+Windows：%appdata%\tor\torrc
+Ubuntu/Debian：/etc/tor/torrc</p>
+</blockquote>
+
+<p>ps : 如果沒有文件的用記事本創一個，不要有副檔名喔</p>
+
+<h3 id="修改torrc">修改torrc</h3>
+
+<p>新增以下描述，可以自行修改。之後儲存</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ORPort 443
+Exitpolicy reject *:*
+Nickname Bitcoiner #自己取一個喜歡的名字 我是Bitcoiner
+ContactInfo ***@gmail.com #輸入自己的email
+AccountingMax 500 GBytes # 每月分配给Tor 500G 流量
+AccountingStart month 3 15:00 # 每月3号15点(Locale)清零
+RelayBandwidthRate 100 KBytes # Throttle traffic to 100KB/s (800Kbps) 
+RelayBandwidthBurst 200 KBytes # But allow bursts up to 200KB (1600Kb)
+</code></pre></div></div>
+
+<h3 id="三運行">三、運行</h3>
+
+<blockquote>
+  <p>各個版本運行
+Mac：tor
+Windows：執行 tor資料夾底下的tor.exe
+Ubuntu/Debian：tor</p>
+</blockquote>
+
+<p>ps. 因為需要port 443 請自行調整防火牆規則</p>
+
+<h3 id="四觀測">四、觀測</h3>
+
+<p><img src="/image/tor19.png" alt="" /></p>
+
+<p>我是還沒看見我自己的，不過應該夠久（三小時），就會出現在Tor Metrics[3] 觀測站，可以輸入剛剛在修改 torrc時設定的Nickname，應該可以搜尋得到。這是我的[6]</p>
+
+<p><img src="/image/tor20.png" alt="" /></p>
+
+<p>ps 看到最上面藍色框框了嗎？他說我目前不能直接提供 洋蔥網路作為中繼需要透過時間的歷練，歷練的標準原文[7]中文翻譯[8]
+[1]https://www.torproject.org/download/download.html.en</p>
+
+<p>[2]https://raw.githubusercontent.com/torproject/tor/master/src/config/torrc.sample.in</p>
+
+<p>[3]https://atlas.torproject.org</p>
+
+<p>[4]https://blog.jxtsai.info/2017/06/14/torrelay/</p>
+
+<p>[5]https://yepster.me/tor-deployment/</p>
+
+<p>[6]https://atlas.torproject.org/#details/C9BFA7484D05A2FCF72D2286F455201B8D5E9743</p>
+
+<p>[7]https://blog.torproject.org/lifecycle-new-relay</p>
+
+<p>[8]https://blog.jxtsai.info/2017/06/22/torrelay-2/</p>
+
+  </div>
+
+  <div class="date">
+    Written on January 26, 2018
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/%E6%90%AD%E5%BB%BA-Tor-%E4%B8%AD%E7%B9%BC%E7%AF%80%E9%BB%9E-Middle-Relay-node/',
+		  'title': '搭建 Tor 中繼節點（Middle Relay node）'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

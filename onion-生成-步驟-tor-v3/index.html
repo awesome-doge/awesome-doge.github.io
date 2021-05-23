@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>.onion 生成 步驟(tor v2 & v3 ) – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="看了一些hidden services 的文獻，大致把.onion的域名生成的步驟畫成下面的圖片，之前有再研究比特幣地址生成的我，發現這樣的生成.onion域名的過程，與比特幣地址生成有相當類似的部分，因為都是式Random生成私鑰，經過私鑰轉公鑰的算法，經過HASH，最後在經過BASE重新編碼，不難發現概念是一樣的。所以誕生出來的比特幣地址或是.onion域名都有它的隨機性。
+" />
+    <meta property="og:description" content="看了一些hidden services 的文獻，大致把.onion的域名生成的步驟畫成下面的圖片，之前有再研究比特幣地址生成的我，發現這樣的生成.onion域名的過程，與比特幣地址生成有相當類似的部分，因為都是式Random生成私鑰，經過私鑰轉公鑰的算法，經過HASH，最後在經過BASE重新編碼，不難發現概念是一樣的。所以誕生出來的比特幣地址或是.onion域名都有它的隨機性。
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content=".onion 生成 步驟(tor v2 & v3 )" />
+    <meta property="twitter:title" content=".onion 生成 步驟(tor v2 & v3 )" />
+    
+    
+    
+    
+    
+    <meta content="Freedom is priceless." property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>.onion 生成 步驟(tor v2 &amp; v3 ) | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content=".onion 生成 步驟(tor v2 &amp; v3 )" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="看了一些hidden services 的文獻，大致把.onion的域名生成的步驟畫成下面的圖片，之前有再研究比特幣地址生成的我，發現這樣的生成.onion域名的過程，與比特幣地址生成有相當類似的部分，因為都是式Random生成私鑰，經過私鑰轉公鑰的算法，經過HASH，最後在經過BASE重新編碼，不難發現概念是一樣的。所以誕生出來的比特幣地址或是.onion域名都有它的隨機性。" />
+<meta property="og:description" content="看了一些hidden services 的文獻，大致把.onion的域名生成的步驟畫成下面的圖片，之前有再研究比特幣地址生成的我，發現這樣的生成.onion域名的過程，與比特幣地址生成有相當類似的部分，因為都是式Random生成私鑰，經過私鑰轉公鑰的算法，經過HASH，最後在經過BASE重新編碼，不難發現概念是一樣的。所以誕生出來的比特幣地址或是.onion域名都有它的隨機性。" />
+<link rel="canonical" href="https://awesome-doge.github.io/onion-%E7%94%9F%E6%88%90-%E6%AD%A5%E9%A9%9F-tor-v3/" />
+<meta property="og:url" content="https://awesome-doge.github.io/onion-%E7%94%9F%E6%88%90-%E6%AD%A5%E9%A9%9F-tor-v3/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-01-24T19:28:57+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content=".onion 生成 步驟(tor v2 &amp; v3 )" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"看了一些hidden services 的文獻，大致把.onion的域名生成的步驟畫成下面的圖片，之前有再研究比特幣地址生成的我，發現這樣的生成.onion域名的過程，與比特幣地址生成有相當類似的部分，因為都是式Random生成私鑰，經過私鑰轉公鑰的算法，經過HASH，最後在經過BASE重新編碼，不難發現概念是一樣的。所以誕生出來的比特幣地址或是.onion域名都有它的隨機性。","headline":".onion 生成 步驟(tor v2 &amp; v3 )","dateModified":"2018-01-24T19:28:57+00:00","datePublished":"2018-01-24T19:28:57+00:00","url":"https://awesome-doge.github.io/onion-%E7%94%9F%E6%88%90-%E6%AD%A5%E9%A9%9F-tor-v3/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/onion-%E7%94%9F%E6%88%90-%E6%AD%A5%E9%A9%9F-tor-v3/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>.onion 生成 步驟(tor v2 & v3 )</h1>
+
+  <div class="entry">
+    <p>看了一些hidden services 的文獻，大致把.onion的域名生成的步驟畫成下面的圖片，之前有再研究比特幣地址生成的我，發現這樣的生成.onion域名的過程，與比特幣地址生成有相當類似的部分，因為都是式Random生成私鑰，經過私鑰轉公鑰的算法，經過HASH，最後在經過BASE重新編碼，不難發現概念是一樣的。所以誕生出來的比特幣地址或是.onion域名都有它的隨機性。</p>
+
+<p><strong>目錄</strong></p>
+
+<ul>
+  <li><a href="#v2-onion%e5%9c%b0%e5%9d%80%e7%94%9f%e6%88%90%e9%81%8e%e7%a8%8b">v2 .onion地址生成過程</a>
+    <ul>
+      <li><a href="#%e5%8e%9f%e6%96%87">原文</a></li>
+      <li><a href="#%e8%91%97%e5%90%8d%e7%9a%84-onion-%e5%9f%9f%e5%90%8d%e7%b6%b2%e7%ab%99">著名的 .onion 域名網站</a>
+        <ul>
+          <li><a href="#facebook">Facebook</a></li>
+          <li><a href="#blockchaininfo">BlockChain.info</a></li>
+          <li><a href="#expressvpn">ExpressVPN</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#v3-onion%e5%9c%b0%e5%9d%80%e7%94%9f%e6%88%90%e9%81%8e%e7%a8%8b">v3 .onion地址生成過程</a>
+    <ul>
+      <li><a href="#%e5%8e%9f%e6%96%87-1">原文</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="v2-onion地址生成過程">v2 .onion地址生成過程</h1>
+
+<p>只要有錢有時間就可以爆破出一個美麗的域名或是比特幣地址。</p>
+
+<div align="center"><img src="/image/tor14.png" /></div>
+
+<p>不難發現洋蔥網路所採用的密碼演算法都相當的過氣，如SHA-1、RSA-1024，當然Tor Project 也意識到這樣的問題，在最新版本的v3[2]中，已經闡述了會將SHA-1換成SHA-3，RSA-1024換成橢圓曲線。</p>
+
+<blockquote>
+  <p>Better crypto (replaced SHA1/DH/RSA1024 with SHA3/ed25519/curve25519)</p>
+</blockquote>
+
+<h2 id="原文">原文</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> .onion
+
+  SYNTAX:  [digest].onion
+           [ignored].[digest].onion
+
+  The digest is the first eighty bits of a SHA1 hash of the identity key for
+  a hidden service, encoded in base32.
+
+  When Tor sees an address in this format, it tries to look up and connect to
+  the specified hidden service.  See rend-spec.txt for full details.
+
+  The "ignored" portion of the address is intended for use in vhosting, and
+  is supported in Tor 0.2.4.10-alpha and later.
+</code></pre></div></div>
+<h2 id="著名的-onion-域名網站">著名的 .onion 域名網站</h2>
+<h3 id="facebook">Facebook</h3>
+<p>他們使用超過500,000個核心，耗資 US$100,000，耗時一周來反復生成.onion域名，產物” facebookcorewwwi.onion”。</p>
+
+<h3 id="blockchaininfo">BlockChain.info</h3>
+<p>花費了200–300美元，大約24小時使用AWS G1實例和六個ATI 來創建自己的.onion域名，產物”blockchainbdgpzk.onion”。</p>
+
+<h3 id="expressvpn">ExpressVPN</h3>
+<p>一般的電腦耗時兩周，產物”expressobutiolem.onion”。</p>
+
+<p>[1]https://www.expressvpn.com/blog/how-to-create-a-onion-address/</p>
+
+<p>[2]https://blog.torproject.org/tor-0329-released-we-have-new-stable-series</p>
+
+<h1 id="v3-onion地址生成過程">v3 .onion地址生成過程</h1>
+
+<p>在v3的地址生成中已經放棄了sha-1也沒有放上新的sha-3</p>
+
+<blockquote>
+  <p>256 bits 的 ECC key 強度大約是 3072 bits RSA key (以現在最好的攻擊演算法來估算)。
+直接放 public key 不需要經過 hash function 計算，可以避免掉 hash function 被找到 collision 時的風險。[3]</p>
+</blockquote>
+
+<!-- more -->
+
+<div align="center"><img src="/image/tor16.png" /></div>
+
+<p>採用了新的公私鑰轉換演算法ed25519[1]，舊有的RSA已經不再是推薦安全的演算法。</p>
+
+<blockquote>
+  <p>ed25519 算法相對於secp256k1 更加高效，同時安全性也非常高。目前也被廣泛應用很多加密數字貨幣項目中，著名的項目例如Zcash、公證通（Factom）、新經幣（NEM）等等， 以太坊的創始人Vitalik 也曾在博客中公開表示，以太坊計劃在新版本中切換到ed25519。ed25519 的好處是在不損失安全級別的情況下，顯著提昇運算效率，其效率是secp256k1 的很多倍。以ed25519 的論文中的實驗為例，該算法完成一次簽名需要87548 個CPU 循環，一個4 核2.4GHz 的CPU 每秒可以完成109000 次簽名。密鑰的生成也非常高效。而ed25519 的安全級別和secp256k1 的級別相同，都是128 位的安全級別。[2]</p>
+</blockquote>
+
+<p>新的v3比較特別的是他加入了CHECKSUM，這個CHECKSUM與比特幣地址生成中的CHECKSUM不同，比特幣的版本是取double sha-256取前幾個bit當作CHECKSUM，而.onion v3 採用的是簽章算法中的CHECKSUM。</p>
+
+<p>最後一個步驟是把Public Key 、CHECKSUM、版本號放在一起做base32編碼，產物為56個字。</p>
+
+<h2 id="原文-1">原文</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Encoding onion addresses [ONIONADDRESS]
+
+   The onion address of a hidden service includes its identity public key, a
+   version field and a basic checksum. All this information is then base32
+   encoded as shown below:
+
+     onion_address = base32(PUBKEY | CHECKSUM | VERSION) + ".onion"
+     CHECKSUM = H(".onion checksum" | PUBKEY | VERSION)[:2]
+
+     where:
+       - PUBKEY is the 32 bytes ed25519 master pubkey of the hidden service.
+       - VERSION is an one byte version field (default value '\x03')
+       - ".onion checksum" is a constant string
+       - CHECKSUM is truncated to two bytes before inserting it in onion_address
+</code></pre></div></div>
+
+<p>[1]https://ed25519.cr.yp.to/</p>
+
+<p>[2]https://zhuanlan.zhihu.com/p/28764295</p>
+
+<p>[3]https://blog.gslin.org/archives/2017/11/03/7725/%E4%B8%8B%E4%B8%80%E4%BB%A3%E7%9A%84-tor-hidden-service/</p>
+
+<p>[4]https://gitweb.torproject.org/torspec.git/plain/proposals/224-rend-spec-ng.txt</p>
+
+  </div>
+
+  <div class="date">
+    Written on January 24, 2018
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/onion-%E7%94%9F%E6%88%90-%E6%AD%A5%E9%A9%9F-tor-v3/',
+		  'title': '.onion 生成 步驟(tor v2 & v3 )'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

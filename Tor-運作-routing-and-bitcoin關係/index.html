@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tor routing 和 bitcoin關係 – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="做了這麼久的比特幣研究，結果第一篇博文不是比特幣哈哈
+我今天要來談談洋蔥網路1，洋蔥網路之所要叫做洋蔥因為他將原始的封包層層的包裹起來。
+" />
+    <meta property="og:description" content="做了這麼久的比特幣研究，結果第一篇博文不是比特幣哈哈
+我今天要來談談洋蔥網路1，洋蔥網路之所要叫做洋蔥因為他將原始的封包層層的包裹起來。
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="Tor routing 和 bitcoin關係" />
+    <meta property="twitter:title" content="Tor routing 和 bitcoin關係" />
+    
+    
+    
+    
+    
+    <meta content="Freedom is priceless." property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Tor routing 和 bitcoin關係 | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Tor routing 和 bitcoin關係" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="做了這麼久的比特幣研究，結果第一篇博文不是比特幣哈哈 我今天要來談談洋蔥網路1，洋蔥網路之所要叫做洋蔥因為他將原始的封包層層的包裹起來。" />
+<meta property="og:description" content="做了這麼久的比特幣研究，結果第一篇博文不是比特幣哈哈 我今天要來談談洋蔥網路1，洋蔥網路之所要叫做洋蔥因為他將原始的封包層層的包裹起來。" />
+<link rel="canonical" href="https://awesome-doge.github.io/Tor-%E9%81%8B%E4%BD%9C-routing-and-bitcoin%E9%97%9C%E4%BF%82/" />
+<meta property="og:url" content="https://awesome-doge.github.io/Tor-%E9%81%8B%E4%BD%9C-routing-and-bitcoin%E9%97%9C%E4%BF%82/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-01-17T02:45:13+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Tor routing 和 bitcoin關係" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"做了這麼久的比特幣研究，結果第一篇博文不是比特幣哈哈 我今天要來談談洋蔥網路1，洋蔥網路之所要叫做洋蔥因為他將原始的封包層層的包裹起來。","headline":"Tor routing 和 bitcoin關係","dateModified":"2018-01-17T02:45:13+00:00","datePublished":"2018-01-17T02:45:13+00:00","url":"https://awesome-doge.github.io/Tor-%E9%81%8B%E4%BD%9C-routing-and-bitcoin%E9%97%9C%E4%BF%82/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/Tor-%E9%81%8B%E4%BD%9C-routing-and-bitcoin%E9%97%9C%E4%BF%82/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Tor routing 和 bitcoin關係</h1>
+
+  <div class="entry">
+    <p>做了這麼久的比特幣研究，結果第一篇博文不是比特幣哈哈
+我今天要來談談洋蔥網路<a href="https://www.torproject.org/">1</a>，洋蔥網路之所要叫做洋蔥因為他將原始的封包層層的包裹起來。</p>
+
+<p><img src="/image/tor1.jpg" alt="" /></p>
+
+<p>在我的認知中，洋蔥網路在全世界中有很多中繼站<a href="https://atlas.torproject.org/">2</a>，這些自願的洋蔥中繼站會負責轉送我們丟上去的封包，但在丟上去之前，發送者也得知道有那些中繼站阿，所以應該會有一個server存取所有中繼站的資料，資料不確定有沒有包括IP，但沒有IP我覺得不太能run，但裡面一定會有一把rsa生成的public key(這個rsa因為太舊了不安全了，v3的洋蔥已經把它修掉了改成ecc)，private key 當然也就是洋蔥中繼站本身啦，他要拆包裹阿。
+<img src="/image/tor2.png" alt="" /></p>
+
+<p>下一步我們去跟這台server要資料。假定我們要了一百台，此時我們隨機抽了10台，並將其public key排序，慢慢的將封包一層一層的包起來，包好了之後我就把它丟進洋蔥網路去(包了10層能夠拆開全部的人我看也不簡單)，此時最外層會被持有最外層的public key的中繼站收到，並且看到了裡面下一層的public key，看到之後往下一顆中繼站丟，就這樣丟壓丟，丟到了出口。值得注意的是在這傳球的過程，每一個中繼站只會知道前一個與下一個是誰，不能再多了。也就是因為這樣所以難以追根究柢到底在網路中徘徊的路徑長甚麼樣子，或許把全部的自願者都監聽了應該就有機會吧。
+<img src="/image/tor3.png" alt="" /></p>
+
+<p>上段簡單的說了封包在洋蔥網路中轉送的過程，在其他的博文也看到，洋蔥網路最大的痛點在於入口跟出口，入口我想，對ISP(網際網路提供者，中華電信應該是)而言他的認知或許是，有個傢伙要進洋蔥網路，出口可能是有來自洋蔥網路的封包要送往Facebook，在這過程就像比特幣洗錢似。談到入口跟出口，又有一個值得一提的是，入口的封包通常被包裹最多曾的rsa公鑰加密，出口的話應該已經被拆得差不多了，可能只剩下https了吧，所以一開始如採用http協議那在出口應該被看光光了。</p>
+
+<p>ps.現在大家常見的Tor 瀏覽器，是一種Firefox+Tor的合體，這樣的合體他有加裝onion域名的解析，在hidden 服務中當然不是取得IP啦，但是可以取得一個路徑到達目的地，這又是另外一個故事了。所以說Tor瀏覽器可以拆掉變成一個Tor 的一支程式，運作時會直接啟用127.0.0.1:9050的socks 5 proxy 在本地端，這也就是你在本地開個洋蔥網路入口啦，因為傳統的瀏覽器and app都是用﹝正常﹞的dns解析，所以也不要覺得沒有onion域名解析很奇怪啦，樣這域名就用合體的，合體的啥都可以看。</p>
+
+<p>結論：洋蔥路由會讓ISP追蹤(忘記說，節點的選擇通常都會故意跨國家的樣子，一下子跳了10個國家，國際刑警未必關西這麼好)更加困難，這樣的匿蹤技術，在比特幣的應用上，我想應該是要預防有心的ISP或是駭客看到交易的發起源，說白了我看得發起源阿比特幣地址的持有者不就肯定是這傢伙了嗎。而除了保護發起源，在比特幣的資料傳輸的過程中好像也沒加密，給人家看光光，雖然也都是公開沒有見不得人，但依照過往的經驗，這會使得封包被竄改變得容易，畢竟沒加密阿，被改了也沒感覺，有加密還需要破解了再包回去，之前好像有看到bip<a href="https://en.bitcoin.it/wiki/Bitcoin_Improvement_Proposals">3</a>有提案要做https 的區塊鏈同步機制。現在的bitcoin core <a href="https://bitcoincore.org/en/releases/0.12.0/">4</a>也支持洋蔥網路的選項。</p>
+
+<ul>
+  <li>#4587 0c465f5 allow users to set -onion via GUI (Diapolo)</li>
+</ul>
+
+  </div>
+
+  <div class="date">
+    Written on January 17, 2018
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/Tor-%E9%81%8B%E4%BD%9C-routing-and-bitcoin%E9%97%9C%E4%BF%82/',
+		  'title': 'Tor routing 和 bitcoin關係'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jekyll 搭建 github page – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="如果今天想要搭建一個Blog或是個人網站甚至是一個公司產品的網站，卻又懶得去租用一個VPS伺服器，這篇文章會是一個不錯的教學。因為其實每一個人的github都可以搭建成一個靜態網站，而每一個repo都可以搭建成子網站，換言之。可以在這樣子的github page架構下搭建很多很多很多的網站。
+
+" />
+    <meta property="og:description" content="如果今天想要搭建一個Blog或是個人網站甚至是一個公司產品的網站，卻又懶得去租用一個VPS伺服器，這篇文章會是一個不錯的教學。因為其實每一個人的github都可以搭建成一個靜態網站，而每一個repo都可以搭建成子網站，換言之。可以在這樣子的github page架構下搭建很多很多很多的網站。
+
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="Jekyll 搭建 github page" />
+    <meta property="twitter:title" content="Jekyll 搭建 github page" />
+    
+    
+    
+    <meta property="og:image" content="https://awesome-doge.github.ioimage/jekyll10.png">
+    
+    
+    
+    <meta content="手把手用jekyll搭建github靜態網頁" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Jekyll 搭建 github page | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Jekyll 搭建 github page" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="手把手用jekyll搭建github靜態網頁" />
+<meta property="og:description" content="手把手用jekyll搭建github靜態網頁" />
+<link rel="canonical" href="https://awesome-doge.github.io/jekyll%E6%90%AD%E5%BB%BAgithubpage/" />
+<meta property="og:url" content="https://awesome-doge.github.io/jekyll%E6%90%AD%E5%BB%BAgithubpage/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:image" content="https://awesome-doge.github.io/image/jekyll10.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-31T00:00:00+00:00" />
+<meta name="twitter:card" content="Cypherpunks" />
+<meta property="twitter:image" content="https://awesome-doge.github.io/image/jekyll10.png" />
+<meta property="twitter:title" content="Jekyll 搭建 github page" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"手把手用jekyll搭建github靜態網頁","headline":"Jekyll 搭建 github page","dateModified":"2019-08-31T00:00:00+00:00","datePublished":"2019-08-31T00:00:00+00:00","url":"https://awesome-doge.github.io/jekyll%E6%90%AD%E5%BB%BAgithubpage/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/jekyll%E6%90%AD%E5%BB%BAgithubpage/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"image":"https://awesome-doge.github.io/image/jekyll10.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Jekyll 搭建 github page</h1>
+
+  <div class="entry">
+    <p>如果今天想要搭建一個Blog或是個人網站甚至是一個公司產品的網站，卻又懶得去租用一個VPS伺服器，這篇文章會是一個不錯的教學。因為其實每一個人的github都可以搭建成一個靜態網站，而每一個repo都可以搭建成子網站，換言之。可以在這樣子的github page架構下搭建很多很多很多的網站。</p>
+<div align="center"><img src="/image/jekyll10.png" /></div>
+
+<ul>
+  <li><a href="#%e7%92%b0%e5%a2%83%e6%90%ad%e5%bb%ba">環境搭建</a></li>
+  <li><a href="#%e7%94%9f%e6%88%90%e7%b6%b2%e7%ab%99">生成網站</a>
+    <ul>
+      <li><a href="#%e7%84%a1%e4%b8%ad%e7%94%9f%e6%9c%89%e5%88%9d%e5%a7%8b%e5%8c%96%e4%b8%80%e5%80%8b%e7%b6%b2%e7%ab%99">無中生有初始化一個網站</a></li>
+      <li><a href="#github-page">github page</a>
+        <ul>
+          <li><a href="#%e7%8f%be%e6%88%90%e6%a8%a1%e6%9d%bf">現成模板</a>
+            <ul>
+              <li><a href="#%e5%88%86%e5%8f%89-%e8%ae%8a%e6%88%90-%e4%b8%bb%e7%b6%b2%e9%a0%81">分叉 變成 主網頁</a></li>
+              <li><a href="#%e5%88%86%e5%8f%89-%e8%ae%8a%e6%88%90-%e5%ad%90%e7%b6%b2%e9%a0%81">分叉 變成 子網頁</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#configyml%e6%96%87%e4%bb%b6%e4%bf%ae%e8%aa%bf%e6%95%b4"><code class="language-plaintext highlighter-rouge">_config.yml</code>文件修調整</a></li>
+  <li><a href="#post-%e8%b3%87%e6%96%99%e5%a4%be"><code class="language-plaintext highlighter-rouge">_post</code> 資料夾</a></li>
+  <li><a href="#build-%e5%87%ba-%e9%9d%9c%e6%85%8b%e7%b6%b2%e7%ab%99%e6%96%87%e4%bb%b6">build 出 靜態網站文件</a>
+    <ul>
+      <li><a href="#%e6%9c%ac%e5%9c%b0server">本地server</a>
+        <ul>
+          <li><a href="#%e8%87%aa%e5%8b%95%e7%99%bc%e5%b8%83-github-page">自動發布 github page</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#markdown-%e8%aa%9e%e6%b3%95">Markdown 語法</a></li>
+  <li><a href="#%e9%80%b2%e9%9a%8e">進階</a>
+    <ul>
+      <li><a href="#%e5%9c%96%e7%89%87%e5%a4%a7%e5%b0%8f%e4%bd%8d%e7%bd%ae%e6%8e%a7%e5%88%b6">圖片大小、位置控制</a></li>
+      <li><a href="#%e8%a1%a8%e6%a0%bc%e6%ac%84%e4%bd%8d%e5%85%a7%e7%9a%84%e6%8f%9b%e8%a1%8c">表格欄位內的換行</a></li>
+      <li><a href="#%e6%95%b8%e5%ad%b8%e5%85%ac%e5%bc%8f">數學公式</a></li>
+      <li><a href="#%e4%bb%bb%e5%8b%99%e5%88%97%e8%a1%a8">任務列表</a></li>
+      <li><a href="#%e5%8a%a0%e5%85%a5-open-graph-%e8%ae%93%e4%bd%a0%e7%9a%84%e9%80%a3%e7%b5%90%e6%9c%89%e7%b8%ae%e5%9c%96">加入 Open Graph 讓你的連結有縮圖</a>
+        <ul>
+          <li><a href="#%e6%8c%87%e5%ae%9a-%e6%a8%99%e9%a1%8c">指定 標題</a></li>
+          <li><a href="#%e6%8c%87%e5%ae%9a-%e7%b0%a1%e4%bb%8b">指定 簡介</a></li>
+          <li><a href="#%e6%b7%bb%e5%8a%a0-%e5%9c%96%e7%89%87%e7%b8%ae%e5%9c%96">添加 圖片縮圖</a></li>
+        </ul>
+      </li>
+      <li><a href="#%e6%96%b0%e5%a2%9e%e9%a0%81%e9%9d%a2">新增頁面</a></li>
+      <li><a href="#%e6%b7%bb%e5%8a%a0%e7%bf%bb%e9%a0%81%e5%8a%9f%e8%83%bd">添加翻頁功能</a></li>
+    </ul>
+  </li>
+  <li><a href="#%e5%8f%83%e8%80%83%e6%96%87%e7%8d%bb">參考文獻</a></li>
+</ul>
+
+<h1 id="環境搭建">環境搭建</h1>
+<p>在搭建網站之前，我們需要先設定好我們的環境，這樣才可以執行jekyll運作起來我們的部落格或是網站。
+主要依賴 <code class="language-plaintext highlighter-rouge">gem</code>指令，他好像是ruby。但我使用的是mac os 他本身自帶。剩下需要做的事<code class="language-plaintext highlighter-rouge">gem install jekyll</code></p>
+
+<h1 id="生成網站">生成網站</h1>
+<h2 id="無中生有初始化一個網站">無中生有初始化一個網站</h2>
+<p>在當前目錄下生成一個<code class="language-plaintext highlighter-rouge">blog</code>資料夾，並前初始化為靜態網站</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new blog
+</code></pre></div></div>
+<p>進去之後運行 <code class="language-plaintext highlighter-rouge">jekyll serve</code>就可以在<a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a> 或是 <a href="http://localhost:4000">http://localhost:4000</a>看到最乾淨的網站了。</p>
+
+<h2 id="github-page">github page</h2>
+<p>來到我一個最重要的一步，我們中了伺服器不是為了在本地端開一個伺服器出來。是為了能夠生成一個文件丟到github上面，進一步讓我變成一個靜態的網頁託管。
+這是我們開始一個repo，命名為<code class="language-plaintext highlighter-rouge">xxx.github.io</code> 這邊的xxx是你賬戶註冊所使用的用戶名稱，衹要有一點點的差異就是不會成功了。現在我們把這個repoClone 下來，再把我們剛剛申請的所有的靜態網站，全部丟進去。做一個 add commit push基本上再過不久的時間，你就可以看到他了。他會出現在<code class="language-plaintext highlighter-rouge">xxx.github.io</code>在網址當中。通常需要最快30秒，最長差不多四五分鐘的反應時間。他並不會立刻馬上的出現在你的網頁上面。</p>
+
+<h3 id="現成模板">現成模板</h3>
+<p>因為在jekyll已經不是什麼小項目了，他已經存在了非常多年，所以也會有許多熱情的開發者撰寫了很多公開的模板給大家使用，<a href="http://jekyllthemes.org">http://jekyllthemes.org</a>，如果在裡面有你看起來高興的樣子，就可以直接拿來用，直接<code class="language-plaintext highlighter-rouge">fork</code>一個很快的。這樣可以省去很多開發時間，也對一個小白是非常友善的。
+所以如果挑到喜歡的，那就讓我們分叉一個吧。
+<img src="/image/jekyll1.png" alt="" />
+個人覺得很有意思的模板：</p>
+<ul>
+  <li><a href="http://jekyllthemes.org/themes/windows-95/">Windows 95</a>  <br />
+<img src="/image/jekyll9.png" alt="" /></li>
+</ul>
+
+<h4 id="分叉-變成-主網頁">分叉 變成 主網頁</h4>
+<p>github會給每個user 一個網址，只是看你有沒有拿來用而已，預設是<code class="language-plaintext highlighter-rouge">xxx.github.io</code>，其中xxx是你自己的名字。
+你只要把你<code class="language-plaintext highlighter-rouge">fork</code>出來的repo，點擊該repo頁面的右上角的setting ，重新命名該repo為<code class="language-plaintext highlighter-rouge">xxx.github.io</code>的格式，過個幾分鐘你就可以進到<code class="language-plaintext highlighter-rouge">xxx.github.io</code>的網站了。</p>
+
+<h4 id="分叉-變成-子網頁">分叉 變成 子網頁</h4>
+<p>子網頁是指我們不是<code class="language-plaintext highlighter-rouge">xxx.github.io</code>，我們把網頁搭載<code class="language-plaintext highlighter-rouge">xxx.github.io/repo名稱</code>，這是你<code class="language-plaintext highlighter-rouge">fork</code>完，依樣把repo 重新命名一下，應該就要在<code class="language-plaintext highlighter-rouge">xxx.github.io/repo名稱</code>下看到自己的內容了。如果沒看到可以檢查一下repo中的setting，下面會有GitHub Pages 相關的設定，可能是因為為他就線在其他的分支了。</p>
+<blockquote>
+  <p>補充說明 通常我們會把 生成靜態網頁前的原始碼放在 master 分支，把生成玩的靜態網頁放在gh-pages分支。不知哪來的傳統，不過現在github 設定裡面也支持，指定要用哪個branch呈現網頁的選項。</p>
+</blockquote>
+
+<p><img src="/image/jekyll4.png" alt="" /></p>
+
+<h1 id="_configyml文件修調整"><code class="language-plaintext highlighter-rouge">_config.yml</code>文件修調整</h1>
+<p>會來到這裡，就代表著你已經從模板庫裡面找到了一個不錯的網站做樣本。可是你從模板庫裡面拿到了網站，裡面預設的信息基本上都是別人家的blog或是公司，所以現在我們要把它變成自己的網頁，我們要來修改我們自己的個人信息，那麼裡面的詳細細節，每一個模板都會有不太一樣，所以建議大家還是一一的看一下自己的檔案慢慢的修改，它裡面都一定會有提示。</p>
+
+<h1 id="_post-資料夾"><code class="language-plaintext highlighter-rouge">_post</code> 資料夾</h1>
+<p>這是一個資料夾這是博客文章的地方。
+<img src="/image/jekyll5.png" alt="" />
+基本上每一個文件頂部有詳細的要求，如果並文章內的YAML頭部沒有按照這樣子的規則去撰寫的話，它會完全無法識別。</p>
+
+<p>在預設的情況下，這個資料夾裡面本來就會存放一些文章。你可以大概學習一下別人大概是怎麼樣去撰寫一篇文章的。
+基本上每一個文章的開頭都有詳細的YAML的格式設定。當中比較特別的是第一行<code class="language-plaintext highlighter-rouge">layout: post</code>，這邊定義了呈現的頁面樣式，而頁面樣式在<code class="language-plaintext highlighter-rouge">_layouts</code>資料夾中有詳細的定義。</p>
+
+<div align="center"><img src="/image/jekyll6.png" /></div>
+
+<h1 id="build--出-靜態網站文件">build  出 靜態網站文件</h1>
+<p>會走到這裡代表你的<code class="language-plaintext highlighter-rouge">_config</code>文件已經設定完成，還有已經設定好一些文章可以發佈了，即使沒有文章也沒關係。</p>
+
+<p>這個時候我們進到總目錄底下執行<code class="language-plaintext highlighter-rouge">jekyll build</code> 就可以順順利利的製作一個網站出來。如果順利運作成功的話，你可以在目錄底下看到很多html的文件。在其中，index.html最為重要，因為它是流覽你網頁的第1個頁面。
+所以現在你有Index.html的文件了。這時的你可以嘗試用瀏覽器看，看看這個文件，看看是否順利的可以開起來。
+<img src="/image/jekyll2.png" alt="" /></p>
+
+<h2 id="本地server">本地server</h2>
+<p>當我們製作好，文件夾好，其實jekyll同時也支持伺服器。你衹要在根目錄底下執行<code class="language-plaintext highlighter-rouge">jekyll serv</code> 你就會在本地端啟動一個伺服器出來。這個伺服器是HTTP的伺服器，同時它也會開啟一個4000端口出來。所以你這時開啟一個瀏覽器輸入<a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a> 或是 <a href="http://localhost:4000">http://localhost:4000</a> 就可以順利的造訪這個網頁。
+值得一提的是，這個伺服器是隨時更新的，他會無時無刻，偵測你在資料夾裡面的檔案變動。他衹要一發現有一些檔案被修改了，他就會立刻去重新建立一個新的網頁出來。而且執行的速度非常快，他可以讓你在最快的時間內看到你的網頁變化。
+<img src="/image/jekyll3.png" alt="" /></p>
+
+<h3 id="自動發布-github-page">自動發布 github page</h3>
+<p>為了使得發布更加的快速，做了自動 add, commit, push 的腳本
+首先在目錄底下執行 <code class="language-plaintext highlighter-rouge">nano publish.sh</code>，創建一個文黨貼上去，contral+o儲存，contral+x退出</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll build; git commit -am $1 ; git add . ;git push origin master
+</code></pre></div></div>
+<p>使用方法<code class="language-plaintext highlighter-rouge">sh publish.sh "更新的commit message"</code>，就會自動更新勒。</p>
+
+<h1 id="markdown-語法">Markdown 語法</h1>
+<ul>
+  <li><a href="https://hackmd.io/@eMP9zQQ0Qt6I8Uqp2Vqy6w/SyiOheL5N/%2FBVqowKshRH246Q7UDyodFA?type=book">MarkDown語法大全</a></li>
+  <li><a href="https://hackmd.io/@bwMrIJGoSwyHxPVocWmFmw/rJqeVSOrV?type=view">Markdown語法教學</a></li>
+</ul>
+
+<h1 id="進階">進階</h1>
+<h2 id="圖片大小位置控制">圖片大小、位置控制</h2>
+<p>[來自<a href="https://mazhuang.org/2017/09/01/markdown-odd-skills/">這裡</a>]  <br />
+<strong>預設的圖片效果：</strong>  <br />
+原始碼：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![](/images/doge.png)
+</code></pre></div></div>
+<p><img src="/images/doge.png" alt="" /></p>
+
+<p><strong>大小、位置控制：</strong>  <br />
+原始碼：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div align="center"&gt;&lt;img width="65" height="75" src="/images/doge.png"/&gt;&lt;/div&gt;
+</code></pre></div></div>
+<div align="center"><img width="65" height="75" src="/images/doge.png" /></div>
+<h2 id="表格欄位內的換行">表格欄位內的換行</h2>
+<p>[來自<a href="https://mazhuang.org/2017/09/01/markdown-odd-skills/">這裡</a>]  <br />
+範例程式碼：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Header1 | Header2                          |
+|---------|----------------------------------|
+| item 1  | 1. one&lt;br /&gt;2. two&lt;br /&gt;3. three |
+</code></pre></div></div>
+
+<p>效果：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Header1</th>
+      <th>Header2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>item 1</td>
+      <td>1. one<br />2. two<br />3. three</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="數學公式">數學公式</h2>
+<p>[來自<a href="https://mazhuang.org/2017/09/01/markdown-odd-skills/">這裡</a>]  <br />
+如果是在 GitHub Pages，可以參考 http://wanguolin.github.io/mathmatics_rending/ 使用 MathJax 來優雅地展示數學公式（非圖片）。</p>
+
+<p>如果是在 GitHub 項目的 README 等地方，目前我能找到的方案只能是貼圖了，以下是一種比較方便的貼圖方案：</p>
+
+<ol>
+  <li>
+    <p>在 <a href="https://www.codecogs.com/latex/eqneditor.php">https://www.codecogs.com/latex/eqneditor.php</a> 網頁上部的輸入框裡輸入 LaTeX 公式，比如 <code class="language-plaintext highlighter-rouge">$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</code>。</p>
+  </li>
+  <li>
+    <p>在網頁下部拷貝 URL Encoded 的內容，比如以上公式生成的是 <code class="language-plaintext highlighter-rouge">https://latex.codecogs.com/png.latex?%24%24x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D%24%24</code>。</p>
+  </li>
+  <li>
+    <p>在文檔需要的地方使用以上 URL 貼圖，比如:
+原始碼：</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![](https://latex.codecogs.com/png.latex?%24%24x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D%24%24)
+</code></pre></div>    </div>
+    <p>效果：  <br />
+<img src="https://latex.codecogs.com/png.latex?%24%24x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D%24%24" alt="" /></p>
+  </li>
+</ol>
+
+<h2 id="任務列表">任務列表</h2>
+<p>[來自<a href="https://mazhuang.org/2017/09/01/markdown-odd-skills/">這裡</a>]  <br />
+在 GitHub 和 GitLab 等網站，除了可以使用有序列表和無序列表外，還可以使用任務列表，很適合要列出一些清單的場景。
+原始碼：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**購物清單**
+
+- [ ] 一次性水杯
+- [x] 西瓜
+- [ ] 豆漿
+- [x] 可口可樂
+- [ ] 小茗同學
+</code></pre></div></div>
+
+<p>效果：</p>
+
+<p><strong>購物清單</strong></p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />一次性水杯</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />西瓜</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />豆漿</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />可口可樂</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />小茗同學</li>
+</ul>
+
+<h2 id="加入-open-graph-讓你的連結有縮圖">加入 Open Graph 讓你的連結有縮圖</h2>
+<p>要修改的檔案位置<code class="language-plaintext highlighter-rouge">/_includes/meta.html</code>
+<a href="https://developers.facebook.com/tools/debug/sharing/?q=https%3A%2F%2Fawesome-doge.github.io%2Fhow-to-use-irc%2F">Facebook測試工具</a>、<a href="https://cards-dev.twitter.com/validator">twitter測試工具</a>。我自己的參數設定<a href="https://github.com/awesome-doge/awesome-doge.github.io/blob/master/_includes/meta.html">網站</a></p>
+<h3 id="指定-標題">指定 標題</h3>
+<p>加入<code class="language-plaintext highlighter-rouge">/_includes/meta.html</code>的程式碼：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+    &lt;meta property="og:title" content="Jekyll 搭建 github page" /&gt;
+    &lt;meta property="twitter:title" content="Jekyll 搭建 github page" /&gt;
+    
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">_posts</code>資料夾底下的md文件的頭部：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: "Jekyll 搭建 github page"
+---
+</code></pre></div></div>
+<h3 id="指定-簡介">指定 簡介</h3>
+<p>加入<code class="language-plaintext highlighter-rouge">/_includes/meta.html</code>的程式碼：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+    &lt;meta content="手把手用jekyll搭建github靜態網頁" property="og:description"&gt;
+    
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">_posts</code>資料夾底下的md文件的頭部：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+description: "要參與一些大型開源項目，加入IRC是第一步"
+---
+</code></pre></div></div>
+<h3 id="添加-圖片縮圖">添加 圖片縮圖</h3>
+<p>加入<code class="language-plaintext highlighter-rouge">/_includes/meta.html</code>的程式碼：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+    &lt;meta property="og:image" content="https://awesome-doge.github.ioimage/jekyll10.png"&gt;
+    
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">_posts</code>資料夾底下的md文件的頭部：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+image: image/jekyll1.png
+---
+</code></pre></div></div>
+
+<h2 id="新增頁面">新增頁面</h2>
+<p>在我們得到一個現成的模板後，像我就只有Blog,About兩個頁面。 可是要多加幾頁得到如下的效果該怎們辦呢？自己又添加了 閱讀、主題，兩個頁面。
+<img src="/image/jekyll7.png" alt="" /></p>
+<ul>
+  <li>首先，在主目錄底下創一個自己高興的<code class="language-plaintext highlighter-rouge">.md</code>文件，像我多加了<code class="language-plaintext highlighter-rouge">reading.md</code>。ok這樣是不夠的，系統是已經幫
+<img src="/image/jekyll8.png" alt="" /></li>
+  <li>ok這樣是不夠的，系統是已經幫你創建了頁面，但是你必須要修改一下預設模板，位置在<code class="language-plaintext highlighter-rouge">_layouts/default.html</code>，看自己的需求進行排版調整。
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          &lt;nav&gt;
+          &lt;a href="/"&gt;Blog&lt;/a&gt;
+          &lt;a href="/reading"&gt;閱讀&lt;/a&gt;
+          &lt;a href="/categories"&gt;主題&lt;/a&gt;
+          &lt;a href="/about"&gt;About&lt;/a&gt;
+            
+          &lt;!-- &lt;a href="/tags"&gt;tags&lt;/a&gt; --&gt;
+        &lt;/nav&gt;
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="添加翻頁功能">添加翻頁功能</h2>
+<ul>
+  <li>在主目錄下<code class="language-plaintext highlighter-rouge">nano Gemfile</code>，存入以下內容
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll"
+end
+</code></pre></div>    </div>
+  </li>
+  <li>在主目錄下<code class="language-plaintext highlighter-rouge">_config.yml</code>文件添加兩行：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>paginate: 7
+  paginate_path: "/page:num/"
+</code></pre></div>    </div>
+  </li>
+  <li>跑到主目錄下的 <code class="language-plaintext highlighter-rouge">index.html</code>，按照<a href="https://github.com/awesome-doge/awesome-doge.github.io/commit/6044caa5857754c449b643fa72cfae5f5d1b5964#diff-eacf331f0ffc35d4b482f1d15a887d3b">這樣</a>修改</li>
+  <li>執行以下指令：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+bundle add webrick
+bundle install
+bundle exec jekyll serve
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>結束</p>
+
+<h1 id="參考文獻">參考文獻</h1>
+<ul>
+  <li><a href="https://jekyllrb.com/docs/">官網連結</a></li>
+  <li><a href="https://jekyllcn.com">簡體中文官網</a></li>
+  <li><a href="https://mazhuang.org/2017/09/01/markdown-odd-skills/">关于 Markdown 的一些奇技淫巧</a></li>
+  <li><a href="http://rocksaying.tw/archives/2016/讓網頁在Twitter推文時顯示圖片-在github-pages中加上Twitter-Cards.html">讓網頁在 Twitter 推文時顯示圖片 - 在 github pages 中加上 Twitter Cards 與 Open Graph 標籤</a></li>
+  <li><a href="https://gist.github.com/davidensinger/5431869">adding-open-graph-tags-to-jekyll.html</a></li>
+  <li><a href="https://danaleegibson.com/jekyll-and-facebook-og-images/">Jekyll and Facebook OG Images</a></li>
+</ul>
+
+  </div>
+
+  <div class="date">
+    Written on August 31, 2019
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/jekyll%E6%90%AD%E5%BB%BAgithubpage/',
+		  'title': 'Jekyll 搭建 github page'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

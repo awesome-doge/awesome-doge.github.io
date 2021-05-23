@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tor + meek (Mac) – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="emmm…會寫這一篇呢，主要是因為某些環境下，在brew install tor還有tor跑起來之後，並無法順利的抵達Tor directory server，也就無法進一步提取一些中繼節點來建立路徑。
+" />
+    <meta property="og:description" content="emmm…會寫這一篇呢，主要是因為某些環境下，在brew install tor還有tor跑起來之後，並無法順利的抵達Tor directory server，也就無法進一步提取一些中繼節點來建立路徑。
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="Tor + meek (Mac)" />
+    <meta property="twitter:title" content="Tor + meek (Mac)" />
+    
+    
+    
+    
+    
+    <meta content="Freedom is priceless." property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Tor + meek (Mac) | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Tor + meek (Mac)" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="emmm…會寫這一篇呢，主要是因為某些環境下，在brew install tor還有tor跑起來之後，並無法順利的抵達Tor directory server，也就無法進一步提取一些中繼節點來建立路徑。" />
+<meta property="og:description" content="emmm…會寫這一篇呢，主要是因為某些環境下，在brew install tor還有tor跑起來之後，並無法順利的抵達Tor directory server，也就無法進一步提取一些中繼節點來建立路徑。" />
+<link rel="canonical" href="https://awesome-doge.github.io/Tor-meek-Mac/" />
+<meta property="og:url" content="https://awesome-doge.github.io/Tor-meek-Mac/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-02-01T19:28:57+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Tor + meek (Mac)" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"emmm…會寫這一篇呢，主要是因為某些環境下，在brew install tor還有tor跑起來之後，並無法順利的抵達Tor directory server，也就無法進一步提取一些中繼節點來建立路徑。","headline":"Tor + meek (Mac)","dateModified":"2018-02-01T19:28:57+00:00","datePublished":"2018-02-01T19:28:57+00:00","url":"https://awesome-doge.github.io/Tor-meek-Mac/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/Tor-meek-Mac/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Tor + meek (Mac)</h1>
+
+  <div class="entry">
+    <p>emmm…會寫這一篇呢，主要是因為某些環境下，在<code class="language-plaintext highlighter-rouge">brew install tor</code>還有<code class="language-plaintext highlighter-rouge">tor</code>跑起來之後，並無法順利的抵達Tor directory server，也就無法進一步提取一些中繼節點來建立路徑。</p>
+
+<p><img src="/image/tor28.png" alt="卡在連線 Tor directory server" /></p>
+
+<!-- more -->
+
+<p>Tor Project 為了可以讓用戶順利的抵達Tor directory server，開發了許多方法使用戶可以順利抵達。這些方法被Tor Project稱之為Pluggable Transports，方法有許多包括​obfs4（之所以是4，也就是說有1,2,3啦，只是都退役了）、meek（簡單的來說就是將流量重新包裝成https的樣子，在封包辨識上比較難辨別）….等，當中每個在包裝技術都很有趣包括，重新包裝成skype流量。</p>
+
+<p><img src="/image/tor29.jpeg" alt="just 參考" /></p>
+
+<p>回到Bash，本文將以Pluggable Transports中的meek嘗試是否可以順利訪問Tor directory server。在<code class="language-plaintext highlighter-rouge">brew install tor</code>之後，來clone一個meek工具（這是Tor Project 自己的git）下來：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://git.torproject.org/pluggable-transports/meek.git
+</code></pre></div></div>
+
+<p>接下來到/meek/meek-client 底下 執行<code class="language-plaintext highlighter-rouge">make</code>（前提是要裝好go，有些不足的go包報錯會有載點）一下，順利的話 你會跟我依樣見到一個meek-client</p>
+
+<p><img src="/image/tor30.png" alt="" /></p>
+
+<p>接下來把這個meek-client 丟到/usr/local/etc/tor 下。</p>
+
+<p><img src="/image/tor31.png" alt="" /></p>
+
+<p>接下來ㄋㄟ，要來編輯一下/usr/local/etc/tor/torrc，不需要sudo 直接打開編輯，在最上面加入些訊息包括，要用bridge, 要連到哪個bridge, 要用meek插件，具體如下，改完之後儲存。至於要用哪一個bridge 這邊是以AZURE為例。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UseBridges 1
+Bridge meek 0.0.2.0:3 url=https://meek.azureedge.net/ front=ajax.aspnetcdn.com
+ClientTransportPlugin meek exec ./meek-client — log meek-client.log
+</code></pre></div></div>
+
+<p>最後一步，在終端裡面，執行<code class="language-plaintext highlighter-rouge">tor</code>就行了。</p>
+
+<h3 id="可能的錯誤">可能的錯誤</h3>
+<p>但是ㄋㄟ ，之前的我常常遇到既使都設定對了還是跑不出來主要報錯如下：</p>
+
+<p><img src="/image/tor32.png" alt="" /></p>
+
+<p>這時我是把/usr/local/etc/tor中的log 砍了 就意外過了23333</p>
+
+<p>參考文獻</p>
+
+<p>[1]https://trac.torproject.org/projects/tor/wiki/doc/PluggableTransports/list#PTlibraries</p>
+
+<p>[2]https://www.slideshare.net/antitree/meek-and-domain-fronting-public</p>
+
+  </div>
+
+  <div class="date">
+    Written on February  1, 2018
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/Tor-meek-Mac/',
+		  'title': 'Tor + meek (Mac)'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

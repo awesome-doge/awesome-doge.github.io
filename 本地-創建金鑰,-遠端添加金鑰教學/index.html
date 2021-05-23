@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>本地 創建金鑰, 遠端添加金鑰教學 – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="echo 'ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFFd7ef7PC+37cJCZtiS7nb2Lg8O9HpYo7D00FGAxt820EMa0C3HzZTOh5Zs8e4Cn1TNMa9B5Wyw3k2zRQgyWkM=' &gt;&gt; ~/.ssh/authorized_keys
+
+" />
+    <meta property="og:description" content="echo 'ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFFd7ef7PC+37cJCZtiS7nb2Lg8O9HpYo7D00FGAxt820EMa0C3HzZTOh5Zs8e4Cn1TNMa9B5Wyw3k2zRQgyWkM=' &gt;&gt; ~/.ssh/authorized_keys
+
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="本地 創建金鑰, 遠端添加金鑰教學" />
+    <meta property="twitter:title" content="本地 創建金鑰, 遠端添加金鑰教學" />
+    
+    
+    
+    
+    
+    <meta content="" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>本地 創建金鑰, 遠端添加金鑰教學 | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="本地 創建金鑰, 遠端添加金鑰教學" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Freedom is priceless." />
+<meta property="og:description" content="Freedom is priceless." />
+<link rel="canonical" href="https://awesome-doge.github.io/%E6%9C%AC%E5%9C%B0-%E5%89%B5%E5%BB%BA%E9%87%91%E9%91%B0,-%E9%81%A0%E7%AB%AF%E6%B7%BB%E5%8A%A0%E9%87%91%E9%91%B0%E6%95%99%E5%AD%B8/" />
+<meta property="og:url" content="https://awesome-doge.github.io/%E6%9C%AC%E5%9C%B0-%E5%89%B5%E5%BB%BA%E9%87%91%E9%91%B0,-%E9%81%A0%E7%AB%AF%E6%B7%BB%E5%8A%A0%E9%87%91%E9%91%B0%E6%95%99%E5%AD%B8/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-29T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="本地 創建金鑰, 遠端添加金鑰教學" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"Freedom is priceless.","headline":"本地 創建金鑰, 遠端添加金鑰教學","dateModified":"2021-03-29T00:00:00+00:00","datePublished":"2021-03-29T00:00:00+00:00","url":"https://awesome-doge.github.io/%E6%9C%AC%E5%9C%B0-%E5%89%B5%E5%BB%BA%E9%87%91%E9%91%B0,-%E9%81%A0%E7%AB%AF%E6%B7%BB%E5%8A%A0%E9%87%91%E9%91%B0%E6%95%99%E5%AD%B8/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/%E6%9C%AC%E5%9C%B0-%E5%89%B5%E5%BB%BA%E9%87%91%E9%91%B0,-%E9%81%A0%E7%AB%AF%E6%B7%BB%E5%8A%A0%E9%87%91%E9%91%B0%E6%95%99%E5%AD%B8/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>本地 創建金鑰, 遠端添加金鑰教學</h1>
+
+  <div class="entry">
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFFd7ef7PC+37cJCZtiS7nb2Lg8O9HpYo7D00FGAxt820EMa0C3HzZTOh5Zs8e4Cn1TNMa9B5Wyw3k2zRQgyWkM=' &gt;&gt; ~/.ssh/authorized_keys
+</code></pre></div></div>
+
+<h3 id="創建自己的ssh-鑰匙">創建自己的ssh 鑰匙</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t ed25519
+</code></pre></div></div>
+<p>查看</p>
+<blockquote>
+  <p>生成的key 位於 <code class="language-plaintext highlighter-rouge">~/.ssh</code>  <br />
+可以 <code class="language-plaintext highlighter-rouge">cd ~/.ssh</code> 查看</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.ssh  ls 
+id_ed25519     id_ed25519.pub
+</code></pre></div>  </div>
+  <p>查看 公鑰 <code class="language-plaintext highlighter-rouge">cat id_ed25519.pub</code></p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.ssh cat id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ+Xwy2XswMIwGw6I1+dFxWge9D54zqojlA7PeeBpsGW cov2019@protonmail.com
+</code></pre></div>  </div>
+</blockquote>
+
+<h3 id="遠端主機添加key">遠端主機添加key</h3>
+<blockquote>
+  <p>進到root權限  <br />
+安裝nano  <br />
+切換到root目錄  <br />
+建立.ssh 資料夾  <br />
+切換到.ssh 資料夾  <br />
+編輯/創建 authorized_keys 文件</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo su
+apt-get install nano -y
+cd /root/
+mkdir .ssh
+cd .ssh
+nano authorized_keys
+</code></pre></div></div>
+
+<blockquote>
+  <p>貼上自己的ssh  <br />
+<code class="language-plaintext highlighter-rouge">ctrl+o</code>存擋  <br />
+<code class="language-plaintext highlighter-rouge">ctrl+x</code>關閉  <br />
+已經可以在本地端連線遠端主機，測試是否需要密碼</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFFd7ef7PC+37cJCZtiS7nb2Lg8O9HpYo7D00FGAxt820EMa0C3HzZTOh5Zs8e4Cn1TNMa9B5Wyw3k2zRQgyWkM=
+</code></pre></div></div>
+
+<h3 id="移除-密碼登入">移除 密碼登入</h3>
+<p>編輯ssh 文件</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano /etc/ssh/sshd_config
+</code></pre></div></div>
+
+<p>搜尋 PasswordAuthentication</p>
+<blockquote>
+  <p>快捷鍵 <code class="language-plaintext highlighter-rouge">ctrl + w</code> 貼上 PasswordAuthentication  <br />
+將 PasswordAuthentication 的yes 改成 no  <br />
+<code class="language-plaintext highlighter-rouge">ctrl+o</code>存擋  <br />
+<code class="language-plaintext highlighter-rouge">ctrl+x</code>關閉  <br />
+應該要是立即生效，可試試看不使用金鑰，遠端ssh 是否讓你連線</p>
+</blockquote>
+
+  </div>
+
+  <div class="date">
+    Written on March 29, 2021
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/%E6%9C%AC%E5%9C%B0-%E5%89%B5%E5%BB%BA%E9%87%91%E9%91%B0,-%E9%81%A0%E7%AB%AF%E6%B7%BB%E5%8A%A0%E9%87%91%E9%91%B0%E6%95%99%E5%AD%B8/',
+		  'title': '本地 創建金鑰, 遠端添加金鑰教學'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

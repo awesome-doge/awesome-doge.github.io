@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ubuntu 19.04 /rc.local 重建手術 – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+" />
+    <meta property="og:description" content="
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="Ubuntu 19.04 /rc.local 重建手術" />
+    <meta property="twitter:title" content="Ubuntu 19.04 /rc.local 重建手術" />
+    
+    
+    
+    <meta property="og:image" content="https://awesome-doge.github.ioimage/ubuntu1.jpeg">
+    
+    
+    
+    <meta content="重新建立Ubuntu 19.04的自動執行" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Ubuntu 19.04 /rc.local 重建手術 | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Ubuntu 19.04 /rc.local 重建手術" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="重新建立Ubuntu 19.04的自動執行" />
+<meta property="og:description" content="重新建立Ubuntu 19.04的自動執行" />
+<link rel="canonical" href="https://awesome-doge.github.io/%E9%87%8D%E5%BB%BAUbutnu19.04%E8%87%AA%E5%8B%95%E5%9F%B7%E8%A1%8C/" />
+<meta property="og:url" content="https://awesome-doge.github.io/%E9%87%8D%E5%BB%BAUbutnu19.04%E8%87%AA%E5%8B%95%E5%9F%B7%E8%A1%8C/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:image" content="https://awesome-doge.github.io/image/ubuntu1.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-23T00:00:00+00:00" />
+<meta name="twitter:card" content="Cypherpunks" />
+<meta property="twitter:image" content="https://awesome-doge.github.io/image/ubuntu1.jpeg" />
+<meta property="twitter:title" content="Ubuntu 19.04 /rc.local 重建手術" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"重新建立Ubuntu 19.04的自動執行","headline":"Ubuntu 19.04 /rc.local 重建手術","dateModified":"2019-12-23T00:00:00+00:00","datePublished":"2019-12-23T00:00:00+00:00","url":"https://awesome-doge.github.io/%E9%87%8D%E5%BB%BAUbutnu19.04%E8%87%AA%E5%8B%95%E5%9F%B7%E8%A1%8C/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/%E9%87%8D%E5%BB%BAUbutnu19.04%E8%87%AA%E5%8B%95%E5%9F%B7%E8%A1%8C/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"image":"https://awesome-doge.github.io/image/ubuntu1.jpeg","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Ubuntu 19.04 /rc.local 重建手術</h1>
+
+  <div class="entry">
+    <p><img src="/image/ubuntu1.jpeg" alt="" /></p>
+
+<p>1.建立一個rc.local 服務</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano /etc/systemd/system/rc-local.service
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Unit]
+Description=/etc/rc.local Compatibility
+ConditionPathExists=/etc/rc.local
+[Service]
+Type=forking
+ExecStart=/etc/rc.local start
+TimeoutSec=0
+StandardOutput=tty
+RemainAfterExit=yes
+SysVStartPriority=99
+
+[Install]
+WantedBy=multi-user.target
+</code></pre></div></div>
+<p>完成後存檔記錄.</p>
+
+<p>1.建立一個/etc/rc.local 檔</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo touch /etc/rc.local
+sudo chmod +x /etc/rc.local
+sudo nano /etc/rc.local
+</code></pre></div></div>
+
+<p>加入預設的啟動SHELL內容:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/sh -e
+
+exit 0;
+</code></pre></div></div>
+
+<p>3.建立開機時的執行服務啟動</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl enable rc-local
+</code></pre></div></div>
+<p>重新啟動電腦就完成設置了.</p>
+
+<h2 id="參考文獻">參考文獻</h2>
+<ul>
+  <li><a href="https://www.php5.idv.tw/wordpress/?p=650">uBuntu 19.04 /rc.local 重建手術</a></li>
+</ul>
+
+  </div>
+
+  <div class="date">
+    Written on December 23, 2019
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/%E9%87%8D%E5%BB%BAUbutnu19.04%E8%87%AA%E5%8B%95%E5%9F%B7%E8%A1%8C/',
+		  'title': 'Ubuntu 19.04 /rc.local 重建手術'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>crontab + 檢測錯誤 + 自動重啟 – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+" />
+    <meta property="og:description" content="
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="crontab + 檢測錯誤 + 自動重啟" />
+    <meta property="twitter:title" content="crontab + 檢測錯誤 + 自動重啟" />
+    
+    
+    
+    <meta property="og:image" content="https://awesome-doge.github.io/image/crontab.png">
+    
+    
+    
+    <meta content="" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>crontab + 檢測錯誤 + 自動重啟 | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="crontab + 檢測錯誤 + 自動重啟" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Freedom is priceless." />
+<meta property="og:description" content="Freedom is priceless." />
+<link rel="canonical" href="https://awesome-doge.github.io/crontab+%E6%AA%A2%E6%B8%AC%E9%8C%AF%E8%AA%A4+%E8%87%AA%E5%8B%95%E9%87%8D%E5%95%9F/" />
+<meta property="og:url" content="https://awesome-doge.github.io/crontab+%E6%AA%A2%E6%B8%AC%E9%8C%AF%E8%AA%A4+%E8%87%AA%E5%8B%95%E9%87%8D%E5%95%9F/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:image" content="https://awesome-doge.github.io/image/crontab.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-10T00:00:00+00:00" />
+<meta name="twitter:card" content="Cypherpunks" />
+<meta property="twitter:image" content="https://awesome-doge.github.io/image/crontab.png" />
+<meta property="twitter:title" content="crontab + 檢測錯誤 + 自動重啟" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"Freedom is priceless.","headline":"crontab + 檢測錯誤 + 自動重啟","dateModified":"2020-10-10T00:00:00+00:00","datePublished":"2020-10-10T00:00:00+00:00","url":"https://awesome-doge.github.io/crontab+%E6%AA%A2%E6%B8%AC%E9%8C%AF%E8%AA%A4+%E8%87%AA%E5%8B%95%E9%87%8D%E5%95%9F/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/crontab+%E6%AA%A2%E6%B8%AC%E9%8C%AF%E8%AA%A4+%E8%87%AA%E5%8B%95%E9%87%8D%E5%95%9F/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"image":"https://awesome-doge.github.io/image/crontab.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>crontab + 檢測錯誤 + 自動重啟</h1>
+
+  <div class="entry">
+    <p><img src="/image/crontab.png" alt="" /></p>
+
+<p>顯示ˋ執行相關的 log 紀錄</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep CRON /var/log/syslog* | grep -E "check-httpd.sh"
+</code></pre></div></div>
+
+<p>添加到自動執行程序</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crontab -e
+* * * * * sh /home/user/check-httpd.sh
+
+crontab -l
+</code></pre></div></div>
+
+<p><strong>第一種</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+DATE=$(date)
+/usr/bin/curl --max-time 5 -s --head  --request GET http://127.0.0.1/ | if ! grep "200 OK"; then
+/opt/bitnami/ctlscript.sh restart apache
+echo "$DATE - NOT OKAY, apache restarted" &gt;&gt; /home/user/custom-restarts.log
+fi
+</code></pre></div></div>
+<p>看一下重重啟了幾次</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail custom-restarts.log 
+</code></pre></div></div>
+
+<p><strong>第二種</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl --max-time 5 http://127.0.0.1/ || /opt/bitnami/ctlscript.sh restart apache
+</code></pre></div></div>
+
+<p><strong>第三種</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+
+
+# Check httpd header
+checkhttpd=`/usr/bin/curl -s --head --request GET http://127.0.0.1/  | grep HTTP | /usr/bin/wc -l`
+
+echo = $checkhttpd
+
+if [ $checkhttpd != 1 ]; then
+echo '!=1'
+echo 'restart httpd'
+/opt/bitnami/ctlscript.sh restart apache
+fi
+</code></pre></div></div>
+
+<ul>
+  <li>https://blog.goodjack.tw/2018/02/user-cron-job.html</li>
+  <li><a href="https://blog.techbridge.cc/2019/11/15/linux-shell-script-tutorial/">簡明 Linux Shell Script 入門教學</a></li>
+</ul>
+
+
+  </div>
+
+  <div class="date">
+    Written on October 10, 2020
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/crontab+%E6%AA%A2%E6%B8%AC%E9%8C%AF%E8%AA%A4+%E8%87%AA%E5%8B%95%E9%87%8D%E5%95%9F/',
+		  'title': 'crontab + 檢測錯誤 + 自動重啟'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>github action + jekyll – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="在過去的jekyll網站部署中，流程為在本地撰寫md文件，跑一下bundle exec jekyll serve取得編譯完成的網頁html檔案，再丟上去gh-page，每次手動都很麻煩。github 推出了自家的ci/cd 叫做github action，本教學教您如何透過github action自動編譯、部署jekyll 網頁到 gh-pages。
+
+" />
+    <meta property="og:description" content="在過去的jekyll網站部署中，流程為在本地撰寫md文件，跑一下bundle exec jekyll serve取得編譯完成的網頁html檔案，再丟上去gh-page，每次手動都很麻煩。github 推出了自家的ci/cd 叫做github action，本教學教您如何透過github action自動編譯、部署jekyll 網頁到 gh-pages。
+
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="github action + jekyll" />
+    <meta property="twitter:title" content="github action + jekyll" />
+    
+    
+    
+    <meta property="og:image" content="https://awesome-doge.github.ioimage/github-action-6.png">
+    
+    
+    
+    <meta content="透過github action自動編譯、部署jekyll 網頁到 gh-pages" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>github action + jekyll | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="github action + jekyll" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="透過github action自動編譯、部署jekyll 網頁到 gh-pages" />
+<meta property="og:description" content="透過github action自動編譯、部署jekyll 網頁到 gh-pages" />
+<link rel="canonical" href="https://awesome-doge.github.io/githubaction+jekyll/" />
+<meta property="og:url" content="https://awesome-doge.github.io/githubaction+jekyll/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:image" content="https://awesome-doge.github.io/image/github-action-6.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-09T00:00:00+00:00" />
+<meta name="twitter:card" content="Cypherpunks" />
+<meta property="twitter:image" content="https://awesome-doge.github.io/image/github-action-6.png" />
+<meta property="twitter:title" content="github action + jekyll" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"透過github action自動編譯、部署jekyll 網頁到 gh-pages","headline":"github action + jekyll","dateModified":"2020-10-09T00:00:00+00:00","datePublished":"2020-10-09T00:00:00+00:00","url":"https://awesome-doge.github.io/githubaction+jekyll/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/githubaction+jekyll/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"image":"https://awesome-doge.github.io/image/github-action-6.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>github action + jekyll</h1>
+
+  <div class="entry">
+    <p>在過去的jekyll網站部署中，流程為在本地撰寫md文件，跑一下<code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>取得編譯完成的網頁html檔案，再丟上去gh-page，每次手動都很麻煩。github 推出了自家的ci/cd 叫做github action，本教學教您如何透過github action自動編譯、部署jekyll 網頁到 gh-pages。
+<img src="/image/github-action-6.png" alt="" /></p>
+
+<ul>
+  <li><a href="#取得-github-action-token">取得 github action token</a></li>
+  <li><a href="#輸入-輸入token-到該目標倉庫">輸入 輸入token 到該目標倉庫</a></li>
+  <li><a href="#插入github-action-腳本">插入github action 腳本</a></li>
+  <li><a href="#執行結果">執行結果</a></li>
+  <li><a href="#debug-插曲">debug 插曲</a>
+    <ul>
+      <li><a href="#gem-套件版本問題">gem 套件版本問題</a></li>
+      <li><a href="#github-action-market-最多人在用的-aaction-不能用">github action market 最多人在用的 aaction 不能用</a></li>
+    </ul>
+  </li>
+  <li><a href="#參考文獻">參考文獻</a></li>
+</ul>
+
+<h2 id="取得-github-action-token">取得 github action token</h2>
+<ul>
+  <li>取得新的 token <a href="https://github.com/settings/tokens/new">https://github.com/settings/tokens/new</a>
+<img src="/image/github-action-3.png" alt="" /></li>
+</ul>
+
+<h2 id="輸入-輸入token-到該目標倉庫">輸入 輸入token 到該目標倉庫</h2>
+<ul>
+  <li>網頁點擊： settings » secrets</li>
+</ul>
+
+<p><img src="/image/github-action-1.png" alt="" /></p>
+
+<h2 id="插入github-action-腳本">插入github action 腳本</h2>
+<ul>
+  <li>在<code class="language-plaintext highlighter-rouge">.github/workflows</code>創建<code class="language-plaintext highlighter-rouge">run.yml</code>文件</li>
+  <li>插入以下<a href="https://jekyllrb.com/docs/continuous-integration/github-actions/">程式碼</a>：</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-16.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: helaili/jekyll-action@2.0.1
+        env:
+          JEKYLL_PAT: $
+</code></pre></div></div>
+
+<h2 id="執行結果">執行結果</h2>
+<p><img src="/image/github-action-2.png" alt="" /></p>
+
+<h2 id="debug-插曲">debug 插曲</h2>
+<h3 id="gem-套件版本問題">gem 套件版本問題</h3>
+<p>在本地端編譯都不是問題，但是在github action 編譯過程中卻遇到gem  版本不符的問題。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Starting the Jekyll Action
+Your Gemfile has no gem server sources. If you need gems that are not already on
+your machine, add a line like this to your Gemfile:
+source 'https://rubygems.org'
+Your bundle is locked to public_suffix (1.5.3), but that version could not be
+found in any of the sources listed in your Gemfile. If you haven't changed
+sources, that means the author of public_suffix (1.5.3) has removed it. You'll
+need to update your bundle to a version other than public_suffix (1.5.3) that
+hasn't been removed in order to install.
+</code></pre></div></div>
+<p><strong>問題解決</strong>
+在<code class="language-plaintext highlighter-rouge">Gemfile</code>文件第一行添加來源，即可解決</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+</code></pre></div></div>
+
+<h3 id="github-action-market-最多人在用的-aaction-不能用">github action market 最多人在用的 aaction 不能用</h3>
+<p><a href="https://github.com/marketplace/actions/jekyll-actions">https://github.com/marketplace/actions/jekyll-actions</a>這是在market 最多人在用的版本，但該版本有致命的問題，無法自動部署 gh-pages 分支。
+作者也說這有問題：
+<img src="/image/github-action-4.png" alt="" />
+我嘗試了很久沒有看到問題的解決方案….
+<img src="/image/github-action-5.png" alt="" /></p>
+
+<p><strong>問題解決</strong>
+直接換一個github action 程式碼吧
+<a href="https://jekyllrb.com/docs/continuous-integration/github-actions/">https://jekyllrb.com/docs/continuous-integration/github-actions/</a> 這是由jekyll 官方網站提供的版本。<strong>成功可以運作</strong></p>
+
+<h2 id="參考文獻">參考文獻</h2>
+<ul>
+  <li><a href="https://jekyllrb.com/docs/continuous-integration/github-actions/">https://jekyllrb.com/docs/continuous-integration/github-actions/</a></li>
+  <li><a href="https://jekyllrb.com/docs/continuous-integration/github-actions/">https://jekyllrb.com/docs/continuous-integration/github-actions/</a></li>
+  <li><a href="https://github.com/marketplace/actions/jekyll-actions">https://github.com/marketplace/actions/jekyll-actions</a></li>
+</ul>
+
+  </div>
+
+  <div class="date">
+    Written on October  9, 2020
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/githubaction+jekyll/',
+		  'title': 'github action + jekyll'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

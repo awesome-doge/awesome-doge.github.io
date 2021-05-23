@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tor v3 hidden service 設定 + ssh 連線 – awesome-doge – Freedom is priceless.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="搭建hidden service、搭建hidden ssh、連線hidden ssh
+
+" />
+    <meta property="og:description" content="搭建hidden service、搭建hidden ssh、連線hidden ssh
+
+" />
+    
+    <meta name="author" content="awesome-doge" />
+
+    
+    <meta property="og:title" content="tor v3 hidden service 設定 + ssh 連線" />
+    <meta property="twitter:title" content="tor v3 hidden service 設定 + ssh 連線" />
+    
+    
+    
+    <meta property="og:image" content="https://awesome-doge.github.io/image/tor33.png">
+    
+    
+    
+    <meta content="搭建hidden service、搭建hidden ssh、連線hidden ssh" property="og:description">
+    
+
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>tor v3 hidden service 設定 + ssh 連線 | awesome doge</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="tor v3 hidden service 設定 + ssh 連線" />
+<meta name="author" content="awesome-doge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="搭建hidden service、搭建hidden ssh、連線hidden ssh" />
+<meta property="og:description" content="搭建hidden service、搭建hidden ssh、連線hidden ssh" />
+<link rel="canonical" href="https://awesome-doge.github.io/torv3-hidden-service-%E8%A8%AD%E5%AE%9A-+-ssh-%E9%80%A3%E7%B7%9A/" />
+<meta property="og:url" content="https://awesome-doge.github.io/torv3-hidden-service-%E8%A8%AD%E5%AE%9A-+-ssh-%E9%80%A3%E7%B7%9A/" />
+<meta property="og:site_name" content="awesome doge" />
+<meta property="og:image" content="https://awesome-doge.github.io/image/tor33.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-11T00:00:00+00:00" />
+<meta name="twitter:card" content="Cypherpunks" />
+<meta property="twitter:image" content="https://awesome-doge.github.io/image/tor33.png" />
+<meta property="twitter:title" content="tor v3 hidden service 設定 + ssh 連線" />
+<meta name="twitter:site" content="@awesome-doge" />
+<meta name="twitter:creator" content="@awesome-doge" />
+<script type="application/ld+json">
+{"description":"搭建hidden service、搭建hidden ssh、連線hidden ssh","headline":"tor v3 hidden service 設定 + ssh 連線","dateModified":"2020-03-11T00:00:00+00:00","datePublished":"2020-03-11T00:00:00+00:00","url":"https://awesome-doge.github.io/torv3-hidden-service-%E8%A8%AD%E5%AE%9A-+-ssh-%E9%80%A3%E7%B7%9A/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://awesome-doge.github.io/torv3-hidden-service-%E8%A8%AD%E5%AE%9A-+-ssh-%E9%80%A3%E7%B7%9A/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://awesome-doge.github.io/images/doge.png"},"name":"awesome-doge"},"author":{"@type":"Person","name":"awesome-doge"},"image":"https://awesome-doge.github.io/image/tor33.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-doge - Freedom is priceless." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/doge.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">awesome-doge</a></h1>
+            <p class="site-description">Freedom is priceless.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/post">Post</a>
+            <!-- <a href="/categories">主題</a> -->
+            <a href="/tor">Tor</a>
+            <a href="/archive">Archives</a>
+            <a href="/about">About</a>            
+            <!-- <a href="/tags">tags</a> -->
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>tor v3 hidden service 設定 + ssh 連線</h1>
+
+  <div class="entry">
+    <p>搭建hidden service、搭建hidden ssh、連線hidden ssh
+<img src="/image/tor33.png" alt="" /></p>
+
+<h2 id="server-setting">server setting</h2>
+
+<h3 id="1個-hidden-address-service">1個 hidden address service</h3>
+<ol>
+  <li>安裝 tor ： <code class="language-plaintext highlighter-rouge">sudo apt-get install tor</code>
+    <ul>
+      <li>因為會背景執行，查一下PID<code class="language-plaintext highlighter-rouge">sudo lsof -i | grep LISTEN</code></li>
+      <li>殺掉他 <code class="language-plaintext highlighter-rouge">sudo kill &lt;pid&gt;</code></li>
+    </ul>
+  </li>
+  <li>修改<code class="language-plaintext highlighter-rouge">/etc/tor/torrc</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> HiddenServiceDir /home/&lt;username&gt;/&lt;hiddenfile_A&gt;
+ HiddenServicePort 22 127.0.0.1:22
+</code></pre></div>    </div>
+    <ul>
+      <li>HiddenServiceDir ：可設定到 <code class="language-plaintext highlighter-rouge">/home/&lt;username&gt;/&lt;hiddenfile_A&gt;</code>
+        <ul>
+          <li>修改一下權限，不然不讓跑：<code class="language-plaintext highlighter-rouge">sudo chmod 700 /home/&lt;username&gt;/&lt;hiddenfile_A&gt;</code></li>
+        </ul>
+      </li>
+      <li>left port : hidden port</li>
+      <li>right port : 本機 port</li>
+    </ul>
+  </li>
+  <li>跑起來 執行 <code class="language-plaintext highlighter-rouge">tor</code>
+    <blockquote>
+      <p>會自動在<code class="language-plaintext highlighter-rouge">/home/&lt;username&gt;/&lt;hiddenfile_A&gt;</code> 生成三個文件，分別為 私鑰、公鑰、地址，需要將地址分享出去。</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="多個-hidden-address-service">多個 hidden address service</h3>
+
+<ol>
+  <li>修改<code class="language-plaintext highlighter-rouge">/etc/tor/torrc</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> HiddenServiceDir /home/&lt;username&gt;/&lt;hiddenfile_A&gt;
+ HiddenServicePort 80 127.0.0.1:80
+
+ HiddenServiceDir /home/&lt;username&gt;/&lt;hiddenfile_B&gt;
+ HiddenServicePort 80 127.0.0.1:8080
+
+ HiddenServiceDir /home/&lt;username&gt;/&lt;hiddenfile_C&gt;
+ HiddenServicePort 80 127.0.0.1:8081
+</code></pre></div>    </div>
+    <ul>
+      <li>不同的&lt;hiddenfile_*&gt;代表不同的hidden 網址，上例會生成三個網址(上線)，分別儲存在資料夾中的<code class="language-plaintext highlighter-rouge">hostname</code></li>
+    </ul>
+  </li>
+  <li>跑起來 執行 <code class="language-plaintext highlighter-rouge">tor</code>
+    <blockquote>
+      <p>換看到創建的資料夾都生成了私鑰、公鑰、地址</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="ssh-client-setting">ssh client setting</h2>
+<ol>
+  <li>在本地端先跑一個 <code class="language-plaintext highlighter-rouge">brew install tor</code>，執行<code class="language-plaintext highlighter-rouge">tor</code></li>
+  <li>修改 .ssh/config，添加以下內容
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Host *.onion *-tor
+  ProxyCommand nc -X 5 -x 127.0.0.1:9050 %h %p
+  CheckHostIP  no
+  Compression  yes
+  Protocol     2
+</code></pre></div>    </div>
+  </li>
+  <li>可以連線了<code class="language-plaintext highlighter-rouge">ssh &lt;username&gt;@&lt;hostname-onion&gt;.onion</code></li>
+</ol>
+
+<p>參考文獻：https://blog.w1r3.net/2018/02/11/ssh-hidden-service.html</p>
+
+<h2 id="暴力生成-特殊-tor-v3-address">暴力生成 特殊 tor v3 address</h2>
+<blockquote>
+  <p>成品展示 winnie <code class="language-plaintext highlighter-rouge">&lt;winnienbkmomnlswyfwfrpv7nl3svncbsqsyizbwgt75kcorbp5d6uad.onion&gt;</code></p>
+</blockquote>
+
+<p>下載</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install git
+git clone https://github.com/cathugger/mkp224o.git
+cd mkp224o
+sudo apt install gcc libsodium-dev make autoconf
+</code></pre></div></div>
+<p>編譯</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./autogen.sh
+./configure
+./configure CPPFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib"
+make
+</code></pre></div></div>
+<p>使用</p>
+
+<blockquote>
+  <p>注意：詞彙設定絕對不要太短(小於等於3字)，會生成太快造成硬碟毀損，或難以刪除</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./mkp224o &lt;詞彙_A&gt; &lt;詞彙_B&gt; &lt;...&gt; 
+</code></pre></div>  </div>
+  <ul>
+    <li><code class="language-plaintext highlighter-rouge">-S 1</code> 顯示狀態，每秒一次，預設十秒刷新一次</li>
+    <li><code class="language-plaintext highlighter-rouge">-j 10</code> ：使用CPU數量，預設是全開</li>
+    <li><code class="language-plaintext highlighter-rouge">./mkp224o -h</code> : 更多內容說明</li>
+  </ul>
+</blockquote>
+
+<p>若有成果會出現在同一個資料夾中，以<code class="language-plaintext highlighter-rouge">&lt;onionaddress&gt;.onion</code>資料夾呈現，資料夾中會有私鑰、公鑰、地址，若要啟用則丟入<code class="language-plaintext highlighter-rouge">/home/&lt;username&gt;/&lt;hiddenfile_*&gt;</code>，覆蓋就行。</p>
+
+<p>參考文獻：https://github.com/cathugger/mkp224o</p>
+
+  </div>
+
+  <div class="date">
+    Written on March 11, 2020
+  </div>
+  
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:cov2019@protonmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/dogewwoww"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/awesome-doge"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-131051587-4', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/torv3-hidden-service-%E8%A8%AD%E5%AE%9A-+-ssh-%E9%80%A3%E7%B7%9A/',
+		  'title': 'tor v3 hidden service 設定 + ssh 連線'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>
