@@ -4,18 +4,21 @@ title: About
 permalink: /about/
 ---
 
-**Chen Po Wei** (@awesome-doge)
+**Dr. Awesome Doge** (@awesome-doge)
 
-*Current Bitmark Researcher. PhD in NTU EE. Former [Huobi](https://www.huobi.com/), [Nayuta](https://nayuta.co/), [Cybavo](https://www.cybavo.com/)
- researcher. Standing director of [taipeihack](https://taipeihack.org/). Promoter of [Cypherpunks Taiwan](https://cypherpunks-core.github.io/). Founder of [Bitcoin Chinese Community](https://www.facebook.com/groups/bitcoin.tw).  [@awesomedoge@x0f.org](https://x0f.org/web/accounts/86067)*
+![](https://gpvc.arturio.dev/awesome-doge)   
+*[TON blockchain](https://github.com/ton-blockchain) contributor. Co-founder of [Blocktempo](https://www.blocktempo.com/), [TonX Studio](https://www.tonx.studio/), Entropy Group, [Mzyme](https://mzyme.xyz/), [Cypherpunks Taiwan](https://cypherpunks-core.github.io/), [Taipei Bitcoin Meetup Group](https://www.meetup.com/taipei-bitcoin-meetup-group/), [Bitcoin Chinese Society](https://www.facebook.com/groups/bitcoin.tw). Former [Huobi](https://www.huobi.com/),[Bitmark](https://bitmark.com/), [Nayuta](https://nayuta.co/), [Cybavo](https://www.cybavo.com/),[Institute of Information Science, Academia Sinica](https://www.iis.sinica.edu.tw/zh/index.html)
+ researcher.*     
+ *Master of Software Engineering of [PKU](https://www.pku.edu.cn/). Former Ph.D. student of [NTU](https://www.ntu.edu.tw/) EE.*     
+ 
 
-<a href="https://github.com/awesome-doge"><img src="https://img.shields.io/github/followers/awesome-doge.svg?label=@awesome-doge&style=social" alt="GitHub"></a> <a href="https://github.com/BlockchainCommons"><img src="https://img.shields.io/badge/BlockchainCommons--Github?style=social&logo=github" alt="GitHub"> <a href="https://github.com/bitcoin"><img src="https://img.shields.io/badge/bitcoin--Github?style=social&logo=github" alt="GitHub"></a> <a href="https://github.com/cypherpunks-core"><img src="https://img.shields.io/badge/cypherpunks-core--Github?style=social&logo=github" alt="GitHub"> <a href="https://twitter.com/PWChenD" rel="me"> <img src="https://img.shields.io/twitter/follow/PWChenD?label=@PWChenD&style=social" alt="Twitter @PWChenD"></a> <a href="mailto:chenpowei@bitmark.com"><img src="https://img.shields.io/badge/email--email?logo=mail.ru&style=social&link&logoColor=000000?link=mailto%3AChristopherA@LifeWithAlacrity.com?link=mailto%3AChristopherA@LifeWithAlacrity.com" alt="Email"></a> <a rel="pgpkey" href="https://gist.github.com/awesome-doge/4b3f697a4611ef21247629e98765eb19"><img src="https://img.shields.io/badge/PGP_key--PGP_key?logo=protonmail&style=social&logoColor=000000?link=https%3A%2F%2Fgithub.com%2Fchristophera.gpg?link=https%3A%2F%2Fgithub.com%2Fchristophera.gpg" alt="PGP/GPG Key"></a>
+Research Areas: [Gordian](https://github.com/BlockchainCommons/Gordian), [RGB](https://github.com/rgb-org/rgb-core), [Schnorr](https://github.com/BlockchainCommons/bc-shamir), [Taproot](https://en.bitcoin.it/wiki/BIP_0341), [LN](https://github.com/lightningnetwork/lnd), [Shamir’s Secret Sharing](), [Descriptors](https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md), [MuSig2](https://medium.com/blockstream/musig2-simple-two-round-schnorr-multisignatures-bf9582e99295), [PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki), [OmniBOLT](https://github.com/omnilaboratory/OmniBOLT-spec).    
+irc: awesome_doge. [google scholar](https://scholar.google.com/citations?user=NUNuG2sAAAAJ)
 
-In 2014, I started blockchain technology research, and in 2015 I entered the Academia Sinica to do blockchain research and participated in four projects of the Ministry of Science and Technology of the Republic of China.
+Book:[TON 白皮書](https://awesome-doge.github.io/the-open-network-white-paper/), [穿越防火長城](https://awesome-doge.github.io/breaking-gfw-book/), [區塊之戰](https://awesome-doge.github.io/the-blocksize-war/), [比特幣編程](https://awesome-doge.github.io/programmingbticoin-zh/), [精通以太](https://cypherpunks-core.github.io/ethereumbook_zh/), [精通比特幣](https://cypherpunks-core.github.io/bitcoinbook_2nd_zh/), [Rust book](https://awesome-doge.github.io/trpl-zh-tw/)
 
-Since 2014, 10 papers have been completed, 4 of which are IEEE international conferences, and two have won the best paper awards. I studied at Peking University in 2016 and completed my three years of study in two years.
 
-My research interests include bitcoin, blockchain, onion networks, cryptography, firewalls, Minecraft and Raspberry Pi.
+<img src="/github-metrics.svg" alt="Metrics" width="100%">
 
 
 ### 聯繫我
