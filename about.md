@@ -18,9 +18,6 @@ irc: awesome_doge. [google scholar](https://scholar.google.com/citations?user=NU
 Book:[TON 白皮書](https://awesome-doge.github.io/the-open-network-white-paper/), [穿越防火長城](https://awesome-doge.github.io/breaking-gfw-book/), [區塊之戰](https://awesome-doge.github.io/the-blocksize-war/), [比特幣編程](https://awesome-doge.github.io/programmingbticoin-zh/), [精通以太](https://cypherpunks-core.github.io/ethereumbook_zh/), [精通比特幣](https://cypherpunks-core.github.io/bitcoinbook_2nd_zh/), [Rust book](https://awesome-doge.github.io/trpl-zh-tw/)
 
 
-<img src="/github-metrics.svg" alt="Metrics" width="100%">
-
-
 ### 聯繫我
 - Facebook: <a href="https://www.facebook.com/dogewwoww">嗷嗚</a>
 - Freenode IRC: awesome-doge
